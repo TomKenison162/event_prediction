@@ -1,0 +1,65 @@
+name: hourly-predictions
+
+on:
+  schedule:
+    - cron: "7 * * * *"        # every hour at :07 UTC (UK time = UTC in December)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (works outside the live window; results uploaded as an artifact, not committed)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: predictions
+  cancel-in-progress: false
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      # GDELT aggregates are re-derivable; cache them between runs so each run
+      # only downloads the newest day.
+      - name: Restore GDELT cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/gdelt_agg
+            data/gdelt_top
+          key: gdelt-${{ github.run_id }}
+          restore-keys: gdelt-
+
+      - name: Run predictor
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: uv run python -m event_prediction.predict ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Upload dry-run output
+        if: ${{ inputs.dry_run }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: dry-run-${{ github.run_id }}
+          path: |
+            predictions_dryrun
+            data/snapshots
+
+      - name: Commit predictions and input snapshots
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "prediction-bot"
+          git config user.email "prediction-bot@users.noreply.github.com"
+          git add predictions data/snapshots
+          git commit -m "predictions: $(date -u +%Y-%m-%dT%H:%MZ)" || echo "nothing to commit"
+          git pull --rebase
+          git push

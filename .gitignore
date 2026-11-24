@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+logs/
+data/gdelt_agg/
+data/gdelt_top/
+data/wiki/
+data/panel*
+reports/backtest_candidates.parquet
+predictions_dryrun/
+.env
+data/poly/trades/
+data/poly/*.pkl
+data/poly/markets_resolved.parquet
