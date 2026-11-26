@@ -1,0 +1,2282 @@
+{
+ "0x6e6851f2698629795fa06869d961c986221a80cedcba10fbaf0ed220607cdada": {
+  "condition_id": "0x6e6851f2698629795fa06869d961c986221a80cedcba10fbaf0ed220607cdada",
+  "country": "IN",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Chinese and Indian military forces clash by Dec 31, 2026"
+ },
+ "0x9ec578f6ec257edab771698bd600a8eac1e59709a4e8e9cd53986cf8387e80e6": {
+  "condition_id": "0x9ec578f6ec257edab771698bd600a8eac1e59709a4e8e9cd53986cf8387e80e6",
+  "country": "UP",
+  "event_type": "force_posture",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "NATO/EU country troops enter Ukraine for combat by Dec 31, 2026"
+ },
+ "0x3373d3750e99d0fd60da842e688d89b71ad92d6bdd42c329f199add1c5bacb06": {
+  "condition_id": "0x3373d3750e99d0fd60da842e688d89b71ad92d6bdd42c329f199add1c5bacb06",
+  "country": "RS",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US and Russian military forces clash by Dec 31, 2026"
+ },
+ "0x4b7b21a5cfdcc7cbb33d499c44b7f11ac754f13d3db39cd93b976141dcdb516e": {
+  "condition_id": "0x4b7b21a5cfdcc7cbb33d499c44b7f11ac754f13d3db39cd93b976141dcdb516e",
+  "country": "NONE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia launches military offensive to seize territory of a NATO country by Dec 31, 2026"
+ },
+ "0x6176cc868c8893cf431ae1e8103d4d4c1fcfcf239c3b3415b672151337125884": {
+  "condition_id": "0x6176cc868c8893cf431ae1e8103d4d4c1fcfcf239c3b3415b672151337125884",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures Sumy railroad station (ISW) by Mar 31, 2027"
+ },
+ "0x6bd56627aa21311850825edb27e53434a0e17a4f782be0086bc07f71eee00d0d": {
+  "condition_id": "0x6bd56627aa21311850825edb27e53434a0e17a4f782be0086bc07f71eee00d0d",
+  "country": "RS",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Putin ceases to be President of Russia by Dec 31, 2026"
+ },
+ "0xcbac06e53a332298ba921cac34bf293bc9bdfd0aeccb37e6f7f1d100956fbe3c": {
+  "condition_id": "0xcbac06e53a332298ba921cac34bf293bc9bdfd0aeccb37e6f7f1d100956fbe3c",
+  "country": "RS",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Putin ceases to be President of Russia by Jun 30, 2027"
+ },
+ "0x67b60ef1a1e81dd62157f8b8fef315c6791a47d229d39f5b77c0e8d3286392ea": {
+  "condition_id": "0x67b60ef1a1e81dd62157f8b8fef315c6791a47d229d39f5b77c0e8d3286392ea",
+  "country": "RS",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Putin ceases to be President of Russia by Mar 31, 2027"
+ },
+ "0xf691956d44187f9296718a26b10c03d3b85e3369e2098ab2188f765ef4dc97b7": {
+  "condition_id": "0xf691956d44187f9296718a26b10c03d3b85e3369e2098ab2188f765ef4dc97b7",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures Lyman railroad station (ISW) by Dec 31, 2026"
+ },
+ "0x8b2d3edd0500a52b39676e1d59a0da5ac145f4e03e97b0d0412da13ca0e70c2a": {
+  "condition_id": "0x8b2d3edd0500a52b39676e1d59a0da5ac145f4e03e97b0d0412da13ca0e70c2a",
+  "country": "IS",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Israel officially annexes any territory by Dec 31, 2026"
+ },
+ "0xd9fb1184af0064e5e34b129f5b79afa5a17b7e32f2953ab05efed82315fee6d4": {
+  "condition_id": "0xd9fb1184af0064e5e34b129f5b79afa5a17b7e32f2953ab05efed82315fee6d4",
+  "country": "TW",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "China launches military offensive to control Taiwan territory by Dec 31, 2026"
+ },
+ "0x51f624dbbf14f9edb575fef1be6f7a303751de70783fa144fce27b957452c803": {
+  "condition_id": "0x51f624dbbf14f9edb575fef1be6f7a303751de70783fa144fce27b957452c803",
+  "country": "UP",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Zelenskyy ceases to be President of Ukraine by Dec 31, 2026"
+ },
+ "0x7ed4f343d9e6cf9c03a72b31809f76cfcfaaf591f5931e1d91f4b3946cf14d25": {
+  "condition_id": "0x7ed4f343d9e6cf9c03a72b31809f76cfcfaaf591f5931e1d91f4b3946cf14d25",
+  "country": "VE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US launches military offensive to control Venezuelan territory by Dec 31, 2026"
+ },
+ "0xf2bf04609e7458df56c9bb4b1e051286dea11da1c944bbc1dafbcc6b76904e52": {
+  "condition_id": "0xf2bf04609e7458df56c9bb4b1e051286dea11da1c944bbc1dafbcc6b76904e52",
+  "country": "NONE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "NATO country and Russian military forces clash by Dec 31, 2026"
+ },
+ "0x91f622f380779dffaf2d2db2bc8c1683216bdf0b65906c387f338862745b1c03": {
+  "condition_id": "0x91f622f380779dffaf2d2db2bc8c1683216bdf0b65906c387f338862745b1c03",
+  "country": "NONE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "NATO country and Russian military forces clash by Nov 30, 2026"
+ },
+ "0x12bd7c63ea356a688c47c5227ef490c63b04354bf2ec8cb7e2aed84968c4c648": {
+  "condition_id": "0x12bd7c63ea356a688c47c5227ef490c63b04354bf2ec8cb7e2aed84968c4c648",
+  "country": "GZ",
+  "event_type": "ceasefire_violation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Israel or Hamas cancels the Gaza ceasefire by Dec 31, 2026"
+ },
+ "0xa6aa5a20027dd49336ca96b7ccbe0fabad29bf3ec01045cf8dc8535ea80156f2": {
+  "condition_id": "0xa6aa5a20027dd49336ca96b7ccbe0fabad29bf3ec01045cf8dc8535ea80156f2",
+  "country": "GZ",
+  "event_type": "agreement",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Israel and Hamas agree Phase II of Gaza ceasefire by Dec 31, 2026"
+ },
+ "0xb7ca42c3a0324b32cad3e64b29cc372d5e941a41f7f23f787806439854be9021": {
+  "condition_id": "0xb7ca42c3a0324b32cad3e64b29cc372d5e941a41f7f23f787806439854be9021",
+  "country": "PK",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "India conducts drone/missile/air strike on Pakistani territory by Dec 31, 2026"
+ },
+ "0x1c39f29a392495da86a9d1882bdb7ad82bd617990a6da16674e1ee3da105e9e6": {
+  "condition_id": "0x1c39f29a392495da86a9d1882bdb7ad82bd617990a6da16674e1ee3da105e9e6",
+  "country": "GZ",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Israel launches major ground offensive (>1,000 troops) in Gaza by Dec 31, 2026"
+ },
+ "0xa72d5a239c10ac6cb67f109b05513ae3a23db39ab7c5d4e2afa93719f20471ba": {
+  "condition_id": "0xa72d5a239c10ac6cb67f109b05513ae3a23db39ab7c5d4e2afa93719f20471ba",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Kupiansk (ISW) by Dec 31, 2026"
+ },
+ "0x25e961b73889e80bb2e8e7e9611aa573cf5f7cae0d7db8a488256cf758f0f1ca": {
+  "condition_id": "0x25e961b73889e80bb2e8e7e9611aa573cf5f7cae0d7db8a488256cf758f0f1ca",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Vovchansk (ISW) by Dec 31, 2026"
+ },
+ "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846": {
+  "condition_id": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+  "country": "IR",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US launches military offensive to control Iranian territory by Dec 31, 2026"
+ },
+ "0xa0a4bd25cdbdb09d7d90d7fa1dab25d7cefcb0048cd9a78afbbf868b66c85815": {
+  "condition_id": "0xa0a4bd25cdbdb09d7d90d7fa1dab25d7cefcb0048cd9a78afbbf868b66c85815",
+  "country": "AR",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Milei ceases to be President of Argentina by Dec 31, 2026"
+ },
+ "0x9beef050b957fe8db5f5d31b8be5d158c80867cc8013d35edd488d6b25f69f70": {
+  "condition_id": "0x9beef050b957fe8db5f5d31b8be5d158c80867cc8013d35edd488d6b25f69f70",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures Sloviansk train station (ISW) by Dec 31, 2026"
+ },
+ "0x84dc47b1dd9cd99a9217b92a95690729334b647650bb6bf676bb31c3db0d7f79": {
+  "condition_id": "0x84dc47b1dd9cd99a9217b92a95690729334b647650bb6bf676bb31c3db0d7f79",
+  "country": "KS",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "North Korea launches military offensive to control South Korean territory by Dec 31, 2026"
+ },
+ "0x9ed2a24391123c685db5c48ea043ee9bd714a144be4a9a0c48d146d521cf9f93": {
+  "condition_id": "0x9ed2a24391123c685db5c48ea043ee9bd714a144be4a9a0c48d146d521cf9f93",
+  "country": "KN",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Kim Jong Un ceases to be Supreme Leader of North Korea by Dec 31, 2026"
+ },
+ "0xe34a08b2a8d0f9e5033dc1bc1ee153509e414196c3e8044d5e99b64b974eeea6": {
+  "condition_id": "0xe34a08b2a8d0f9e5033dc1bc1ee153509e414196c3e8044d5e99b64b974eeea6",
+  "country": "NONE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Israeli and Turkish military forces clash by Dec 31, 2026"
+ },
+ "0x794fbb668b14dacd636ff47a39e2294148420577e38278e11adf14655ad6cfe0": {
+  "condition_id": "0x794fbb668b14dacd636ff47a39e2294148420577e38278e11adf14655ad6cfe0",
+  "country": "WE",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Israel officially annexes West Bank territory by Dec 31, 2026"
+ },
+ "0x765e5daae966128da2acac8edab65d23abcabcf8958563a490d24c3498812c85": {
+  "condition_id": "0x765e5daae966128da2acac8edab65d23abcabcf8958563a490d24c3498812c85",
+  "country": "IR",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Iran conducts a nuclear test by Dec 31, 2026"
+ },
+ "0x568d872051e7b699d8e056b76d470d3f8a0e423c7a79c7aace4dffb60bebfb27": {
+  "condition_id": "0x568d872051e7b699d8e056b76d470d3f8a0e423c7a79c7aace4dffb60bebfb27",
+  "country": "SY",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ahmed al-Sharaa ceases to be President of Syria by Dec 31, 2026"
+ },
+ "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722": {
+  "condition_id": "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Trump ceases to be US President by Dec 31, 2026"
+ },
+ "0x67619e99976fae938097536fe3cd4b31f282f00028cff1586fb0776f864c89d6": {
+  "condition_id": "0x67619e99976fae938097536fe3cd4b31f282f00028cff1586fb0776f864c89d6",
+  "country": "CH",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Widely reported coup attempt in China by Dec 31, 2026"
+ },
+ "0x4c80df6f557bb0b9de08c0301ebdce500dd9bdc58400d9269fb8fab1709ed584": {
+  "condition_id": "0x4c80df6f557bb0b9de08c0301ebdce500dd9bdc58400d9269fb8fab1709ed584",
+  "country": "TW",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Chinese and Taiwanese military forces clash by Dec 31, 2026"
+ },
+ "0x2343926c89946f2e3abe1511dd38a026ca9176b96d6554ec6d7ae5b1a59a6ef9": {
+  "condition_id": "0x2343926c89946f2e3abe1511dd38a026ca9176b96d6554ec6d7ae5b1a59a6ef9",
+  "country": "SU",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "RSF and SAF announce official ceasefire agreement in Sudan by Dec 31, 2026"
+ },
+ "0xa466e17524bcc473279c4ca86f4f1fb01932946a8204e68f6ca96628f8bf2b5e": {
+  "condition_id": "0xa466e17524bcc473279c4ca86f4f1fb01932946a8204e68f6ca96628f8bf2b5e",
+  "country": "JA",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Chinese and Japanese military forces clash by Dec 31, 2026"
+ },
+ "0x021b61936a6694bd8b89b207cfcf4deff3ed1c41b87a004268cd562935729345": {
+  "condition_id": "0x021b61936a6694bd8b89b207cfcf4deff3ed1c41b87a004268cd562935729345",
+  "country": "LE",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Naim Qassem ceases to be Hezbollah secretary-general by Dec 31, 2026"
+ },
+ "0x890f9b8de730479549e95027f26aad5ce89ecc4a42a6fd6316d0b0aec9a5aad1": {
+  "condition_id": "0x890f9b8de730479549e95027f26aad5ce89ecc4a42a6fd6316d0b0aec9a5aad1",
+  "country": "SP",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Pedro S\u00e1nchez ceases to be PM of Spain by Dec 31, 2026"
+ },
+ "0x0dcece9d5296b453ca602fa2fb10b8df4a7b5f0899342c071caf277e8a660497": {
+  "condition_id": "0x0dcece9d5296b453ca602fa2fb10b8df4a7b5f0899342c071caf277e8a660497",
+  "country": "SP",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Pedro S\u00e1nchez ceases to be PM of Spain by Jan 15, 2027"
+ },
+ "0x4aa32bf54db5a3b4297e8c3ad46d9c56f14cd2efdf828812a69f5fb2e64fa396": {
+  "condition_id": "0x4aa32bf54db5a3b4297e8c3ad46d9c56f14cd2efdf828812a69f5fb2e64fa396",
+  "country": "SP",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Pedro S\u00e1nchez ceases to be PM of Spain by Jan 31, 2027"
+ },
+ "0xebe7b01546ccd6b7fd1e446708aa29c6052aa600ff6ce2693a3916ae3f048c0d": {
+  "condition_id": "0xebe7b01546ccd6b7fd1e446708aa29c6052aa600ff6ce2693a3916ae3f048c0d",
+  "country": "NONE",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Sassou Nguesso ceases to be President of the Republic of the Congo by Dec 31, 2026"
+ },
+ "0xdfef104292a20af8ca34d3da06c74596ecfca8a0a3efb4deb25bc319d34f1937": {
+  "condition_id": "0xdfef104292a20af8ca34d3da06c74596ecfca8a0a3efb4deb25bc319d34f1937",
+  "country": "CG",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "F\u00e9lix Tshisekedi ceases to be President of DR Congo by Dec 31, 2026"
+ },
+ "0x226e00465b1a3856e164ab5ef5426d180975776d68c10b4be5abf51de0c0bc0f": {
+  "condition_id": "0x226e00465b1a3856e164ab5ef5426d180975776d68c10b4be5abf51de0c0bc0f",
+  "country": "GR",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Greek and Turkish military forces engage in use of force by Dec 31, 2026"
+ },
+ "0x71ee8e53f370ab5630f8a68f8a40d4e4cbbad222138f208de574056e80ab8473": {
+  "condition_id": "0x71ee8e53f370ab5630f8a68f8a40d4e4cbbad222138f208de574056e80ab8473",
+  "country": "UP",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Widely reported coup attempt occurs in Ukraine by Dec 31, 2026"
+ },
+ "0xce30a577d01fae8689a05218fde403388d8bce41649f8156c96ccf104d631b59": {
+  "condition_id": "0xce30a577d01fae8689a05218fde403388d8bce41649f8156c96ccf104d631b59",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Stepnohirsk, Zaporizhzhia Oblast per ISW by Dec 31, 2026"
+ },
+ "0x9051c339493374b28c5348337a3928890127228cac85dc270b928c805789052e": {
+  "condition_id": "0x9051c339493374b28c5348337a3928890127228cac85dc270b928c805789052e",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Prymorske, Zaporizhzhia Oblast per ISW by Dec 31, 2026"
+ },
+ "0x2f224fca80a6a6b3a2a200406473fc8b33da6bcf5af83dc3fe9021a541c0519d": {
+  "condition_id": "0x2f224fca80a6a6b3a2a200406473fc8b33da6bcf5af83dc3fe9021a541c0519d",
+  "country": "IR",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Reza Pahlavi physically enters Iran by Dec 31, 2026"
+ },
+ "0xec4366aa6a191c8dc392e2b3bc874d5ce9a22637a60f33e72e869ce39c89ef4e": {
+  "condition_id": "0xec4366aa6a191c8dc392e2b3bc874d5ce9a22637a60f33e72e869ce39c89ef4e",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Donetsk Oblast per ISW by Dec 31, 2026"
+ },
+ "0x115374e9cb26f7c375f35cdfec08167024dbfc5a20f339806d81236ed25ab781": {
+  "condition_id": "0x115374e9cb26f7c375f35cdfec08167024dbfc5a20f339806d81236ed25ab781",
+  "country": "CU",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Miguel D\u00edaz-Canel ceases to be President of Cuba by Dec 31, 2026"
+ },
+ "0xc6e54956b79ddf6f8640df06eea9ffb1f5e558907b2a9031aa00cefeb5f3ab22": {
+  "condition_id": "0xc6e54956b79ddf6f8640df06eea9ffb1f5e558907b2a9031aa00cefeb5f3ab22",
+  "country": "CO",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US drone, missile, or air strike hits Colombian soil by Dec 31, 2026"
+ },
+ "0xb23e6d6ba72e76bbce9799daf527e3598a939a602ff5e069cf27a0b25bab50a7": {
+  "condition_id": "0xb23e6d6ba72e76bbce9799daf527e3598a939a602ff5e069cf27a0b25bab50a7",
+  "country": "MX",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US drone, missile, or air strike hits Mexican soil by Dec 31, 2026"
+ },
+ "0x3de0f3d7d7efb40cde68e814d40a0b232832083653c8e78260eb999baa967de0": {
+  "condition_id": "0x3de0f3d7d7efb40cde68e814d40a0b232832083653c8e78260eb999baa967de0",
+  "country": "CU",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US drone, missile, or air strike hits Cuban soil by Dec 31, 2026"
+ },
+ "0x80ebf0a88a44bf737d4047b3accd7108285c69b84257e5c684bdc4c715c81139": {
+  "condition_id": "0x80ebf0a88a44bf737d4047b3accd7108285c69b84257e5c684bdc4c715c81139",
+  "country": "CU",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US launches military offensive to control Cuban land territory by Dec 31, 2026"
+ },
+ "0x984ee41a6ca3a79a425befa1dc635ff8204cd29550190b8363ae6a1250c1677d": {
+  "condition_id": "0x984ee41a6ca3a79a425befa1dc635ff8204cd29550190b8363ae6a1250c1677d",
+  "country": "NONE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US launches military offensive to control land in a Latin American country by Dec 31, 2026"
+ },
+ "0x4cba9bf990370fac4f6ec2b3513d7dbbc5c569a88d01180ccda081cccc57eed7": {
+  "condition_id": "0x4cba9bf990370fac4f6ec2b3513d7dbbc5c569a88d01180ccda081cccc57eed7",
+  "country": "VE",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Delcy Rodr\u00edguez ceases to be leader of Venezuela by Dec 31, 2026"
+ },
+ "0xe723e5e63c14e387c03cb37b11d79fa88f46a302503175b56cd9f68ecbc00a20": {
+  "condition_id": "0xe723e5e63c14e387c03cb37b11d79fa88f46a302503175b56cd9f68ecbc00a20",
+  "country": "NONE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US launches military offensive to control land in Greenland by Dec 31, 2026"
+ },
+ "0x173e1e71d57e728e99544c38da074e38e079e1f2865b332c10ad5ae7f84385b8": {
+  "condition_id": "0x173e1e71d57e728e99544c38da074e38e079e1f2865b332c10ad5ae7f84385b8",
+  "country": "NONE",
+  "event_type": "abduction",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US personnel capture a sitting head of state in a ground operation by Dec 31, 2026"
+ },
+ "0x12d1f08c93c4272c0447b5aebfabc3b4901588615128d6d91d0e04a1e7031d3a": {
+  "condition_id": "0x12d1f08c93c4272c0447b5aebfabc3b4901588615128d6d91d0e04a1e7031d3a",
+  "country": "CO",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US launches military offensive to control Colombian land territory by Dec 31, 2026"
+ },
+ "0x1015d806e33eebde7edb0762f1197051575f6286b5f06261d8e4ff4d34c90697": {
+  "condition_id": "0x1015d806e33eebde7edb0762f1197051575f6286b5f06261d8e4ff4d34c90697",
+  "country": "MX",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US launches military offensive to control Mexican land territory by Dec 31, 2026"
+ },
+ "0xddeb88745cb5ad8c67dd08d9fdf322c316ae5f36fdd21b89ff3ec090b6fa1fec": {
+  "condition_id": "0xddeb88745cb5ad8c67dd08d9fdf322c316ae5f36fdd21b89ff3ec090b6fa1fec",
+  "country": "WE",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Mahmoud Abbas ceases to be Palestinian Authority President by Dec 31, 2026"
+ },
+ "0x7b0ed36d5d86756b0f854dd2d5a721c951c2e2c6273c63b00c837b1842bb62e4": {
+  "condition_id": "0x7b0ed36d5d86756b0f854dd2d5a721c951c2e2c6273c63b00c837b1842bb62e4",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US officially annexes any territory by Dec 31, 2026"
+ },
+ "0x13faa876e0bc41ff44bd250ed3745bd62d33763e727f2193d3dfb5e789008fce": {
+  "condition_id": "0x13faa876e0bc41ff44bd250ed3745bd62d33763e727f2193d3dfb5e789008fce",
+  "country": "IR",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Widely reported coup attempt occurs in Iran by Dec 31, 2026"
+ },
+ "0x1f4a556c0c21678921abffeab9dfc175d5326c3e6d5cb3f61bb9558684d6b14f": {
+  "condition_id": "0x1f4a556c0c21678921abffeab9dfc175d5326c3e6d5cb3f61bb9558684d6b14f",
+  "country": "IR",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Widely reported coup attempt occurs in Iran by Dec 31, 2027"
+ },
+ "0x68e47e45601b8e7fff925490f419191126c0f87cdf978717881fd2efa18cfb5b": {
+  "condition_id": "0x68e47e45601b8e7fff925490f419191126c0f87cdf978717881fd2efa18cfb5b",
+  "country": "TW",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Lai Ching-te ceases to be President of Taiwan by Dec 31, 2026"
+ },
+ "0x3285179b99df57b0390e480f8e69d340e5fa38496b263225df90ef389e2958f4": {
+  "condition_id": "0x3285179b99df57b0390e480f8e69d340e5fa38496b263225df90ef389e2958f4",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US Congress formally declares war on Iran by Dec 31, 2026"
+ },
+ "0x844c84a7b6f8dbbdd72a1cf730062026c8c0b5ad6d30c9eb761263477fa283c6": {
+  "condition_id": "0x844c84a7b6f8dbbdd72a1cf730062026c8c0b5ad6d30c9eb761263477fa283c6",
+  "country": "NONE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US and Chinese military forces have a use-of-force encounter by Dec 31, 2026"
+ },
+ "0xe795e57fe247a42e1e12bf543e6cd8bc859c850ab8194da6367e080fa15f5e2b": {
+  "condition_id": "0xe795e57fe247a42e1e12bf543e6cd8bc859c850ab8194da6367e080fa15f5e2b",
+  "country": "NONE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US and Danish military forces have a use-of-force encounter by Dec 31, 2026"
+ },
+ "0x72f0b7ccdf12e2c4dc169edfd853fd67ae25929af6579bc2a52781231a6b1c44": {
+  "condition_id": "0x72f0b7ccdf12e2c4dc169edfd853fd67ae25929af6579bc2a52781231a6b1c44",
+  "country": "RS",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ramzan Kadyrov ceases to be Head of Chechen Republic by Dec 31, 2026"
+ },
+ "0x4ec6ada6365a8cfc2a36493903e7af4311513e90fa9cbf4defefab1d912a9971": {
+  "condition_id": "0x4ec6ada6365a8cfc2a36493903e7af4311513e90fa9cbf4defefab1d912a9971",
+  "country": "NONE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Military forces of two NATO members have a use-of-force encounter by Dec 31, 2026"
+ },
+ "0x43b3bc105e75c59d4745892067c57220702f869dc86296793a45429f1ad29773": {
+  "condition_id": "0x43b3bc105e75c59d4745892067c57220702f869dc86296793a45429f1ad29773",
+  "country": "NONE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia launches military offensive to control territory of a country other than Ukraine by Dec 31, 2027"
+ },
+ "0x8011cff605bac25673a202332b678e823cd7d82abad9e9770db01ea625808229": {
+  "condition_id": "0x8011cff605bac25673a202332b678e823cd7d82abad9e9770db01ea625808229",
+  "country": "NONE",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia launches military offensive to control territory of a country other than Ukraine by Dec 31, 2026"
+ },
+ "0xff7af0d4001a984e5bdb2ced851ca82babf800344071ed5f8aee2df7b55797a8": {
+  "condition_id": "0xff7af0d4001a984e5bdb2ced851ca82babf800344071ed5f8aee2df7b55797a8",
+  "country": "BE",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ursula von der Leyen ceases to be European Commission President by Dec 31, 2026"
+ },
+ "0xa91ddfc41b279099da4d4ab260fdc50ed43c09f2b761d78e25c9ed0ffb0402d2": {
+  "condition_id": "0xa91ddfc41b279099da4d4ab260fdc50ed43c09f2b761d78e25c9ed0ffb0402d2",
+  "country": "AS",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Anthony Albanese ceases to be Prime Minister of Australia by Dec 31, 2026"
+ },
+ "0xca63577f886917a299e60c25626641e06f74885b2bb848d67c0915551a05cc5b": {
+  "condition_id": "0xca63577f886917a299e60c25626641e06f74885b2bb848d67c0915551a05cc5b",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures Havrylivka intersection per ISW by Dec 31, 2026"
+ },
+ "0x50bcef01951fc97974a4cb2894b593aed9bd85c69354e93fe00dde4be7b4cf4d": {
+  "condition_id": "0x50bcef01951fc97974a4cb2894b593aed9bd85c69354e93fe00dde4be7b4cf4d",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures Kupiansk-Vuzlovyi railroad station per ISW by Dec 31, 2026"
+ },
+ "0x6f14538957e0818c9b89f92cebc7b8021643b08d648e421f9d67ae548f32d9a2": {
+  "condition_id": "0x6f14538957e0818c9b89f92cebc7b8021643b08d648e421f9d67ae548f32d9a2",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Ternuvate, Zaporizhzhia Oblast per ISW by Dec 31, 2026"
+ },
+ "0x1531394070411c2e5f081a9406de4b009374808e3e832f1c1f5ddc37bb6d4ba0": {
+  "condition_id": "0x1531394070411c2e5f081a9406de4b009374808e3e832f1c1f5ddc37bb6d4ba0",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Drobysheve, Donetsk Oblast per ISW by Dec 31, 2026"
+ },
+ "0x3ab254eba59333a4165e744c03eb523591d5beb52475ac79d3521ab97f06f103": {
+  "condition_id": "0x3ab254eba59333a4165e744c03eb523591d5beb52475ac79d3521ab97f06f103",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures any territory of Pokrovskoe, Dnipropetrovsk Oblast per ISW by Dec 31, 2026"
+ },
+ "0x41026240b7e9da9e447ba71d113c8e09dd0fff1bafa3a4a8ec38febe12d43f7a": {
+  "condition_id": "0x41026240b7e9da9e447ba71d113c8e09dd0fff1bafa3a4a8ec38febe12d43f7a",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures any territory of Khatnie, Kharkiv Oblast per ISW by Dec 31, 2026"
+ },
+ "0x442b48ba510d7d8dbeecca1410c8d1b8679c60dfd451c525321ca137bb35648b": {
+  "condition_id": "0x442b48ba510d7d8dbeecca1410c8d1b8679c60dfd451c525321ca137bb35648b",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Kostyantynivka, Donetsk Oblast per ISW by Mar 31, 2027"
+ },
+ "0xcb27e43eb122b963be232cdbe641356d25b65f4ad73964fdc0d8b743a4fe0e6d": {
+  "condition_id": "0xcb27e43eb122b963be232cdbe641356d25b65f4ad73964fdc0d8b743a4fe0e6d",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Kostyantynivka, Donetsk Oblast per ISW by Jun 30, 2027"
+ },
+ "0x703c63fd81f59a22212acaa66272cd2910efd80116002bac95e3d4e354850fcc": {
+  "condition_id": "0x703c63fd81f59a22212acaa66272cd2910efd80116002bac95e3d4e354850fcc",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Kostyantynivka, Donetsk Oblast, by Nov 30, 2026 (per ISW map)"
+ },
+ "0x627ed310dc3977b2d71d96a4f2fccd6050553f6f165efd6c29578f5678f3f863": {
+  "condition_id": "0x627ed310dc3977b2d71d96a4f2fccd6050553f6f165efd6c29578f5678f3f863",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Kostyantynivka, Donetsk Oblast, by Dec 31, 2026 (per ISW map)"
+ },
+ "0xb4aea2573ecac699851b042d39a99b26e43aed7a6b024a4bc827ba220f9fbb78": {
+  "condition_id": "0xb4aea2573ecac699851b042d39a99b26e43aed7a6b024a4bc827ba220f9fbb78",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures all of Lyman, Donetsk Oblast, by Dec 31, 2026 (per ISW map)"
+ },
+ "0xaba33ea1253e3dbf70a1d3395c92514737ef3bc405255331a4d98465039581ee": {
+  "condition_id": "0xaba33ea1253e3dbf70a1d3395c92514737ef3bc405255331a4d98465039581ee",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ukraine retakes any territory of Uspenivka, Zaporizhzhia Oblast, by Dec 31 (per ISW map)"
+ },
+ "0x37959dc30829a2d36be8f1e05239b55a5ecf62c258435e47c1ddef4264a1a076": {
+  "condition_id": "0x37959dc30829a2d36be8f1e05239b55a5ecf62c258435e47c1ddef4264a1a076",
+  "country": "MX",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Cartel leader Iv\u00e1n Archivaldo Guzm\u00e1n Salazar arrested or detained by Dec 31, 2026"
+ },
+ "0xd2d3739630b201fd89af0cff05f679987d30064895e4793a22fb0861ccfdde64": {
+  "condition_id": "0xd2d3739630b201fd89af0cff05f679987d30064895e4793a22fb0861ccfdde64",
+  "country": "MX",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Cartel leader Ricardo Ruiz Velasco arrested or detained by Dec 31, 2026"
+ },
+ "0x4caf8733e896ec56a9ff3348b03c630f90df2f0ef0188d5d217ed3312840be12": {
+  "condition_id": "0x4caf8733e896ec56a9ff3348b03c630f90df2f0ef0188d5d217ed3312840be12",
+  "country": "MX",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Cartel leader Juan Carlos Valencia Gonz\u00e1lez arrested or detained by Dec 31, 2026"
+ },
+ "0x7bca0e44bf00dd6fe52688e12106bc9e93f61962768331280ef402908a4aacd5": {
+  "condition_id": "0x7bca0e44bf00dd6fe52688e12106bc9e93f61962768331280ef402908a4aacd5",
+  "country": "MX",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Cartel leader Juan Reyes Mej\u00eda Gonz\u00e1lez arrested or detained by Dec 31, 2026"
+ },
+ "0x333455a7be2dad4c981b49d700b80a0497c0274f72be3ab633a9ec020e80e884": {
+  "condition_id": "0x333455a7be2dad4c981b49d700b80a0497c0274f72be3ab633a9ec020e80e884",
+  "country": "CU",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US and Cuban military forces have a military encounter by Dec 31, 2026"
+ },
+ "0x53d189809af80825a7682a2ecf9a5246f34a8a07b827589d3080f69e22765270": {
+  "condition_id": "0x53d189809af80825a7682a2ecf9a5246f34a8a07b827589d3080f69e22765270",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures the Viroliubivka intersection, Donetsk Oblast, by Dec 31 (per ISW map)"
+ },
+ "0xa85a7ef371d55db0807bf95126318bbe25b0f8299f0e9e0f6a061e41964cb912": {
+  "condition_id": "0xa85a7ef371d55db0807bf95126318bbe25b0f8299f0e9e0f6a061e41964cb912",
+  "country": "NONE",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Hamad bin Isa Al Khalifa ceases to be leader of Bahrain by Dec 31, 2026"
+ },
+ "0x15e8b539b6e6bed3285dbabb6fa3de5c528e562a089edda1ba7c0dcb5a073657": {
+  "condition_id": "0x15e8b539b6e6bed3285dbabb6fa3de5c528e562a089edda1ba7c0dcb5a073657",
+  "country": "NONE",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Edi Rama ceases to be Prime Minister of Albania by Dec 31, 2026"
+ },
+ "0x3867c954ccd50c147312a14025511270bcd264b755fa40e7e3ee20df3e2c81bb": {
+  "condition_id": "0x3867c954ccd50c147312a14025511270bcd264b755fa40e7e3ee20df3e2c81bb",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ukraine retakes any territory of Obratne or Temyrivka, Zaporizhzhia Oblast, by Dec 31 (per ISW map)"
+ },
+ "0x0734eb61d07f694bde1da2619cfb75d2a052b8f173180fb050894c30d73de98c": {
+  "condition_id": "0x0734eb61d07f694bde1da2619cfb75d2a052b8f173180fb050894c30d73de98c",
+  "country": "US",
+  "event_type": "force_posture",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US enacts legislation authorizing a military draft via the Selective Service by Dec 31, 2026"
+ },
+ "0xeeb9978cfc8165d890be20ff6bcdd1d15a26acaadcb15b30023652a1822ac4a6": {
+  "condition_id": "0xeeb9978cfc8165d890be20ff6bcdd1d15a26acaadcb15b30023652a1822ac4a6",
+  "country": "IR",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Israeli military personnel confirmed in a ground operation inside Iran by Dec 31, 2026"
+ },
+ "0xe6d5e5da83874cd82c9b651a8a5d4fc541a800a295fb62e85124b4f5a04a4b7d": {
+  "condition_id": "0xe6d5e5da83874cd82c9b651a8a5d4fc541a800a295fb62e85124b4f5a04a4b7d",
+  "country": "TW",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "China starts a military offensive to seize Taiwan-administered territory by Dec 31, 2027"
+ },
+ "0x756b85cb4e3a4df45069df41a4c433634f80eaa025f0367e5a2a111ae01f4cb7": {
+  "condition_id": "0x756b85cb4e3a4df45069df41a4c433634f80eaa025f0367e5a2a111ae01f4cb7",
+  "country": "LE",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Joseph Aoun ceases to be President of Lebanon by Dec 31"
+ },
+ "0xce1b8885440154c0ec0fee0a082114a759d0a8743e2893910530989b54d3405b": {
+  "condition_id": "0xce1b8885440154c0ec0fee0a082114a759d0a8743e2893910530989b54d3405b",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures the Serhiivka intersection, Donetsk Oblast, by Dec 31 (per ISW map)"
+ },
+ "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc": {
+  "condition_id": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Pete Hegseth ceases to be US Secretary of Defense by Dec 31"
+ },
+ "0x057da165b096d1f3a59d87bcad68649aecd18dc25c89a6d083530d1aaac18146": {
+  "condition_id": "0x057da165b096d1f3a59d87bcad68649aecd18dc25c89a6d083530d1aaac18146",
+  "country": "TW",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "China starts a military offensive to seize Taiwan-administered territory by Jun 30, 2027"
+ },
+ "0x578cfae7575d7d072fc67f12b4920a1aca31050a45f15344674fd37f16f52d42": {
+  "condition_id": "0x578cfae7575d7d072fc67f12b4920a1aca31050a45f15344674fd37f16f52d42",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ukraine retakes any territory of Myrnohrad, Donetsk Oblast, by Dec 31 (per ISW map)"
+ },
+ "0x000c7a50900321bab3ffc498b1f8d5493820ce68edfa8ab669885fd9b8c7d339": {
+  "condition_id": "0x000c7a50900321bab3ffc498b1f8d5493820ce68edfa8ab669885fd9b8c7d339",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures the Dovha Balka intersection, Donetsk Oblast, by Dec 31, 2026 (per ISW map)"
+ },
+ "0xf39f02e6d794c3bfcba332647fea6e2d130552a36b1df8416541a7b2063f83d7": {
+  "condition_id": "0xf39f02e6d794c3bfcba332647fea6e2d130552a36b1df8416541a7b2063f83d7",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures the Myropillia intersection, Sumy Oblast, by Dec 31 (per ISW map)"
+ },
+ "0x7dec9c618309c76d9772c3205ecf688828189c00d0485222be618e0a0011f00a": {
+  "condition_id": "0x7dec9c618309c76d9772c3205ecf688828189c00d0485222be618e0a0011f00a",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures the Prymorske intersection, Zaporizhzhia Oblast, by Dec 31, 2026 (per ISW map)"
+ },
+ "0x19e4c19193bb06609b83267b5d06fbd4c45d8848ff532a66ace9e8e77e3c991d": {
+  "condition_id": "0x19e4c19193bb06609b83267b5d06fbd4c45d8848ff532a66ace9e8e77e3c991d",
+  "country": "IZ",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Kurdistan Regional Government formally declares independence from Iraq by Dec 31"
+ },
+ "0xbd395d67357a1862b014dfad77cb770824a64734949e789ea631509a4e1879d6": {
+  "condition_id": "0xbd395d67357a1862b014dfad77cb770824a64734949e789ea631509a4e1879d6",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures the Rai-Oleksandrivka intersection, Donetsk Oblast, by Dec 31 (per ISW map)"
+ },
+ "0xd4aa5c6bd2a179244d98ba714dba4441e4bf5f99f27a657b8d967f8f67cfe041": {
+  "condition_id": "0xd4aa5c6bd2a179244d98ba714dba4441e4bf5f99f27a657b8d967f8f67cfe041",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures any territory of Sloviansk by Dec 31, 2026 (per ISW map)"
+ },
+ "0x4d3395a91ab99cb40dc56cd4debc360ad167ac51137b862aa4ff1b5c28a22561": {
+  "condition_id": "0x4d3395a91ab99cb40dc56cd4debc360ad167ac51137b862aa4ff1b5c28a22561",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures any territory of Sumy city by Dec 31, 2026 (per ISW map)"
+ },
+ "0xb7d6db12a48e282585501f57871e6e482b9e2c41c68d1d5019bdbd2902209b69": {
+  "condition_id": "0xb7d6db12a48e282585501f57871e6e482b9e2c41c68d1d5019bdbd2902209b69",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures any territory of Druzhkivka by Dec 31, 2026 (per ISW map)"
+ },
+ "0x6557ff312837c0707d82bc2def893572289e012cff21a264593c6551f85d7e50": {
+  "condition_id": "0x6557ff312837c0707d82bc2def893572289e012cff21a264593c6551f85d7e50",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures any territory of Dobropillia by Dec 31, 2026 (per ISW map)"
+ },
+ "0x357ee5e692658d4dae5b7fe59bae12cef029f2ebffb5452f4d439a1934d84211": {
+  "condition_id": "0x357ee5e692658d4dae5b7fe59bae12cef029f2ebffb5452f4d439a1934d84211",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures any territory of Kramatorsk by Dec 31, 2026 (per ISW map)"
+ },
+ "0x3998586e8a30f2ba516c073859c98bfcc37e6abdc06e0652fa7e7259a0de6584": {
+  "condition_id": "0x3998586e8a30f2ba516c073859c98bfcc37e6abdc06e0652fa7e7259a0de6584",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures any territory of Kharkiv city by Dec 31, 2026 (per ISW map)"
+ },
+ "0x465ca3fde976d3f147697893414b341b11a4e624e97e6e9b106c4d02cae4a443": {
+  "condition_id": "0x465ca3fde976d3f147697893414b341b11a4e624e97e6e9b106c4d02cae4a443",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures any territory of Kherson city by Dec 31, 2026 (per ISW map)"
+ },
+ "0xe97ddd7cfb8633ca0cc05f8033e662b92f6186b9763e96d8fa734c6c83009b35": {
+  "condition_id": "0xe97ddd7cfb8633ca0cc05f8033e662b92f6186b9763e96d8fa734c6c83009b35",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures any territory of Zaporizhzhia city by Dec 31, 2026 (per ISW map)"
+ },
+ "0x5c19f205507ce03ff5f3be08a8090a5969ea6870cc07b902a4ca2e61dfe48fdd": {
+  "condition_id": "0x5c19f205507ce03ff5f3be08a8090a5969ea6870cc07b902a4ca2e61dfe48fdd",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Dec 31, 2026"
+ },
+ "0x2ef59a55bf60ef28edad3a6eaa6ea9bcecbafa721dc9d0d1e73eb2c74516debd": {
+  "condition_id": "0x2ef59a55bf60ef28edad3a6eaa6ea9bcecbafa721dc9d0d1e73eb2c74516debd",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Mar 31, 2027"
+ },
+ "0x1e4ad3d340dbb9149ec6d2873bf6f519bddc1eb0f89665605fd90d226dd06b78": {
+  "condition_id": "0x1e4ad3d340dbb9149ec6d2873bf6f519bddc1eb0f89665605fd90d226dd06b78",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Jun 30, 2027"
+ },
+ "0xbdab12a222060b29a0238cbfff86c5108a31ee492ee67be3f292f8697eea7d31": {
+  "condition_id": "0xbdab12a222060b29a0238cbfff86c5108a31ee492ee67be3f292f8697eea7d31",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Apr 30, 2027"
+ },
+ "0x6160c02bc34107f6f84ad8a9f1efd42c02e607fbcc154b720949231c5558acc2": {
+  "condition_id": "0x6160c02bc34107f6f84ad8a9f1efd42c02e607fbcc154b720949231c5558acc2",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by May 31, 2027"
+ },
+ "0xea73edf70a088c4939d28ef861eb45db380078ac9eede411608c774ced5e944b": {
+  "condition_id": "0xea73edf70a088c4939d28ef861eb45db380078ac9eede411608c774ced5e944b",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Jul 31, 2027"
+ },
+ "0x08f1d018dc73d4df073a64f7184ab77aff8a977c076e28383a65394668a39be9": {
+  "condition_id": "0x08f1d018dc73d4df073a64f7184ab77aff8a977c076e28383a65394668a39be9",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Sep 30, 2027"
+ },
+ "0x2b19d23ba678929babfd5154a155eade5c957656117eb1d601ba2c2cb74f2337": {
+  "condition_id": "0x2b19d23ba678929babfd5154a155eade5c957656117eb1d601ba2c2cb74f2337",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Aug 31, 2027"
+ },
+ "0xb3b0aebe0883b11310c60e6eec36db02e94956fa81e5a534c654733759f0e5b6": {
+  "condition_id": "0xb3b0aebe0883b11310c60e6eec36db02e94956fa81e5a534c654733759f0e5b6",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Oct 31, 2027"
+ },
+ "0xa1092f590e543158e3f230aca48efd8c1c53198d68d96fcd9c6ef6a83937bb9d": {
+  "condition_id": "0xa1092f590e543158e3f230aca48efd8c1c53198d68d96fcd9c6ef6a83937bb9d",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Dec 31, 2027"
+ },
+ "0xae554f30b7ba3de62193b969264d817329c44111cbb0364042a091e229b24d66": {
+  "condition_id": "0xae554f30b7ba3de62193b969264d817329c44111cbb0364042a091e229b24d66",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Nov 30, 2027"
+ },
+ "0x357319ded51afc8843eb0ddcf345c2de1f7613e97357f7942e1e228961f4e723": {
+  "condition_id": "0x357319ded51afc8843eb0ddcf345c2de1f7613e97357f7942e1e228961f4e723",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Jan 31, 2027"
+ },
+ "0x270b8e5dac0c25d7adf5f0df5472de74c1b0ad36260a67e403120d23006ccd3f": {
+  "condition_id": "0x270b8e5dac0c25d7adf5f0df5472de74c1b0ad36260a67e403120d23006ccd3f",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Feb 28, 2027"
+ },
+ "0x346543618b5077cedcabb9da57cf643922dbc752a7f332fc26e0256a38bb74c7": {
+  "condition_id": "0x346543618b5077cedcabb9da57cf643922dbc752a7f332fc26e0256a38bb74c7",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree a ceasefire by Nov 30, 2026"
+ },
+ "0xf91ca58d99ac47e4c6a8c324419f082b3d09744179b1a8b6540a3c20c6c23c7d": {
+  "condition_id": "0xf91ca58d99ac47e4c6a8c324419f082b3d09744179b1a8b6540a3c20c6c23c7d",
+  "country": "RS",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "A coup attempt occurs in Russia by Dec 31, 2026"
+ },
+ "0x84c625fdccf5c5246a15e476361e4563033906ee225800e1136c0d737596a72f": {
+  "condition_id": "0x84c625fdccf5c5246a15e476361e4563033906ee225800e1136c0d737596a72f",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia-Ukraine ceasefire takes effect by Dec 31, 2026 and holds 10 days"
+ },
+ "0x3242b643a0452825cb80a26cf8b775a0fc4dc5b473a0923664f00fb88951ebc4": {
+  "condition_id": "0x3242b643a0452825cb80a26cf8b775a0fc4dc5b473a0923664f00fb88951ebc4",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia-Ukraine ceasefire takes effect by Mar 31, 2027 and holds 10 days"
+ },
+ "0x9d03dc73aeadaa0c31e31de3f4ac946fe1cf7c67a72020c5223aeab23a16ac9c": {
+  "condition_id": "0x9d03dc73aeadaa0c31e31de3f4ac946fe1cf7c67a72020c5223aeab23a16ac9c",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia-Ukraine ceasefire takes effect by Dec 31, 2027 and holds 10 days"
+ },
+ "0x8567295f09b89140143070db5a6ae362aba1d1ce81de2c3ef0da086cc5185877": {
+  "condition_id": "0x8567295f09b89140143070db5a6ae362aba1d1ce81de2c3ef0da086cc5185877",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture Mala Tokmachka by Dec 31, 2026"
+ },
+ "0x6a6e35ad1126b7c51fdf1bdd72a562f14455dfd1c1885e282a7a10bf6cf251d4": {
+  "condition_id": "0x6a6e35ad1126b7c51fdf1bdd72a562f14455dfd1c1885e282a7a10bf6cf251d4",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture Orikhiv by Dec 31, 2026"
+ },
+ "0x613235b9e2431915d33473fe60c078a333275c7b913fad569f4c14bd9bd62341": {
+  "condition_id": "0x613235b9e2431915d33473fe60c078a333275c7b913fad569f4c14bd9bd62341",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture Orikhiv by Jun 30, 2027"
+ },
+ "0x08bf0887f7d939553bd64c3f27d1d373fa265ee5b7d2315ff054f5fc4ebc5391": {
+  "condition_id": "0x08bf0887f7d939553bd64c3f27d1d373fa265ee5b7d2315ff054f5fc4ebc5391",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture Orikhiv by Mar 31, 2027"
+ },
+ "0x78401aebcb93cb03100dedf8d7cfc4568e8e17f619c4b7017a294ae3c8954fb6": {
+  "condition_id": "0x78401aebcb93cb03100dedf8d7cfc4568e8e17f619c4b7017a294ae3c8954fb6",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture Borova by Dec 31, 2026"
+ },
+ "0x101335768342a7cfc82c9eb40791ddb001bd146b72a3db1571db61b513b55908": {
+  "condition_id": "0x101335768342a7cfc82c9eb40791ddb001bd146b72a3db1571db61b513b55908",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture all of Chasiv Yar by Dec 31, 2026"
+ },
+ "0x4aff7958ba78ff48344c142e97ca3e7a29c0edf9ed00d0fe13d5965b779cd5e7": {
+  "condition_id": "0x4aff7958ba78ff48344c142e97ca3e7a29c0edf9ed00d0fe13d5965b779cd5e7",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture Kupiansk by Dec 31, 2026"
+ },
+ "0x96498c10c79ecaafa2bbb92ada36c7ff617913b03d9220f8c95ce7d6776a0b0c": {
+  "condition_id": "0x96498c10c79ecaafa2bbb92ada36c7ff617913b03d9220f8c95ce7d6776a0b0c",
+  "country": "TW",
+  "event_type": "force_posture",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "China establishes an air or naval blockade of Taiwan by Dec 31, 2026"
+ },
+ "0x2d7da8aeba11b38dc7733150b53a7b7f5fc6d8e68571d671a11377468bbd8b74": {
+  "condition_id": "0x2d7da8aeba11b38dc7733150b53a7b7f5fc6d8e68571d671a11377468bbd8b74",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture Kozacha Lopan by Dec 31, 2026"
+ },
+ "0xbd5d4d89c5b835e1dbe9dc29a5a3f3841e25a0717eb32c09827fc72213f2767c": {
+  "condition_id": "0xbd5d4d89c5b835e1dbe9dc29a5a3f3841e25a0717eb32c09827fc72213f2767c",
+  "country": "ML",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Anti-government militants capture Gao, Mali by Dec 31, 2026"
+ },
+ "0x2dc5b4353fe863db7a4151dbb81cb040d2c86f55558633fcd200c6d3c7518e41": {
+  "condition_id": "0x2dc5b4353fe863db7a4151dbb81cb040d2c86f55558633fcd200c6d3c7518e41",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture Oleksiievo-Druzhkivka by Dec 31, 2026"
+ },
+ "0xb35d8c3b3fa6af5a269822e8f4ec31bd7c8e65ff5520df79b115044a662c198f": {
+  "condition_id": "0xb35d8c3b3fa6af5a269822e8f4ec31bd7c8e65ff5520df79b115044a662c198f",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture Oleksiievo-Druzhkivka by Mar 31, 2027"
+ },
+ "0xb087ef29ad90ab94becb60658fd996b39c828675f0c2d4b5ed57c2602da01aba": {
+  "condition_id": "0xb087ef29ad90ab94becb60658fd996b39c828675f0c2d4b5ed57c2602da01aba",
+  "country": "LE",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Israel conducts an air or missile strike on Greater Beirut by Nov 30, 2026"
+ },
+ "0x04646097993a3f048d428dcc051596a0f9962c7955540983a5815eef02e55edf": {
+  "condition_id": "0x04646097993a3f048d428dcc051596a0f9962c7955540983a5815eef02e55edf",
+  "country": "IR",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ghalibaf ceases to be Iran parliament speaker by Dec 31, 2026"
+ },
+ "0x3a191ec82c99051119bfa197f1334b262cddc8b742e47b766a6d3e16fee1e7e9": {
+  "condition_id": "0x3a191ec82c99051119bfa197f1334b262cddc8b742e47b766a6d3e16fee1e7e9",
+  "country": "IR",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Araghchi ceases to be Iran foreign minister by Dec 31, 2026"
+ },
+ "0xc4cfff85b8d29a04d1f2bff0d33e7b896b622207ed587ffe867db600e4976680": {
+  "condition_id": "0xc4cfff85b8d29a04d1f2bff0d33e7b896b622207ed587ffe867db600e4976680",
+  "country": "ML",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Assimi Go\u00efta departs as President of Mali by Dec 31, 2026"
+ },
+ "0x9ba8565c41ac73060ad76a08ca808eb9143bc413a67ed082994652d98ff5e0ae": {
+  "condition_id": "0x9ba8565c41ac73060ad76a08ca808eb9143bc413a67ed082994652d98ff5e0ae",
+  "country": "ML",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Assimi Go\u00efta departs as President of Mali by Jun 30, 2027"
+ },
+ "0x46ca741da4abd7ffa993f59ac65bfe83de43ae027accac71d263a493e44064e7": {
+  "condition_id": "0x46ca741da4abd7ffa993f59ac65bfe83de43ae027accac71d263a493e44064e7",
+  "country": "IR",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US officially announces end of naval blockade of Iran by Dec 31, 2026"
+ },
+ "0x8db33416a2d1ebde7438c80129e898f89a5deb3852ca64b37c4bf46513204409": {
+  "condition_id": "0x8db33416a2d1ebde7438c80129e898f89a5deb3852ca64b37c4bf46513204409",
+  "country": "IR",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US officially announces end of naval blockade of Iran by Mar 31, 2027"
+ },
+ "0x7a70fc60ee280fa7b4312f5dd128d148d74ae5b3e4a2e8215ccf0030a08ebb04": {
+  "condition_id": "0x7a70fc60ee280fa7b4312f5dd128d148d74ae5b3e4a2e8215ccf0030a08ebb04",
+  "country": "IR",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US officially announces end of naval blockade of Iran by Nov 30, 2026"
+ },
+ "0x6de8e2164b364eb87838b2289db8622fab81b5ce5931bb325e1b3a679314f1a7": {
+  "condition_id": "0x6de8e2164b364eb87838b2289db8622fab81b5ce5931bb325e1b3a679314f1a7",
+  "country": "IR",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US officially announces end of naval blockade of Iran by Dec 15, 2026"
+ },
+ "0xeb52ebb2cab7ea7e27c4baa2a924566a8fe2cba8c69486b103f0fba4c2073e76": {
+  "condition_id": "0xeb52ebb2cab7ea7e27c4baa2a924566a8fe2cba8c69486b103f0fba4c2073e76",
+  "country": "IR",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US officially announces end of naval blockade of Iran by Jan 31, 2027"
+ },
+ "0xa9c48d6455ade5fba8c858b182e63dbede91c8bb7b366d95e32155c99e380884": {
+  "condition_id": "0xa9c48d6455ade5fba8c858b182e63dbede91c8bb7b366d95e32155c99e380884",
+  "country": "IR",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US officially announces end of naval blockade of Iran by Feb 28, 2027"
+ },
+ "0x9d509b38bd75f40e69d67320c6a584c5bf8d262dd3415ed55f1cc3c88a7490fd": {
+  "condition_id": "0x9d509b38bd75f40e69d67320c6a584c5bf8d262dd3415ed55f1cc3c88a7490fd",
+  "country": "CH",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Alibaba removed from US 1260H Chinese Military Companies list by Jun 30, 2027"
+ },
+ "0x6592acbe368e30879072043db356133759a63e48dd78457fb592902fa76155c1": {
+  "condition_id": "0x6592acbe368e30879072043db356133759a63e48dd78457fb592902fa76155c1",
+  "country": "CH",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "DJI removed from US 1260H Chinese Military Companies list by Jun 30, 2027"
+ },
+ "0x0b8c73c0e5a7429637fca2c5ecb98e107a2ba3b665583897cc074cbd2385ef13": {
+  "condition_id": "0x0b8c73c0e5a7429637fca2c5ecb98e107a2ba3b665583897cc074cbd2385ef13",
+  "country": "CH",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "YMTC removed from US 1260H Chinese Military Companies list by Jun 30, 2027"
+ },
+ "0x324e5c8886733c5b5ceab38d7f37085ab0f9d0daac7dde2100f01f04f066ae16": {
+  "condition_id": "0x324e5c8886733c5b5ceab38d7f37085ab0f9d0daac7dde2100f01f04f066ae16",
+  "country": "CH",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "CXMT removed from US 1260H Chinese Military Companies list by Jun 30, 2027"
+ },
+ "0xb8fdfc31e14d939ddbddb7b96e5471ea76aabcd7c45c468673543ecd6aacc613": {
+  "condition_id": "0xb8fdfc31e14d939ddbddb7b96e5471ea76aabcd7c45c468673543ecd6aacc613",
+  "country": "CH",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Tencent removed from US 1260H Chinese Military Companies list by Jun 30, 2027"
+ },
+ "0xce5320bc858fcb8439fd6ca00b30487c0dab38304a52f1e72a8c7566ba0de7cb": {
+  "condition_id": "0xce5320bc858fcb8439fd6ca00b30487c0dab38304a52f1e72a8c7566ba0de7cb",
+  "country": "CH",
+  "event_type": "NONE",
+  "yes_means_event": false,
+  "scheduled": false,
+  "event_phrase": "CATL removed from US 1260H Chinese Military Companies list by 2027-06-30"
+ },
+ "0x35f18058ac9d1874df287a7d903fb177ca93817be3d8cfe5b687eaa38b88d897": {
+  "condition_id": "0x35f18058ac9d1874df287a7d903fb177ca93817be3d8cfe5b687eaa38b88d897",
+  "country": "CH",
+  "event_type": "NONE",
+  "yes_means_event": false,
+  "scheduled": false,
+  "event_phrase": "Hesai removed from US 1260H Chinese Military Companies list by 2027-06-30"
+ },
+ "0x5d2afd0dbe1e4ce212f523b4eaf9fc4605a3df8a7f0c4036815821bbb3fcfef4": {
+  "condition_id": "0x5d2afd0dbe1e4ce212f523b4eaf9fc4605a3df8a7f0c4036815821bbb3fcfef4",
+  "country": "CH",
+  "event_type": "NONE",
+  "yes_means_event": false,
+  "scheduled": false,
+  "event_phrase": "Baidu removed from US 1260H Chinese Military Companies list by 2027-06-30"
+ },
+ "0x0eac38a2c3cc0a5fe2c0466d0acd532247e3c14e0d722800a9037d14e2f1eb0c": {
+  "condition_id": "0x0eac38a2c3cc0a5fe2c0466d0acd532247e3c14e0d722800a9037d14e2f1eb0c",
+  "country": "CH",
+  "event_type": "NONE",
+  "yes_means_event": false,
+  "scheduled": false,
+  "event_phrase": "BYD removed from US 1260H Chinese Military Companies list by 2027-06-30"
+ },
+ "0x39ffcd498550e7d615d55c7e372bac618d7277164ccf5c0ea2dbef61649e7dc4": {
+  "condition_id": "0x39ffcd498550e7d615d55c7e372bac618d7277164ccf5c0ea2dbef61649e7dc4",
+  "country": "CH",
+  "event_type": "NONE",
+  "yes_means_event": false,
+  "scheduled": false,
+  "event_phrase": "Unitree removed from US 1260H Chinese Military Companies list by 2027-06-30"
+ },
+ "0xb8781105c2fde5235d3066f41767bae659ba1bda7c8ba30884317e5fa34fc939": {
+  "condition_id": "0xb8781105c2fde5235d3066f41767bae659ba1bda7c8ba30884317e5fa34fc939",
+  "country": "CH",
+  "event_type": "sanctions",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US adds DeepSeek to 1260H Chinese Military Companies list by 2027-06-30"
+ },
+ "0xe3d75ecd7868363ec78711b1d8ee1eeb31b6271dc2167020b40f8908f77a4c4a": {
+  "condition_id": "0xe3d75ecd7868363ec78711b1d8ee1eeb31b6271dc2167020b40f8908f77a4c4a",
+  "country": "CH",
+  "event_type": "sanctions",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US adds ByteDance to 1260H Chinese Military Companies list by 2027-06-30"
+ },
+ "0x0bbe0a32de38e6347c54c95dd85f393a1bfc9ed1cd81cc380778dd2a53268140": {
+  "condition_id": "0x0bbe0a32de38e6347c54c95dd85f393a1bfc9ed1cd81cc380778dd2a53268140",
+  "country": "CH",
+  "event_type": "sanctions",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US adds Xiaomi to 1260H Chinese Military Companies list by 2027-06-30"
+ },
+ "0x60c9db5c0bb02f948e4959ef921d9b7815fbc8adb4a4069e42f812d80156f1af": {
+  "condition_id": "0x60c9db5c0bb02f948e4959ef921d9b7815fbc8adb4a4069e42f812d80156f1af",
+  "country": "CH",
+  "event_type": "sanctions",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US adds Moonshot AI to 1260H Chinese Military Companies list by 2027-06-30"
+ },
+ "0xfd0f91715b7c9df5f333ab6c52bb361a5002b6e74788643287fb231e20d56679": {
+  "condition_id": "0xfd0f91715b7c9df5f333ab6c52bb361a5002b6e74788643287fb231e20d56679",
+  "country": "IS",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Houthi air or missile strike hits Israel by 2026-12-31"
+ },
+ "0x136f93963d636b2496443a8d247266000cc751fb34e3c4dbe7ec3ba75a31b85a": {
+  "condition_id": "0x136f93963d636b2496443a8d247266000cc751fb34e3c4dbe7ec3ba75a31b85a",
+  "country": "IR",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "A European country conducts air or missile strike on Iran by 2026-12-31"
+ },
+ "0x7372f6df4410bbef1d4ffa8041fc2f221c79f86c997a8a6b331f4c7ef11fc478": {
+  "condition_id": "0x7372f6df4410bbef1d4ffa8041fc2f221c79f86c997a8a6b331f4c7ef11fc478",
+  "country": "KU",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Iranian forces invade and hold territory in Kuwait by 2026-12-31"
+ },
+ "0x5a35c8d26f024d73b504530a3f33945741ff1152473c7393250f19d73d518a17": {
+  "condition_id": "0x5a35c8d26f024d73b504530a3f33945741ff1152473c7393250f19d73d518a17",
+  "country": "SA",
+  "event_type": "agreement",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US-Saudi 123 nuclear cooperation agreement enters into force by 2026-12-31"
+ },
+ "0x2167ab5c0d163f85195ccea4d11734e4ba53913c838c6720fb815794128c68f2": {
+  "condition_id": "0x2167ab5c0d163f85195ccea4d11734e4ba53913c838c6720fb815794128c68f2",
+  "country": "RP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Military clash between Chinese and Philippine forces by 2026-12-31"
+ },
+ "0xba614421a4d40861fa12757201aefc25d46d4b83a27e19c22c8d51e5e44f5863": {
+  "condition_id": "0xba614421a4d40861fa12757201aefc25d46d4b83a27e19c22c8d51e5e44f5863",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ukraine recaptures territory in Rodynske (ISW) by 2026-12-31"
+ },
+ "0x0035033a23d2c683a917c8d231901130dff6ab1248e84b4d9ead1b96c225864b": {
+  "condition_id": "0x0035033a23d2c683a917c8d231901130dff6ab1248e84b4d9ead1b96c225864b",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ukraine recaptures territory in Huliaipole (ISW) by 2026-12-31"
+ },
+ "0x035a8294c84b2128ff6765a18d779295331d995ee18e84313589f48160782f61": {
+  "condition_id": "0x035a8294c84b2128ff6765a18d779295331d995ee18e84313589f48160782f61",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures Royal Caf\u00e9 Alex in Kostyantynivka (ISW) by 2026-12-31"
+ },
+ "0xdf00cb80b326e0dd42c67bdeaf3e079df18ee8567784465493779a2cdc1fff74": {
+  "condition_id": "0xdf00cb80b326e0dd42c67bdeaf3e079df18ee8567784465493779a2cdc1fff74",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures Royal Caf\u00e9 Alex in Kostyantynivka (ISW) by 2026-11-30"
+ },
+ "0x1cd3f72c814065a8f7f03ddfce24f7ae3018c0778e00546f52423e41de2c531f": {
+  "condition_id": "0x1cd3f72c814065a8f7f03ddfce24f7ae3018c0778e00546f52423e41de2c531f",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures Royal Caf\u00e9 Alex in Kostyantynivka (ISW) by 2027-03-31"
+ },
+ "0x32dcf8954e6e8da281c96d061f9a1052de896ba3fa486e477cfb5c8d99f7707d": {
+  "condition_id": "0x32dcf8954e6e8da281c96d061f9a1052de896ba3fa486e477cfb5c8d99f7707d",
+  "country": "SY",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Israel conducts air or missile strike on Syria by 2026-11-30"
+ },
+ "0xfc61377bf1822f97b14f3581729b67d9b95617a9129ac615c4d19e02f98d3514": {
+  "condition_id": "0xfc61377bf1822f97b14f3581729b67d9b95617a9129ac615c4d19e02f98d3514",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures central Dobropillia intersection (ISW) by 2026-12-31"
+ },
+ "0x1ffecafc44acb9c8a850019ec44038afc944d13979b883b886c8f6de0b7b32f6": {
+  "condition_id": "0x1ffecafc44acb9c8a850019ec44038afc944d13979b883b886c8f6de0b7b32f6",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures central Dobropillia intersection (ISW) by 2027-03-31"
+ },
+ "0xbb04a8403c194b06efb5e0d901ce00fbd1e0cfc18859254b41882b364c2c279c": {
+  "condition_id": "0xbb04a8403c194b06efb5e0d901ce00fbd1e0cfc18859254b41882b364c2c279c",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia captures territory in Oleksiievo-Druzhkivka (ISW) by 2026-12-31"
+ },
+ "0x28dc4873a85a2d4f4d5dbbaead6dc575071492eacf43415ff2a8d0076f83324c": {
+  "condition_id": "0x28dc4873a85a2d4f4d5dbbaead6dc575071492eacf43415ff2a8d0076f83324c",
+  "country": "IR",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US officially lifts naval blockade of Iran before an Iran-Oman Hormuz agreement"
+ },
+ "0x1f6926c8e2a2d7caf40dbf7e64f422dc7f06a5c4da435ec1b256abb82283396d": {
+  "condition_id": "0x1f6926c8e2a2d7caf40dbf7e64f422dc7f06a5c4da435ec1b256abb82283396d",
+  "country": "YM",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Pakistan conducts air or missile strike on Yemen by 2026-12-31"
+ },
+ "0xf6beb39de7421e0a114ecc1360ca8eabb0af54dc0178a3f4896da9be176a54f8": {
+  "condition_id": "0xf6beb39de7421e0a114ecc1360ca8eabb0af54dc0178a3f4896da9be176a54f8",
+  "country": "YM",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Houthi forces enter Aden by 2026-12-31"
+ },
+ "0xea7f75f9bdedef80577109cf375cdb271b83d19b4e618288e03e0186200f2f4c": {
+  "condition_id": "0xea7f75f9bdedef80577109cf375cdb271b83d19b4e618288e03e0186200f2f4c",
+  "country": "YM",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Houthi forces enter Aden by 2026-11-30"
+ },
+ "0x2395fcf739d050877cb6fe38878aaac89bc5bf0a13d03e1c358becdbc38a65c3": {
+  "condition_id": "0x2395fcf739d050877cb6fe38878aaac89bc5bf0a13d03e1c358becdbc38a65c3",
+  "country": "SA",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Houthi forces enter Saudi Arabian territory by 2026-12-31"
+ },
+ "0xcef432844d5a66b2b5ab0a0866a5b266509c9f0cf5dc8221ebb4973185f4401d": {
+  "condition_id": "0xcef432844d5a66b2b5ab0a0866a5b266509c9f0cf5dc8221ebb4973185f4401d",
+  "country": "YM",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Saudi troops enter Yemen for combat by 2026-12-31"
+ },
+ "0x262205bec581d96172e22b27ae40eef12afad1ce3395a5d4e10613541dffa569": {
+  "condition_id": "0x262205bec581d96172e22b27ae40eef12afad1ce3395a5d4e10613541dffa569",
+  "country": "IR",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Saudi Arabia conducts air or missile strike on Iran by 2026-12-31"
+ },
+ "0xa553590ff67fd46dfb0a8a84ff5cf22b07955798da078543772f201c9b633072": {
+  "condition_id": "0xa553590ff67fd46dfb0a8a84ff5cf22b07955798da078543772f201c9b633072",
+  "country": "YM",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "14-day period with no Houthi-Saudi military action by 2026-12-31"
+ },
+ "0xd65df08f1f2e47682c4c5670d9c67ace8723d37db74e54efa9aa3a23ae6b7677": {
+  "condition_id": "0xd65df08f1f2e47682c4c5670d9c67ace8723d37db74e54efa9aa3a23ae6b7677",
+  "country": "YM",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "NATO member troops enter Yemen for combat by 2026-12-31"
+ },
+ "0xbd561f0c530589927349f2056c8682fb16529f7e0503a15be4438d3f2224e56a": {
+  "condition_id": "0xbd561f0c530589927349f2056c8682fb16529f7e0503a15be4438d3f2224e56a",
+  "country": "YM",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Saudi-Houthi ceasefire agreement announced by 2026-12-31"
+ },
+ "0x575d41dd1659790a3d92bcd3c078d5d6a9f0f5d16c9a828e600cc85d1d08ea37": {
+  "condition_id": "0x575d41dd1659790a3d92bcd3c078d5d6a9f0f5d16c9a828e600cc85d1d08ea37",
+  "country": "NONE",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia conducts air or missile strike on an EU member state by 2026-12-31"
+ },
+ "0xef36219a5c150ad7b0bf37607bf3833e16e88efa42f2c3da63742cbf1a65eaf4": {
+  "condition_id": "0xef36219a5c150ad7b0bf37607bf3833e16e88efa42f2c3da63742cbf1a65eaf4",
+  "country": "NONE",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia conducts air or missile strike on an EU member state by 2027-12-31"
+ },
+ "0xb4f0b155f076c865a9c8211a85e5addd728888ac0b9fffb4cb1f22b29bdbb7f2": {
+  "condition_id": "0xb4f0b155f076c865a9c8211a85e5addd728888ac0b9fffb4cb1f22b29bdbb7f2",
+  "country": "ET",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Abiy Ahmed ceases to be Ethiopian PM by 2026-12-31"
+ },
+ "0x73fee6c2068e758b1362f558502c0dbc86d85a0252f2b136bff85e698f27bbf0": {
+  "condition_id": "0x73fee6c2068e758b1362f558502c0dbc86d85a0252f2b136bff85e698f27bbf0",
+  "country": "ET",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Eritrean forces invade and hold Ethiopian territory by 2026-12-31"
+ },
+ "0x313b184b23c8c960264c08baaa96b74f62dda2f8db3ae098497241351d198e86": {
+  "condition_id": "0x313b184b23c8c960264c08baaa96b74f62dda2f8db3ae098497241351d198e86",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ukraine recaptures territory in Terny (ISW) by 2026-12-31"
+ },
+ "0x3cd1474b7b57d4990b4ad586cd0e2bdf5ec4919b49526774f3241b4b94eec766": {
+  "condition_id": "0x3cd1474b7b57d4990b4ad586cd0e2bdf5ec4919b49526774f3241b4b94eec766",
+  "country": "YM",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Yemeni government forces enter Sanaa by 2026-11-30"
+ },
+ "0xfb5e4a080fd8ee9efb6a65b45d3a0b49a4047d972a71be252fd501dc38489ae7": {
+  "condition_id": "0xfb5e4a080fd8ee9efb6a65b45d3a0b49a4047d972a71be252fd501dc38489ae7",
+  "country": "YM",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Yemeni government forces enter Sanaa by 2026-12-31"
+ },
+ "0xc5dbbca7b61e18ee0fe77ec570830f80ef80ab006379c6755d3a165314f50e36": {
+  "condition_id": "0xc5dbbca7b61e18ee0fe77ec570830f80ef80ab006379c6755d3a165314f50e36",
+  "country": "AF",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Pakistan carries out an air strike or surface military action against Afghanistan by Nov 30, 2026"
+ },
+ "0x9e69d69cdbccdef7f8543d02dc2a60d299121286463cc5bbaf57b0aff5693a68": {
+  "condition_id": "0x9e69d69cdbccdef7f8543d02dc2a60d299121286463cc5bbaf57b0aff5693a68",
+  "country": "SA",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Saudi East-West oil pipeline targeted by military strike by Nov 30, 2026"
+ },
+ "0x12606fd7b38eddb909c49b7211bd2ee7eb8c86ac83c82df05e8053c9d4429288": {
+  "condition_id": "0x12606fd7b38eddb909c49b7211bd2ee7eb8c86ac83c82df05e8053c9d4429288",
+  "country": "UP",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Zelenskyy ceases to be President of Ukraine by Jun 30, 2027"
+ },
+ "0x03aaf0743fea4b3399b3b1f15734186b427e3ed3dbfb06b68aff49f19c8f2de5": {
+  "condition_id": "0x03aaf0743fea4b3399b3b1f15734186b427e3ed3dbfb06b68aff49f19c8f2de5",
+  "country": "YM",
+  "event_type": "force_posture",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Syrian regular troops deploy into Yemen by Dec 31, 2026"
+ },
+ "0x299fb38ebe51a4fdd76dde14df6549cc3cd4db4be7b21c9dbab19274d7277b07": {
+  "condition_id": "0x299fb38ebe51a4fdd76dde14df6549cc3cd4db4be7b21c9dbab19274d7277b07",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ukrainian forces capture territory of Zakitne, Donetsk Oblast per ISW by Dec 31, 2026"
+ },
+ "0x4e0c990f9f3fe6e5647521788a4fe0897475369917112df5ffcf15234f7be520": {
+  "condition_id": "0x4e0c990f9f3fe6e5647521788a4fe0897475369917112df5ffcf15234f7be520",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture territory of Bilozerske, Donetsk Oblast per ISW by Nov 30, 2026"
+ },
+ "0x85aed2f8711a469ae2fbe9662f1b0bf42dcabc028ac7a6aa7c540f314ef1d0d5": {
+  "condition_id": "0x85aed2f8711a469ae2fbe9662f1b0bf42dcabc028ac7a6aa7c540f314ef1d0d5",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture territory of Bilozerske, Donetsk Oblast per ISW by Dec 31, 2026"
+ },
+ "0xaabe05f69c6d8d114c7a8304a10ebde65a077ad4b252bc0d9bc6e9ef75365b42": {
+  "condition_id": "0xaabe05f69c6d8d114c7a8304a10ebde65a077ad4b252bc0d9bc6e9ef75365b42",
+  "country": "SA",
+  "event_type": "airstrike",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "King Khalid International Airport (Riyadh) targeted by military strike by Nov 30, 2026"
+ },
+ "0x2ae191f16c9b07fb128e686d23c3ca720c23e782c57bf11f59c4e027ab5c8197": {
+  "condition_id": "0x2ae191f16c9b07fb128e686d23c3ca720c23e782c57bf11f59c4e027ab5c8197",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture territory of Druzhkivka per ISW by Jun 30, 2027"
+ },
+ "0x67e80ce4efe9a433f4224fdeec18caba21ae0c894faf4b9046882e1579eab229": {
+  "condition_id": "0x67e80ce4efe9a433f4224fdeec18caba21ae0c894faf4b9046882e1579eab229",
+  "country": "UP",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russian forces capture territory of Zaporizhzhia city per ISW by Jun 30, 2027"
+ },
+ "0xe605216c7c484eb652d8fd4b0b97265d4f8ee72a3eda4ea7966f6454034378f2": {
+  "condition_id": "0xe605216c7c484eb652d8fd4b0b97265d4f8ee72a3eda4ea7966f6454034378f2",
+  "country": "YM",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Houthis capture Taiz city, Yemen by Nov 30, 2026"
+ },
+ "0x719da011baed5f543e28d07c9ce08dc8d0ea946b64f9a4609176b1c969bd4a45": {
+  "condition_id": "0x719da011baed5f543e28d07c9ce08dc8d0ea946b64f9a4609176b1c969bd4a45",
+  "country": "YM",
+  "event_type": "armed_clash",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Houthis capture Taiz city, Yemen by Dec 31, 2026"
+ },
+ "0x6485b9330eba93ca3892c32a4d22780f32d2d3302ea62cadec5c24f5316f5a8c": {
+  "condition_id": "0x6485b9330eba93ca3892c32a4d22780f32d2d3302ea62cadec5c24f5316f5a8c",
+  "country": "IR",
+  "event_type": "ceasefire_violation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Israel-Iran ceasefire ends before Netanyahu leaves office"
+ },
+ "0xefc2ab7a3e27efe236bf12c1dd7eabb2c774227351bf33cda1a4f2af933f9387": {
+  "condition_id": "0xefc2ab7a3e27efe236bf12c1dd7eabb2c774227351bf33cda1a4f2af933f9387",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Marco Rubio ceases to be US Secretary of State by Nov 30, 2026"
+ },
+ "0xc916288be54f9473bb263652748cbf073038874c9660c322b88c65cf8ec9f9d7": {
+  "condition_id": "0xc916288be54f9473bb263652748cbf073038874c9660c322b88c65cf8ec9f9d7",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Marco Rubio ceases to be US Secretary of State by Dec 31, 2026"
+ },
+ "0xb598dfa814345579ff96e04c4d2b08605867d9740e18f91073960f3004261d4d": {
+  "condition_id": "0xb598dfa814345579ff96e04c4d2b08605867d9740e18f91073960f3004261d4d",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Marco Rubio ceases to be US Secretary of State by Mar 31, 2027"
+ },
+ "0xf56a109b9e4db6e1394a1479ee6a4aca989eff2a3ca7f4125cfd84ec7b622696": {
+  "condition_id": "0xf56a109b9e4db6e1394a1479ee6a4aca989eff2a3ca7f4125cfd84ec7b622696",
+  "country": "IR",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US refrains from military action against Iran for a 14-day period starting by Nov 30, 2026"
+ },
+ "0xa7ba4563954892f7bdfd3cca6338d99bb4094ced275b459f121d2b40c046f585": {
+  "condition_id": "0xa7ba4563954892f7bdfd3cca6338d99bb4094ced275b459f121d2b40c046f585",
+  "country": "IR",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "US refrains from military action against Iran for a 14-day period starting by Dec 31, 2026"
+ },
+ "0x4d8293931a5409d12daf6f4a2db84042d8a89e8125f5d9c306b273e7dbba9a57": {
+  "condition_id": "0x4d8293931a5409d12daf6f4a2db84042d8a89e8125f5d9c306b273e7dbba9a57",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree an energy-infrastructure ceasefire by Nov 30, 2026"
+ },
+ "0x442c7ca3f0334d3c35cb763af137ad777278262b9d446adc9b451e25aaf72fb2": {
+  "condition_id": "0x442c7ca3f0334d3c35cb763af137ad777278262b9d446adc9b451e25aaf72fb2",
+  "country": "UP",
+  "event_type": "deescalation",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Russia and Ukraine agree an energy-infrastructure ceasefire by Dec 31, 2026"
+ },
+ "0x139d3d3dbae763d86436a5a59fdfb21eb4203a2ae1eee670b2faa8b187457500": {
+  "condition_id": "0x139d3d3dbae763d86436a5a59fdfb21eb4203a2ae1eee670b2faa8b187457500",
+  "country": "NONE",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "WHO declares a PHEIC for plague by Nov 30, 2026"
+ },
+ "0xcb0bb4712a1423e8d1076e5adfe203725b3dd66b11e49fb2f6efaf4ec1c221f9": {
+  "condition_id": "0xcb0bb4712a1423e8d1076e5adfe203725b3dd66b11e49fb2f6efaf4ec1c221f9",
+  "country": "NONE",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "WHO declares a PHEIC for plague by Dec 31, 2026"
+ },
+ "0x3eb7a5bafda646691abc5bfee5e98c3cfe063fc2e774bf8db8dc017c2feb5c15": {
+  "condition_id": "0x3eb7a5bafda646691abc5bfee5e98c3cfe063fc2e774bf8db8dc017c2feb5c15",
+  "country": "NONE",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Former Megaspeed executive Alice Huang arrested by Mar 31, 2027"
+ },
+ "0x550fe73ab40f6cdee010dbbed001279b1662d2849cfd3eba2f58e5921d00156e": {
+  "condition_id": "0x550fe73ab40f6cdee010dbbed001279b1662d2849cfd3eba2f58e5921d00156e",
+  "country": "IS",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Benjamin Netanyahu taken into custody by Dec 31, 2026"
+ },
+ "0x65b047bc433cc61d5bb652b9b07e5d1ec1c0ba75704134f41a75c0a4b439fa24": {
+  "condition_id": "0x65b047bc433cc61d5bb652b9b07e5d1ec1c0ba75704134f41a75c0a4b439fa24",
+  "country": "IS",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Aryeh Deri ceases to be Shas leader by Dec 31, 2026"
+ },
+ "0x5008486648e1504fc35d468ab774f4e081b9f93f6879840519656af94bdf5cc8": {
+  "condition_id": "0x5008486648e1504fc35d468ab774f4e081b9f93f6879840519656af94bdf5cc8",
+  "country": "FR",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "S\u00e9bastien Lecornu ceases to be French PM by Dec 31, 2026"
+ },
+ "0x189fc3a42652bc98e40592bbdee43cb8160315310ce535a4fa37fd838da64e72": {
+  "condition_id": "0x189fc3a42652bc98e40592bbdee43cb8160315310ce535a4fa37fd838da64e72",
+  "country": "CA",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Pierre Poilievre ceases to be Conservative leader by Dec 31, 2026"
+ },
+ "0x005de69d6f0d32f8284310d0b0d292f6eb42119fe0ecde7dbd34f7aedce0851c": {
+  "condition_id": "0x005de69d6f0d32f8284310d0b0d292f6eb42119fe0ecde7dbd34f7aedce0851c",
+  "country": "KS",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Lee Jae-myung arrested or detained by Dec 31, 2026"
+ },
+ "0x176e84015b1cc54d470836ef1d8a60753e17fa232d9b55e9aa8dde580d03f436": {
+  "condition_id": "0x176e84015b1cc54d470836ef1d8a60753e17fa232d9b55e9aa8dde580d03f436",
+  "country": "GM",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Friedrich Merz ceases to be German Chancellor by Dec 31, 2026"
+ },
+ "0x5c881188a151876e13d8bf67c36c03e34ce851bd5fbc2163288e9e45b93ef46c": {
+  "condition_id": "0x5c881188a151876e13d8bf67c36c03e34ce851bd5fbc2163288e9e45b93ef46c",
+  "country": "GM",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Friedrich Merz ceases to be German Chancellor by Sep 30, 2026"
+ },
+ "0x38bb0395750dd925badadfbd86f9fc821a7855d090fbc9da34a9c676661dc0f1": {
+  "condition_id": "0x38bb0395750dd925badadfbd86f9fc821a7855d090fbc9da34a9c676661dc0f1",
+  "country": "GM",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Friedrich Merz ceases to be German Chancellor by Nov 30, 2026"
+ },
+ "0x32ce78136d1617c5e669a971da7f6e57b514094cc52c1332a40f76527a4cd968": {
+  "condition_id": "0x32ce78136d1617c5e669a971da7f6e57b514094cc52c1332a40f76527a4cd968",
+  "country": "GM",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Friedrich Merz ceases to be German Chancellor by Mar 31, 2027"
+ },
+ "0x17db0ed725e9e6d65dd1ae1cdb6e8c1828bde160e111520b369e5c917b5cd422": {
+  "condition_id": "0x17db0ed725e9e6d65dd1ae1cdb6e8c1828bde160e111520b369e5c917b5cd422",
+  "country": "GM",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Friedrich Merz ceases to be German Chancellor by Jun 30, 2027"
+ },
+ "0x86e8c236e5c863140dfaf4c9b9e682fca3d6e627624df603b377d5ad9c57b991": {
+  "condition_id": "0x86e8c236e5c863140dfaf4c9b9e682fca3d6e627624df603b377d5ad9c57b991",
+  "country": "GM",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Friedrich Merz ceases to be German Chancellor by Dec 31, 2027"
+ },
+ "0xc51baec7a14a60ee2474e0b4c90cc28f78c3ca8b7af7e918d771097e05edb419": {
+  "condition_id": "0xc51baec7a14a60ee2474e0b4c90cc28f78c3ca8b7af7e918d771097e05edb419",
+  "country": "IT",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Giorgia Meloni ceases to be Italian PM by Dec 31, 2026"
+ },
+ "0x230637a2f974ebdaa5b56974c3daec95938f8a7bfcee9f351441bf8483a115f1": {
+  "condition_id": "0x230637a2f974ebdaa5b56974c3daec95938f8a7bfcee9f351441bf8483a115f1",
+  "country": "FR",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "France puts a state of emergency (\u00e9tat d'urgence) decree into effect by Dec 31, 2026"
+ },
+ "0x59cf3e64b7eb236fd783674c68b7af10d56b79e9ce6d8137dee5c54687431aa2": {
+  "condition_id": "0x59cf3e64b7eb236fd783674c68b7af10d56b79e9ce6d8137dee5c54687431aa2",
+  "country": "FR",
+  "event_type": "force_posture",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "France puts a state of siege (martial law) decree into effect by Dec 31, 2026"
+ },
+ "0x10571eacd9090ecb8fd49ebe38d438a366a57bb147f5dde6abbce4c61e7d2f3f": {
+  "condition_id": "0x10571eacd9090ecb8fd49ebe38d438a366a57bb147f5dde6abbce4c61e7d2f3f",
+  "country": "BR",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Brazil's top courts strike down the crude oil export tax by Jun 30, 2027"
+ },
+ "0xb391ef901ce074e3816fdc8567a051c55bf2d67e7aba69ae31213d7685fa756b": {
+  "condition_id": "0xb391ef901ce074e3816fdc8567a051c55bf2d67e7aba69ae31213d7685fa756b",
+  "country": "MX",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Sinaloa Governor Rub\u00e9n Rocha Moya arrested or detained by Dec 31, 2026"
+ },
+ "0x448f73e89890ae9d0e42ad0b592f63b53c0ae05d1ca3fa8d80b30027781f1be7": {
+  "condition_id": "0x448f73e89890ae9d0e42ad0b592f63b53c0ae05d1ca3fa8d80b30027781f1be7",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Donald Trump announces resignation of the presidency by Dec 31, 2026"
+ },
+ "0x70b226359baf2441d277d46fe796af532992f42d792fc2fe444ad21d2f4cc1da": {
+  "condition_id": "0x70b226359baf2441d277d46fe796af532992f42d792fc2fe444ad21d2f4cc1da",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Barack Obama is arrested by Dec 31, 2026"
+ },
+ "0x387abd33ec2706bf5e2d5089556962f899c76f2e53e72de416ee097f5e0cde5f": {
+  "condition_id": "0x387abd33ec2706bf5e2d5089556962f899c76f2e53e72de416ee097f5e0cde5f",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Zohran Mamdani ceases to be NYC mayor by Dec 31, 2026"
+ },
+ "0xe430a005036a377169cab5ec0a2541aa0fc30b98ac0e0b29b005a75da3264666": {
+  "condition_id": "0xe430a005036a377169cab5ec0a2541aa0fc30b98ac0e0b29b005a75da3264666",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Trump announces resignation by Dec 31, 2026"
+ },
+ "0x46a62442a96f6b6aec25b369d6dee763aaa5c47dc7d3750ad1ed0a6039ba63bb": {
+  "condition_id": "0x46a62442a96f6b6aec25b369d6dee763aaa5c47dc7d3750ad1ed0a6039ba63bb",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Tim Walz announces resignation as MN governor by Dec 31, 2026"
+ },
+ "0xae515ea2b1b95486007cff8aa4afbd5f677e2760dd8752c1068d9cc55afb6d58": {
+  "condition_id": "0xae515ea2b1b95486007cff8aa4afbd5f677e2760dd8752c1068d9cc55afb6d58",
+  "country": "BR",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Alexandre de Moraes ceases to be STF justice by Dec 31, 2026"
+ },
+ "0xdcb431c45911812e13749c7e71f376c97abf70b02f619b6c24558819fecf5766": {
+  "condition_id": "0xdcb431c45911812e13749c7e71f376c97abf70b02f619b6c24558819fecf5766",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Howard Lutnick leaves Commerce Secretary post by Nov 30, 2026"
+ },
+ "0x5d0adcceef0930057e2c661ed75450cb44a2a2e165bb5979472d631ae4c91a30": {
+  "condition_id": "0x5d0adcceef0930057e2c661ed75450cb44a2a2e165bb5979472d631ae4c91a30",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Howard Lutnick leaves Commerce Secretary post by Mar 31, 2027"
+ },
+ "0x7978663d03b5c053dcea87b39e06fad5bcdd036b0c7febfa4309502c02f70c2c": {
+  "condition_id": "0x7978663d03b5c053dcea87b39e06fad5bcdd036b0c7febfa4309502c02f70c2c",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Howard Lutnick leaves Commerce Secretary post by Dec 31, 2026"
+ },
+ "0x84475d1a75144bd36f12c58ef721e79154ece1096ae279c9f915c448cb2206c3": {
+  "condition_id": "0x84475d1a75144bd36f12c58ef721e79154ece1096ae279c9f915c448cb2206c3",
+  "country": "JA",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Sanae Takaichi ceases to be Japan PM by Dec 31, 2026"
+ },
+ "0xf4c72ff42c3f1ee9f25e835e62ca52d71a9cafbcc11f93c01af709af8ee5ff09": {
+  "condition_id": "0xf4c72ff42c3f1ee9f25e835e62ca52d71a9cafbcc11f93c01af709af8ee5ff09",
+  "country": "KS",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Lee Jae-myung ceases to be South Korea president by Dec 31, 2026"
+ },
+ "0x408877da98dbe7b36a8efdc3075057e2ae600e71f39ea96c4ff019c26eb3e05a": {
+  "condition_id": "0x408877da98dbe7b36a8efdc3075057e2ae600e71f39ea96c4ff019c26eb3e05a",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "James Comey is arrested by Dec 31, 2026"
+ },
+ "0x1a975c8210f5aa11c76d645a4dd746764799310898445689b17fb500a8925c80": {
+  "condition_id": "0x1a975c8210f5aa11c76d645a4dd746764799310898445689b17fb500a8925c80",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Anthony Fauci is arrested by Dec 31, 2026"
+ },
+ "0x087d55571a3847d92cab41c9aa6e05d6111dcbf2b95559627d3cf88fc53d22fe": {
+  "condition_id": "0x087d55571a3847d92cab41c9aa6e05d6111dcbf2b95559627d3cf88fc53d22fe",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "John Brennan is arrested by Dec 31, 2026"
+ },
+ "0x44cd8b15befa5d0ce8e20dcefc25b91bf44907d6f83d148c7b600336d990085b": {
+  "condition_id": "0x44cd8b15befa5d0ce8e20dcefc25b91bf44907d6f83d148c7b600336d990085b",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "James Clapper is arrested by Dec 31, 2026"
+ },
+ "0x293a15dc69de092ea5f669af2a0207d7b9dbf32b8e53eae53cdea7785d915747": {
+  "condition_id": "0x293a15dc69de092ea5f669af2a0207d7b9dbf32b8e53eae53cdea7785d915747",
+  "country": "SP",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Jos\u00e9 Luis Rodr\u00edguez Zapatero is arrested by Dec 31, 2026"
+ },
+ "0xa996ddae9ea35ff0c110e5cc04f116714ec5d4013119088f347b27920017e590": {
+  "condition_id": "0xa996ddae9ea35ff0c110e5cc04f116714ec5d4013119088f347b27920017e590",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Adam Schiff is arrested by Dec 31, 2026"
+ },
+ "0x1b5f6d557381c9d5e5c8b9cb3aff3396c721fe6fc65c647e9d859adaa15747ce": {
+  "condition_id": "0x1b5f6d557381c9d5e5c8b9cb3aff3396c721fe6fc65c647e9d859adaa15747ce",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Letitia James is arrested by Dec 31, 2026"
+ },
+ "0x862c6d9cb806315fe626d37e8b9f21585710a98ada2fb9338061574fb9a5f453": {
+  "condition_id": "0x862c6d9cb806315fe626d37e8b9f21585710a98ada2fb9338061574fb9a5f453",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Hillary Clinton is arrested by Dec 31, 2026"
+ },
+ "0x30f0732734e61902d81cf2d3e37e531de8883b6a2c4cabd8ba3e4035977de1ed": {
+  "condition_id": "0x30f0732734e61902d81cf2d3e37e531de8883b6a2c4cabd8ba3e4035977de1ed",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Gavin Newsom is arrested by Dec 31, 2026"
+ },
+ "0xf0f06f10ca905fa971609b18ea337047068e80e8fed592886edf1716a71fe389": {
+  "condition_id": "0xf0f06f10ca905fa971609b18ea337047068e80e8fed592886edf1716a71fe389",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Barack Obama is arrested by Dec 31, 2026"
+ },
+ "0xbe555c50fc49ae7f1a970fbe13f226d179c192d87daa71c7ca082464b71fb8f6": {
+  "condition_id": "0xbe555c50fc49ae7f1a970fbe13f226d179c192d87daa71c7ca082464b71fb8f6",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Tom Homan is arrested by Dec 31, 2026"
+ },
+ "0x8a30aa5cf51e1d166854a1cf26157b5ac76b5721d8d9f3f6f7be958e6fb132a1": {
+  "condition_id": "0x8a30aa5cf51e1d166854a1cf26157b5ac76b5721d8d9f3f6f7be958e6fb132a1",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "JD Vance ceases to be VP by Dec 31, 2026"
+ },
+ "0x53425fd506374e5554df143acd234a890ceed68fc90b72a1b5a7f2964386c393": {
+  "condition_id": "0x53425fd506374e5554df143acd234a890ceed68fc90b72a1b5a7f2964386c393",
+  "country": "RO",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Nicu\u0219or Dan ceases to be Romania president by Dec 31, 2026"
+ },
+ "0xef1904f76f205933ad8038a36348561388df264ce167465e91057a14627a418e": {
+  "condition_id": "0xef1904f76f205933ad8038a36348561388df264ce167465e91057a14627a418e",
+  "country": "UK",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Nigel Farage ceases to be Reform UK leader by Dec 31, 2026"
+ },
+ "0x6c1edaa79408bb89d38be4a4a99f2d38ec9d934e18e8ea9277f4eddf99e67d30": {
+  "condition_id": "0x6c1edaa79408bb89d38be4a4a99f2d38ec9d934e18e8ea9277f4eddf99e67d30",
+  "country": "UK",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Nigel Farage ceases to be Reform UK leader by Mar 31, 2027"
+ },
+ "0x0112bacb71e6882084f529ed4ea74f317b66ae60edd4236838072c8c99fcf557": {
+  "condition_id": "0x0112bacb71e6882084f529ed4ea74f317b66ae60edd4236838072c8c99fcf557",
+  "country": "HU",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Viktor Orb\u00e1n is arrested or detained by the specified date"
+ },
+ "0x5fc5e419a6a0f8012d8b5b0400cf48ed15c035729a733e3362dd959ed03ceb1a": {
+  "condition_id": "0x5fc5e419a6a0f8012d8b5b0400cf48ed15c035729a733e3362dd959ed03ceb1a",
+  "country": "HU",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Viktor Orb\u00e1n is arrested or detained by Jun 30, 2027"
+ },
+ "0x8bd7a156b5a84916b7585f5181840caa4aca8a5ac0eedb8942116048411b10b9": {
+  "condition_id": "0x8bd7a156b5a84916b7585f5181840caa4aca8a5ac0eedb8942116048411b10b9",
+  "country": "UK",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Andy Burnham's departure as UK PM announced by Dec 31, 2026"
+ },
+ "0x27c6633dae0b924ef89933d71a3eda93ef6b390719b53f2786fd2cd69386d9ab": {
+  "condition_id": "0x27c6633dae0b924ef89933d71a3eda93ef6b390719b53f2786fd2cd69386d9ab",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Chuck Edwards' departure from US House announced by Dec 31, 2026"
+ },
+ "0x348f98e8ce6dcba76c4cd149701cec47e203b3978d73bc1fb03cffd69095a880": {
+  "condition_id": "0x348f98e8ce6dcba76c4cd149701cec47e203b3978d73bc1fb03cffd69095a880",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Kevin Warsh's departure as Fed Chair announced by Dec 31, 2026"
+ },
+ "0xc159b8f7eb457df1803d7fff5e35e0952dbe42ddb6f459e5f28c086c0bb715ea": {
+  "condition_id": "0xc159b8f7eb457df1803d7fff5e35e0952dbe42ddb6f459e5f28c086c0bb715ea",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Kevin Warsh's departure as Fed Chair announced by Jun 30, 2027"
+ },
+ "0xae6a47137560e4eff884c1bf454abea0507615efb06510c6d1f86a57cda9e540": {
+  "condition_id": "0xae6a47137560e4eff884c1bf454abea0507615efb06510c6d1f86a57cda9e540",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Jeanine Pirro ceases to be DC US Attorney by Dec 31, 2026"
+ },
+ "0x7ea819930e6e3676704371e1a778cbb2f4396d4351c4ebe1801b3d434127499b": {
+  "condition_id": "0x7ea819930e6e3676704371e1a778cbb2f4396d4351c4ebe1801b3d434127499b",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Lisa Cook formally ceases to be Fed Governor by Dec 31, 2026"
+ },
+ "0x2b960ca2e53a1dd5f8f44f61af1237925fb5a00fbf6610a6fe96e329d3574e73": {
+  "condition_id": "0x2b960ca2e53a1dd5f8f44f61af1237925fb5a00fbf6610a6fe96e329d3574e73",
+  "country": "UK",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Zack Polanski ceases to be Green Party leader by Dec 31, 2026"
+ },
+ "0x60f76e2a690c5f0c1ef73a5201afcadfbd9244207c82ccd4bc1039ffbe310af9": {
+  "condition_id": "0x60f76e2a690c5f0c1ef73a5201afcadfbd9244207c82ccd4bc1039ffbe310af9",
+  "country": "UK",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Zack Polanski ceases to be Green Party leader by Mar 31, 2027"
+ },
+ "0x2d858f0a25a61dfde6485f3d8e75aed397bed616c3e458b66e10e642fb2f9759": {
+  "condition_id": "0x2d858f0a25a61dfde6485f3d8e75aed397bed616c3e458b66e10e642fb2f9759",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Pete Hegseth ceases to be Secretary of Defense by Nov 30, 2026"
+ },
+ "0x84064fc8eaa80d257f8673867b0a3c84c1935aeb9fda5a74cecd14b3a2c8b94c": {
+  "condition_id": "0x84064fc8eaa80d257f8673867b0a3c84c1935aeb9fda5a74cecd14b3a2c8b94c",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Ilhan Omar is arrested by Dec 31, 2026"
+ },
+ "0x7a87acd05d094ecec7a6b27ba4b6d4ef3c8e15b849c8836c3b83e042a444045f": {
+  "condition_id": "0x7a87acd05d094ecec7a6b27ba4b6d4ef3c8e15b849c8836c3b83e042a444045f",
+  "country": "BR",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Fl\u00e1vio Bolsonaro is arrested or detained by Dec 31, 2026"
+ },
+ "0x5db3c0191c72b9beb0d8f39219e747b5201ba25d20bd458c52003431122acf75": {
+  "condition_id": "0x5db3c0191c72b9beb0d8f39219e747b5201ba25d20bd458c52003431122acf75",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Trump formally declares a national emergency by Dec 31, 2026"
+ },
+ "0xc43c6c3bd979cb17e2ff931fbf8c4a5bef3778eb727f3504b79d97eab86138d4": {
+  "condition_id": "0xc43c6c3bd979cb17e2ff931fbf8c4a5bef3778eb727f3504b79d97eab86138d4",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Democrats fail to sweep House and Senate and US enters recession by end of 2027"
+ },
+ "0x37704bd9b4067e31b3092f90493460278bc308fe7a0955cc3aea50da8dc15740": {
+  "condition_id": "0x37704bd9b4067e31b3092f90493460278bc308fe7a0955cc3aea50da8dc15740",
+  "country": "SR",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Authorities arrest or detain Aleksandar Vu\u010di\u0107 by November 30, 2026"
+ },
+ "0xc956778cbd71395b963b49ca97351e1973351df62d6c48ce366c554d00dd8d13": {
+  "condition_id": "0xc956778cbd71395b963b49ca97351e1973351df62d6c48ce366c554d00dd8d13",
+  "country": "SR",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Authorities arrest or detain Aleksandar Vu\u010di\u0107 by December 31, 2026"
+ },
+ "0x6d688a79c2a72d93fd9d6a450ef696431fc26b383491e4c79e809e0cff2c4204": {
+  "condition_id": "0x6d688a79c2a72d93fd9d6a450ef696431fc26b383491e4c79e809e0cff2c4204",
+  "country": "US",
+  "event_type": "NONE",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "JD Vance's resignation as US Vice President is officially announced by December 31, 2026"
+ },
+ "0x3dbbe95a36ae4403871bee2c2c16c79acc4bb74cda846469b9dc5715103fba13": {
+  "condition_id": "0x3dbbe95a36ae4403871bee2c2c16c79acc4bb74cda846469b9dc5715103fba13",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Law enforcement arrests NVIDIA CEO Jensen Huang by November 30, 2026"
+ },
+ "0x8ccb9977b0134a3805e9a8b0520753dabea61215b5d8494ee78a1331eed1bc15": {
+  "condition_id": "0x8ccb9977b0134a3805e9a8b0520753dabea61215b5d8494ee78a1331eed1bc15",
+  "country": "US",
+  "event_type": "arrest",
+  "yes_means_event": true,
+  "scheduled": false,
+  "event_phrase": "Law enforcement arrests NVIDIA CEO Jensen Huang by December 31, 2026"
+ }
+}

@@ -30,6 +30,17 @@ COUNT_FIELDS = {"n_events", "root_articles", "articles", "max_sources"}
 # peaceful, heavily-covered countries (their GDELT noise floor), AND the event has
 # a minimum share of global coverage (so tiny-coverage countries can't trip it).
 # Thresholds are fitted on data up to LABEL_FIT_END only and then frozen.
+# Surprise target (what we actually predict)
+# ----------------------------------------
+# big[d,c,t]   : global coverage share >= BIG_SHARE per 10k (top ~0.5% of days) AND
+#                >= BIG_RATIO x that country/type's mean over the 28 days before d.
+# onset[d,c,t] : big today, and no big day for (c,t) in the previous ONSET_QUIET days.
+# The model predicts onset; scoring counts any big day (onset or its continuation),
+# which is how a judge would check "did it happen". 'notable' Y stays as a feature.
+BIG_SHARE = 80.0
+BIG_RATIO = 4.0
+ONSET_QUIET = 14
+
 QUIET_COUNTRIES = ["UK", "CA", "AS", "GM", "FR", "JA"]
 QUIET_QUANTILE = 0.95
 MIN_GLOBAL_SHARE_PER_10K = 0.5
@@ -68,13 +79,18 @@ class Panel:
     F: np.ndarray            # [D, C, K]
     Y: np.ndarray            # [D, C, T] bool
     share: np.ndarray        # [D, C, T] root-article share per 10k (label source)
+    missing: np.ndarray      # [D] bool: no GDELT data that day (features carried forward,
+                             #           never used as a label/target)
+    big: np.ndarray          # [D, C, T] bool: big spike day (used for realised scoring)
+    onset: np.ndarray        # [D, C, T] bool: start of a big development (the model target)
 
     def day_index(self, d) -> int:
         return int(self.days.get_loc(pd.Timestamp(d)))
 
 
 def build_panel(start: date | None = None, end: date | None = None,
-                agg: pd.DataFrame | None = None, views: pd.DataFrame | None = None) -> Panel:
+                agg: pd.DataFrame | None = None, views: pd.DataFrame | None = None,
+                fcdo_df: pd.DataFrame | None = None, threat_df: pd.DataFrame | None = None) -> Panel:
     agg = gdelt.load_agg(start, end) if agg is None else agg
     views = wiki.load() if views is None else views
     countries = list(COUNTRIES)
@@ -126,6 +142,28 @@ def build_panel(start: date | None = None, end: date | None = None,
     blocks.append(np.broadcast_to(np.log(g_art)[:, None], (D, C)).copy())
     names.append("global:log_articles")
 
+    # --- early-warning precursors (features only) ---
+    from .precursors import fcdo, threats
+    fc = fcdo.load() if fcdo_df is None else fcdo_df
+    if len(fc):
+        for cat, a in fcdo.daily_features(fc, days, countries).items():
+            blocks.append(np.log1p(a.astype(np.float64)))
+            names.append(f"fcdo:{cat}")
+    else:
+        for cat in ["any", *fcdo.CATEGORIES]:
+            blocks.append(np.zeros((D, C)))
+            names.append(f"fcdo:{cat}")
+    th = threats.load(start, end) if threat_df is None else threat_df
+    for kind in threats.CODES:
+        if len(th):
+            x = (th[th["kind"] == kind].pivot_table(index="date", columns="country", values="articles", aggfunc="sum")
+                   .reindex(index=days, columns=countries))
+            x = np.log1p(np.nan_to_num(x.to_numpy(dtype=np.float64)) * 1e5 / g_art[:, None])
+        else:
+            x = np.zeros((D, C))
+        blocks.append(x)
+        names.append(f"threat:{kind}")
+
     share = np.stack([raw_root[t] * 1e4 / g_root[:, None] for t in TYPE_NAMES], axis=-1)
     c_root = np.nan_to_num(tensor("ALL", "root_articles"))
     with np.errstate(divide="ignore", invalid="ignore"):
@@ -142,8 +180,35 @@ def build_panel(start: date | None = None, end: date | None = None,
         blocks.append(Y[:, :, i].astype(np.float64))
         names.append(f"{t}:label")
 
+    have = set(pd.to_datetime(agg["date"].unique()))
+    missing = np.array([d not in have for d in days])
+    big, onset = surprise_labels(share.astype(np.float64), missing)
+    for i, t in enumerate(TYPE_NAMES):
+        blocks.append(big[:, :, i].astype(np.float64))
+        names.append(f"{t}:big")
     F = np.stack(blocks, axis=-1).astype(np.float32)
-    return Panel(days, countries, names, F, Y, share.astype(np.float32))
+    for d in np.where(missing)[0]:
+        if d > 0:
+            F[d] = F[d - 1]          # carry forward: an outage is not "nothing happened"
+    Y = Y & ~missing[:, None, None]
+    return Panel(days, countries, names, F, Y, share.astype(np.float32), missing, big, onset)
+
+
+def surprise_labels(share: np.ndarray, missing: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    prev28 = np.concatenate([np.full((1,) + share.shape[1:], np.nan), _rolling_mean(share, 28)[:-1]])
+    prev28 = np.where(np.isnan(prev28), np.inf, prev28)      # no history -> can't be a spike
+    big = (share >= BIG_SHARE) & (share >= BIG_RATIO * prev28) & ~missing[:, None, None]
+    prior = np.zeros_like(big)
+    for k in range(1, ONSET_QUIET + 1):
+        prior[k:] |= big[:-k]
+    return big, big & ~prior
+
+
+def quiet_mask(p: "Panel", cutoff: int) -> np.ndarray:
+    """[C, T] True where (c, t) had no big day in the ONSET_QUIET days up to cutoff,
+    i.e. a big event there would be a new development, not a continuation."""
+    lo = max(0, cutoff - ONSET_QUIET + 1)
+    return ~p.big[lo:cutoff + 1].any(0)
 
 
 # ---------------------------------------------------------------------------
@@ -180,6 +245,7 @@ class TabularBuilder:
             ne = F[:, :, idx[f"{t}:n_events"]]
             ms = F[:, :, idx[f"{t}:max_sources"]]
             y = p.Y[:, :, TYPE_NAMES.index(t)].astype(np.float32)
+            bg = p.big[:, :, TYPE_NAMES.index(t)].astype(np.float32)
             sh = np.log1p(p.share[:, :, TYPE_NAMES.index(t)])
             st = {
                 "ra_1": ra, "ra_3": _rolling_mean(ra, 3), "ra_7": _rolling_mean(ra, 7),
@@ -189,6 +255,9 @@ class TabularBuilder:
                 "y_7": _rolling_mean(y, 7), "y_28": _rolling_mean(y, 28),
                 "y_91": _rolling_mean(y, 91), "y_365": _rolling_mean(y, 365),
                 "since": _days_since(y > 0),
+                "big_365": _rolling_mean(bg, 365), "big_since": _days_since(bg > 0),
+                "sh_max_7": np.log1p(np.maximum.reduce([np.roll(p.share[:, :, TYPE_NAMES.index(t)], k, 0)
+                                                        for k in range(7)])),
                 "tone_7": _rolling_mean(F[:, :, idx[f"{t}:tone"]], 7),
                 "gold_7": _rolling_mean(F[:, :, idx[f"{t}:goldstein"]], 7),
             }
@@ -203,7 +272,23 @@ class TabularBuilder:
             ctry[f"{key}_7"] = _rolling_mean(x, 7)
             ctry[f"{key}_28"] = _rolling_mean(x, 28)
         ctry["wiki_spike"] = ctry["wiki_log_views_1"] - ctry["wiki_log_views_28"]
+        # early-warning precursors
+        for cat in ["any", "staff_withdrawn", "leave_now", "airspace", "travel_upgrade", "tensions",
+                    "unrest", "downgrade"]:
+            x = F[:, :, idx[f"fcdo:{cat}"]]
+            ctry[f"fcdo_{cat}_7"] = _rolling_mean(x, 7) * 7
+        for cat in ["staff_withdrawn", "leave_now", "travel_upgrade", "airspace"]:
+            ctry[f"fcdo_since_{cat}"] = _days_since(F[:, :, idx[f"fcdo:{cat}"]] > 0)
+        for kind in ["threaten", "threat_force", "threat_attack", "ultimatum", "mobilise",
+                     "reduce_relations", "coerce"]:
+            x = F[:, :, idx[f"threat:{kind}"]]
+            ctry[f"thr_{kind}_1"] = x
+            ctry[f"thr_{kind}_3"] = _rolling_mean(x, 3)
+            ctry[f"thr_{kind}_trend"] = _rolling_mean(x, 3) - _rolling_mean(x, 28)
         ctry["q4_trend"] = ctry["Q4_articles_7"] - ctry["Q4_articles_28"]
+        ctry["n_big_28"] = _rolling_mean(p.big.any(-1).astype(np.float32), 28)
+        ctry["global_big_7"] = np.broadcast_to(
+            _rolling_mean(p.big.any((1, 2)).astype(np.float32)[:, None], 7), p.big.shape[:2]).copy()
         yall = p.Y.astype(np.float32)
         ctry["n_types_notable_1"] = yall.sum(-1)
         ctry["n_types_notable_7"] = _rolling_mean(yall.sum(-1), 7)
@@ -241,8 +326,9 @@ class TabularBuilder:
         if with_label:
             tgt_i = di + hh
             ok = tgt_i < len(p.days)
+            ok[ok] &= ~p.missing[tgt_i[ok]]
             y = np.full(len(df), -1, dtype=np.int8)
-            y[ok] = p.Y[tgt_i[ok], ci[ok], ti[ok]]
+            y[ok] = p.onset[tgt_i[ok], ci[ok], ti[ok]]
             df["y"] = y
         return df
 

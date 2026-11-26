@@ -1,108 +1,73 @@
 # Event prediction model
 
-Forecasts unscheduled, checkable world events (country + event + date) for the
-Polymarket Insider Model Competition (live run 8–21 Dec 2026).
+Forecasts unscheduled, checkable world events (country + event + single date) for the
+Polymarket Insider Model Competition (live run 8–21 Dec 2026, events up to 28 Dec).
+Each prediction scores (judge score − 3), so the system only predicts when the expected
+judge score clears the cost, and predicting nothing on a day is allowed.
 
-## How it works
+## Where predictions come from
 
 ```
-GDELT (every news event worldwide, 2016→now) ─┐
-Wikipedia pageviews per country ──────────────┼─► daily panel  F[day, country, 168 features]
-                                              │         │
-                                              │         ├─► LightGBM (tabular rolling features)
-                                              │         └─► Spatio-temporal transformer
-                                              │              (56-day history per country +
-                                              │               cross-country attention)
-                                              │                     │ calibrated P(event type t,
-                                              │                     ▼ country c, day D)
-                                              │         expected judge score per candidate
-                                              │         (exact day / ±1 / ±2-3 / ±4-7 credit)
-News RSS + Polymarket movers (live) ──────────┴─► Claude: picks ≤5, phrases them checkably,
-                                                   vetoes scheduled/unphraseable ones
-                                                          │
-                                                          ▼
-                                     predictions/<issue-date>/predictions.json
+Polymarket + Manifold event markets ──► filters ──► price → daily hazard → best date → E[score] ──┐
+   (trade / bet tapes)                    │                                                       │ candidates
+                                          └──► insider-flow transformer ── alert ───────────────┐ │ E ≥ 3.5
+GDELT daily events, FCDO travel advice,                                                       │ │
+State Dept advisories, threat spikes ──► LightGBM + spatio-temporal transformer (gated, E≥5) ─┤ │
+headlines, military flights ───────────► early-warning context ───────────────────────────────┤ │
+                                                                                              ▼ ▼
+                                       Claude (claude-opus-5-5): picks ≤5, words them checkably,
+                                       rejects scheduled / no-event-day / not-BBC-worthy markets
+                                                               │
+                                                               ▼
+                                         predictions/<issue-date>/predictions.json (22:00 UK)
 ```
 
-**Label ("did it happen?").** For each country × event type × day, the
-share of that country's news coverage about that event type (from GDELT CAMEO
-codes). A day is *notable* when the share is above the noise floor that
-peaceful, heavily-covered countries show on 95% of days. Thresholds were fitted on data up to mid-2024 and then
-frozen (`models/label_thresholds.json`).
+**The decision core is not a learned model.** For a market priced *p* with *N* days to its
+deadline: daily hazard λ = 1 − (1 − p)^(1/N); P(first occurrence on day k) = (1 − λ)^(k−1)·λ;
+expected judge score of predicting day d = 0.9 · Σ_k P(k) · credit(|k − d|), credit 10 / 8.5 /
+6.5 / 6.5 / 4.5 ×4 for offsets 0–7. Predict the best d when E ≥ 3.5. Every learned adjustment
+we tried (price calibration, insider blend, date-ladder term structure, FCDO flags) lost
+points out of sample, so none is used in selection.
 
-**Event types** (in `config.py`): protest, strike, riot, arrest, deport/expel,
-repression, sanctions, diplomatic break, force posture, armed clash, airstrike,
-ceasefire violation, abduction, bombing, assassination, mass violence,
-de-escalation, agreement. 74 countries.
+| Component | Role live | Out-of-sample result |
+|---|---|---|
+| Market hazard + date optimiser (`poly/strategy.py`, `poly/live.py`, `poly/manifold.py`) | selects predictions | +27 per 14 days, 79% of windows positive (Oct 2025 – Nov 2026, Polymarket + Manifold, 22:00 issue) |
+| Insider-flow transformer (`poly/insider.py`) | alert in Claude's prompt | price-jump head AUC 0.85 vs 0.79 baseline; hurt the score when blended in |
+| GDELT surprise-onset LightGBM + spatio-temporal transformer | gated candidates (E ≥ 5) and context | AUC 0.967 / 0.942, but ~1.4 points per prediction vs the 3-point cost |
+| Early warning (`precursors/`): FCDO notes, State Dept, threat spikes, OpenSky | context | FCDO "leave now" → 8.7× onset rate within 7 days |
+| Claude analyst (`llm.py`) | final pick + wording | – |
 
-**Selection.** A prediction scores (judge − 3), so we only predict when the
-expected judge score is ≥ `SCORE_THRESHOLD` (default 5). At most 5 per day,
-at most 2 per country, and 1 per country+type. Choosing zero is allowed.
+Naive "just use Polymarket" strategies (top markets, predict tomorrow / the deadline / mid-window)
+lose 7–123 points per 14 days on the same data; the edge is the date choice and the bar.
 
-**No look-ahead.** Predictions on issue day X use only GDELT data up to the
-end of X−1 (GDELT's daily file is published the next morning). Each hourly run
-saves the live inputs it used (headlines, markets) to `data/snapshots/` with a timestamp,
-and saves the shortlist and LLM output next to each day's predictions.
+## Rules compliance
 
-## Polymarket insider model (`src/event_prediction/poly/`)
-
-This is a separate deep model that reads Polymarket trade tapes and asks whether the
-flow knows something the price doesn't.
-
-- **Data:** resolved geopolitics, conflict and diplomacy markets since late 2023 (Gamma
-  keyset API) and every trade of $100 or more in them (Data API v2 `/v2/trades`).
-- **Per trade:** size, direction (bet on YES or NO), price, the price of the side
-  bought (longshot bets), and the wallet's *point-in-time* reputation: prior trades,
-  age, win rate and realised PnL counting only markets that had resolved before
-  that trade, plus whether this is the wallet's first trade in the market.
-- **Samples:** a snapshot every 12h on a fixed UTC grid over each market's life.
-  Input is the last 256 trades plus 15 market-level flow features.
-- **Heads:** `soon` (the market resolves YES within 72h, i.e. the event happens),
-  `yes` (final outcome), `up` (price +10 points within 24h).
-- **Split by close date:** train before 2025-10, validation 2025-10 to 2026-03,
-  test after. Compared against the price-only and context-only baselines.
-
-At prediction time, Claude maps active markets to (country, event type), with a
-cache in `data/poly/market_map.json`. Scheduled-event markets are dropped. Each
-market's daily event probability, from the insider model for the next 72h and
-from the price-implied hazard after that, is combined by noisy-OR into the main model's
-probabilities. The top signals are also shown to the LLM.
-
-```bash
-uv run python -m event_prediction.poly.data       # markets + trade tapes
-uv run python -m event_prediction.poly.insider    # train/val/test + calibration
-uv run python -c "from event_prediction.poly.live import build_wallet_table; build_wallet_table()"
-uv run python -m event_prediction.poly.insider --final --epochs N
-```
+- **No look-ahead.** Market features use trades strictly before the issue time; wallet reputation
+  only counts markets resolved before each trade; GDELT uses the previous day's file.
+- **Issue time.** Nothing is issued before 22:00 UTC (= UK time in December); targets are ≥
+  `MIN_LEAD_DAYS` (default 1 calendar day) after the issue day and ≤ 28 Dec; at most 5 per day.
+- **Audit trail.** Each day's folder holds the shortlist, Claude's output and rejections, the
+  early-warning signals, and `data/snapshots/` keeps every live input with a timestamp.
 
 ## Commands
 
 ```bash
 uv sync
-uv run python -m event_prediction.gdelt          # backfill GDELT 2016→yesterday (~1h first time)
-uv run python -m event_prediction.wiki           # pageviews
-uv run python -m event_prediction.train_lgbm     # train/val/test, writes models/lgbm*
-uv run python -m event_prediction.train_seq      # transformer, writes models/seq*
-uv run python -m event_prediction.backtest       # simulated competitions on held-out data
-bash scripts/train_all.sh                        # all of the above + final models
-
-# dry run of the live pipeline at any date (writes predictions_dryrun/)
-uv run python -m event_prediction.predict --dry-run [--no-llm] [--as-of 2026-11-25T07:00]
+uv run python -m event_prediction.predict --dry-run [--no-llm] [--force]   # full live pipeline now
+uv run python -m event_prediction.poly.strategy --source poly_wide+manifold  # market backtest
+uv run python -m event_prediction.poly.data --wide                           # Polymarket history
+uv run python -m event_prediction.poly.manifold                              # Manifold history
+uv run python -m event_prediction.poly.insider                               # insider model
+bash scripts/train_all.sh                                                    # GDELT models
+scripts/ui.sh [--refresh]                                                    # local console, http://localhost:8000/ui/
 ```
 
-Bigger transformer on a rented GPU: `bash scripts/gpu_box.sh` (rsync `data/`
-over first to skip the backfill). Sizes are set with
-`--d-model/--t-layers/--c-layers/--heads`.
-
-macOS: LightGBM needs OpenMP (`brew install libomp`).
+macOS: LightGBM needs OpenMP (`brew install libomp`, or point it at torch's bundled copy).
 
 ## GitHub Actions
 
-`.github/workflows/predict.yml` runs every hour at :07 UTC. Each run updates
-`predictions/status.json` (a heartbeat). The first run each day after
-yesterday's GDELT file is out (usually 06:00–08:00 UTC) issues the day's
-predictions. Set the repo secret `ANTHROPIC_API_KEY`. Without it, predictions
-are phrased from templates instead of by the LLM.
-
-Before lock-in, commit `models/` (the final LightGBM, transformer,
-calibrators and label thresholds).
+`.github/workflows/predict.yml` runs hourly at :07 UTC plus a 22:37 backup. Every run commits
+`predictions/status.json` (heartbeat); the first run at or after 22:00 UTC on each live day
+issues and commits that day's predictions. Claude runs through the Claude Code CLI with the
+repo secret `CLAUDE_CODE_OAUTH_TOKEN` (or the API with `ANTHROPIC_API_KEY`); without either,
+the model's default picks are issued with template wording. No secrets are stored in the repo.

@@ -1,0 +1,14 @@
+{
+  "auc_test": 0.9421416444672152,
+  "val_bce": 0.0017994530498981476,
+  "cfg": {
+    "n_feat": 205,
+    "n_countries": 74,
+    "d_model": 128,
+    "heads": 4,
+    "t_layers": 3,
+    "c_layers": 2,
+    "dropout": 0.1
+  },
+  "epochs_trained": 13
+}

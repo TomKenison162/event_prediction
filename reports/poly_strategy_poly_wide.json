@@ -1,0 +1,32 @@
+{
+  "3": {
+    "preds_per_day": 0.8613138686131386,
+    "mean_expected": 4.489682023266948,
+    "mean_realised": 4.751412429378531,
+    "miss_rate": 0.3983050847457627,
+    "window_total_mean": 21.75502512562814,
+    "window_p10": -10.0,
+    "window_p90": 63.0,
+    "share_windows_positive": 0.7487437185929648
+  },
+  "3.5": {
+    "preds_per_day": 0.635036496350365,
+    "mean_expected": 4.9335327379472504,
+    "mean_realised": 5.040229885057471,
+    "miss_rate": 0.39080459770114945,
+    "window_total_mean": 18.64824120603015,
+    "window_p10": -3.799999999999997,
+    "window_p90": 49.80000000000001,
+    "share_windows_positive": 0.7688442211055276
+  },
+  "4": {
+    "preds_per_day": 0.4768856447688564,
+    "mean_expected": 5.328371284493524,
+    "mean_realised": 5.290816326530612,
+    "miss_rate": 0.3826530612244898,
+    "window_total_mean": 15.71105527638191,
+    "window_p10": -5.0,
+    "window_p90": 44.650000000000006,
+    "share_windows_positive": 0.6884422110552764
+  }
+}

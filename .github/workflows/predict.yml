@@ -3,6 +3,7 @@ name: hourly-predictions
 on:
   schedule:
     - cron: "7 * * * *"        # every hour at :07 UTC (UK time = UTC in December)
+    - cron: "37 22 * * *"      # backup for the 22:00 UTC issue slot (GitHub cron can lag)
   workflow_dispatch:
     inputs:
       dry_run:
@@ -20,7 +21,10 @@ concurrency:
 jobs:
   predict:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 120          # first cold run downloads ~430 days of GDELT twice
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -37,12 +41,17 @@ jobs:
           path: |
             data/gdelt_agg
             data/gdelt_top
+            data/gdelt_precursor
           key: gdelt-${{ github.run_id }}
           restore-keys: gdelt-
 
+      # Subscription route: Claude Code CLI authenticated by CLAUDE_CODE_OAUTH_TOKEN
+      # (from `claude setup-token`). Skipped if that secret isn't set.
+      - name: Install Claude Code CLI
+        if: ${{ env.CLAUDE_CODE_OAUTH_TOKEN != '' }}
+        run: npm install -g @anthropic-ai/claude-code && claude --version
+
       - name: Run predictor
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: uv run python -m event_prediction.predict ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Upload dry-run output
@@ -59,7 +68,7 @@ jobs:
         run: |
           git config user.name "prediction-bot"
           git config user.email "prediction-bot@users.noreply.github.com"
-          git add predictions data/snapshots
+          git add predictions data/snapshots data/precursors data/poly/market_map.json
           git commit -m "predictions: $(date -u +%Y-%m-%dT%H:%MZ)" || echo "nothing to commit"
           git pull --rebase
           git push

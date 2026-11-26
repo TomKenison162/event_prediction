@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forecast Console</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: sticky tab bar; each tab is a single column of dense technical panels. Role colours: selects / alert / context / off. */
+:root {
+  --bg: #f3f5f8; --panel: #fff; --ink: #142030; --muted: #5b6878; --line: #d9dfe7; --off: #e9edf2;
+  --accent: #0b6e78; --accent-soft: #d5ecee; --amber: #a85f00; --amber-soft: #fbecd3;
+  --violet: #5a4fb0; --violet-soft: #e6e3f7; --red: #a33a3a; --red-soft: #f6dede; --heat: 11,110,120;
+  --display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --bg: #0f1620; --panel: #16202c; --ink: #e4eaf1; --muted: #93a1b2; --line: #2a3747; --off: #121a24;
+  --accent: #4fc0c9; --accent-soft: #173a40; --amber: #f0a640; --amber-soft: #3a2a12;
+  --violet: #a99ff0; --violet-soft: #2a2747; --red: #f08a8a; --red-soft: #3d1f22; --heat: 79,192,201; color-scheme: dark } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 14.5px/1.55 var(--body); }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 24px 20px 72px; display: grid; gap: 26px; }
+h1, h2, h3 { font-family: var(--display); font-stretch: 85%; margin: 0; text-wrap: balance; }
+h1 { font-size: 34px; font-weight: 800; } h2 { font-size: 22px; } h3 { font-size: 17px; }
+p { margin: 0; max-width: 74ch; }
+code, .mono { font-family: var(--mono); font-size: .92em; font-variant-numeric: tabular-nums; }
+code { background: var(--off); padding: 1px 5px; border-radius: 4px; }
+.muted { color: var(--muted); }
+.eyebrow { font: 500 11.5px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+nav { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
+nav .in { max-width: 1180px; margin: 0 auto; padding: 0 20px; display: flex; gap: 4px; overflow-x: auto; }
+nav a { font: 500 13px var(--mono); color: var(--muted); text-decoration: none; padding: 12px 12px 10px; border-bottom: 2px solid transparent; white-space: nowrap; }
+nav a.on { color: var(--ink); border-color: var(--accent); }
+nav a:focus-visible { outline: 2px solid var(--accent); }
+.tab { display: grid; gap: 22px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: grid; gap: 12px; min-width: 0; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 16px; }
+.role { font: 600 11px var(--mono); padding: 3px 7px; border-radius: 4px; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+.r-sel { background: var(--accent-soft); color: var(--accent); }
+.r-alert { background: var(--amber-soft); color: var(--amber); }
+.r-ctx { background: var(--violet-soft); color: var(--violet); }
+.r-off { background: var(--off); color: var(--muted); border: 1px solid var(--line); }
+.r-rej { background: var(--red-soft); color: var(--red); }
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 10.5px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+.hdr { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.kv { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: 13px; }
+.kv dt { color: var(--muted); font-family: var(--mono); font-size: 12px; }
+.kv dd { margin: 0; }
+pre { margin: 0; background: var(--off); border-radius: 6px; padding: 10px 12px; font: 12.5px/1.5 var(--mono); overflow-x: auto; }
+ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+
+/* pipeline diagram */
+.flow { display: grid; grid-template-columns: repeat(5, minmax(170px, 1fr)); gap: 10px; overflow-x: auto; padding-bottom: 4px; }
+.col { display: grid; gap: 8px; align-content: start; }
+.col > .eyebrow { padding: 0 2px 2px; }
+.node { border: 1px solid var(--line); border-left: 4px solid var(--muted); background: var(--panel); border-radius: 6px; padding: 8px 10px; font-size: 12.5px; display: grid; gap: 2px; }
+.node b { font-size: 13px; }
+.node.sel { border-left-color: var(--accent); } .node.alert { border-left-color: var(--amber); }
+.node.ctx { border-left-color: var(--violet); } .node.off { border-left-color: var(--line); opacity: .8; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: 12.5px; color: var(--muted); }
+.steps { counter-reset: s; display: grid; gap: 12px; }
+.step { display: grid; grid-template-columns: 34px 1fr; gap: 12px; }
+.step::before { counter-increment: s; content: counter(s); font: 700 18px var(--display); color: var(--accent); background: var(--accent-soft); border-radius: 6px; height: 34px; display: grid; place-items: center; }
+.step div { display: grid; gap: 4px; }
+
+/* calendar */
+.dow, .week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+.cal { display: grid; gap: 6px; }
+.dow div { font: 500 10.5px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.day { position: relative; min-height: 96px; background: var(--panel); border: 1px solid var(--line); border-radius: 7px; padding: 7px 7px 13px; display: flex; flex-direction: column; gap: 4px; text-align: left; font: inherit; color: inherit; cursor: pointer; overflow: hidden; min-width: 0; }
+.day.sel { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.day.out { background: var(--off); cursor: default; color: var(--muted); }
+.day b { font: 700 17px var(--display); font-stretch: 85%; }
+.chip { font-size: 11.5px; line-height: 1.25; padding: 3px 5px; border-radius: 4px; background: var(--accent); color: var(--panel); font-weight: 600; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.chip.ins { box-shadow: inset 3px 0 0 var(--amber); }
+.small { font: 11px var(--mono); color: var(--muted); }
+.heat { position: absolute; left: 0; right: 0; bottom: 0; height: 5px; }
+.bar { position: relative; width: 110px; height: 7px; background: var(--off); border-radius: 4px; display: inline-block; vertical-align: middle; }
+.bar i { position: absolute; inset: 0 auto 0 0; border-radius: 4px; background: var(--muted); }
+.bar i.go { background: var(--accent); }
+.bar u { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--amber); }
+svg text { font-family: var(--mono); }
+.err { background: var(--red-soft); color: var(--red); padding: 12px 14px; border-radius: 8px; }
+@media (max-width: 700px) { .day { min-height: 70px; } .chip { font-size: 10px; -webkit-line-clamp: 2; } .small { display: none; } }
+</style>
+</head>
+<body>
+<nav><div class="in" id="nav"></div></nav>
+<div class="wrap">
+  <header style="display:grid;gap:8px">
+    <span class="eyebrow">event_prediction · local console</span>
+    <h1>Forecast Console</h1>
+    <p class="muted" id="sub">Loading…</p>
+  </header>
+  <div id="err"></div>
+
+  <!-- CALENDAR -->
+  <section class="tab" id="t-calendar">
+    <div class="panel">
+      <div class="hdr"><h2>Two-week calendar</h2><span class="legend">
+        <span class="role r-sel">prediction</span><span>chip edge amber = insider alert</span><span>bottom strip = P(any watched event first happens that day)</span></span></div>
+      <div class="cal" id="cal"></div>
+    </div>
+    <div class="panel" id="brief"></div>
+    <div class="panel">
+      <div class="hdr"><h2>Candidate table</h2><span class="muted mono" id="candn"></span></div>
+      <p class="muted">Every live event market after filtering. λ = implied daily hazard. Insider columns come from the insider transformer and are <b>shown to Claude only</b>; the expected score uses price alone.</p>
+      <div class="tbl"><table id="cands"></table></div>
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <section class="tab" id="t-pipeline" hidden>
+    <div class="panel">
+      <div class="hdr"><h2>Where a prediction comes from</h2>
+        <span class="legend"><span class="role r-sel">selects</span><span class="role r-alert">alert</span><span class="role r-ctx">context</span><span class="role r-off">gated / unused</span></span></div>
+      <div class="flow" id="flow"></div>
+    </div>
+    <div class="panel">
+      <h2>One live run, step by step</h2>
+      <p class="muted">GitHub Actions runs <code>python -m event_prediction.predict</code> every hour at :07 UTC (+ a 22:37 backup). Nothing is issued before 22:00 UTC; the first run after that writes <code>predictions/&lt;date&gt;/predictions.json</code> and commits it.</p>
+      <div class="steps" id="steps"></div>
+    </div>
+    <div class="panel">
+      <h2>The decision maths</h2>
+      <p>For a market priced <i>p</i> with <i>N</i> days to its deadline, assume a constant daily hazard and choose the date with the best expected judge score.</p>
+      <pre>λ        = 1 − (1 − p)^(1/N)                       # implied daily hazard
+P(X = k) = (1 − λ)^(k−1) · λ,   k = 1..N              # first-occurrence day
+credit   = [10, 8.5, 6.5, 6.5, 4.5, 4.5, 4.5, 4.5]    # |offset| 0..7 days, else 0
+E(d)     = 0.9 · Σ_k P(X = k) · credit[|k − d|]      # 0.9 = strict-judge haircut
+d*       = argmax_d E(d),  d ∈ [1, min(N, 7)]
+issue if E(d*) ≥ 3.5   (every prediction costs 3)    # "on &lt;date&gt;" markets: d = N, E = 9·p</pre>
+      <p class="muted">Code: <code>poly/strategy.py</code> → <code>first_occurrence_probs</code>, <code>best_date</code>; live use in <code>poly/live.py:signals</code> and <code>poly/manifold.py:live_signals</code>.</p>
+    </div>
+  </section>
+
+  <!-- MODELS -->
+  <section class="tab" id="t-models" hidden>
+    <div id="models" class="tab"></div>
+  </section>
+
+  <!-- BACKTESTS -->
+  <section class="tab" id="t-backtests" hidden>
+    <div class="panel"><h2>Experiment ledger</h2>
+      <p class="muted">“14-day net” = mean over rolling 14-day windows of Σ(score − 3), i.e. one competition's worth of points. Test period Oct 2025 – Nov 2026, never used for training.</p>
+      <div class="tbl"><table id="exps"></table></div></div>
+    <div id="bts" class="grid2"></div>
+  </section>
+
+  <!-- DATA -->
+  <section class="tab" id="t-data" hidden>
+    <div class="panel"><h2>Stored data</h2><div class="tbl"><table id="data"></table></div></div>
+    <div class="panel"><h2>Live sources (fetched each run)</h2><div class="tbl"><table id="live"></table></div></div>
+    <div class="panel"><h2>Rules the data must obey</h2>
+      <ul>
+        <li>Only data timestamped before the prediction: every feature is point-in-time (wallet stats via <code>merge_asof</code> on resolution time; trade windows strictly before τ).</li>
+        <li>GDELT live uses the v1 daily file for the previous day (cutoff = issue day − 1); v2 15-minute counts are ~2.2× smaller and would shift features.</li>
+        <li>Time splits everywhere: LightGBM train ≤ 2024-06-30, val ≤ 2025-06-30, test after. Insider val from 2025-10-01, test from 2026-04-01.</li>
+        <li>Secrets (Anthropic key / Claude OAuth token) live only in GitHub Actions secrets and your shell, never in the repo.</li>
+      </ul></div>
+  </section>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const pct = (x, k = 0) => x == null ? "–" : (100 * x).toFixed(k) + "%";
+const f = (x, k = 3) => x == null ? "–" : Number(x).toFixed(k);
+const DAY = 864e5, CREDIT = [10, 8.5, 6.5, 6.5, 4.5, 4.5, 4.5, 4.5];
+const TABS = [["calendar", "Calendar"], ["pipeline", "Pipeline"], ["models", "Models"], ["backtests", "Backtests"], ["data", "Data"]];
+$("nav").innerHTML = TABS.map(([k, n]) => `<a href="#${k}" data-k="${k}">${n}</a>`).join("");
+function route() {
+  const k = (location.hash || "#calendar").slice(1);
+  TABS.forEach(([t]) => { $("t-" + t).hidden = t !== k; });
+  document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.k === k));
+}
+addEventListener("hashchange", route); route();
+
+Promise.all([fetch("../reports/calendar_data.json").then(r => r.json()), fetch("data/summary.json").then(r => r.json())])
+  .then(([C, S]) => { render(C, S); })
+  .catch(e => { $("err").innerHTML = `<div class="err">Couldn't load data (${esc(e.message)}). Serve from the repo root: <code>uv run python -m http.server 8000</code> then open <code>http://localhost:8000/ui/</code>. Build data with <code>scripts/forecast_calendar.py</code> and <code>scripts/build_ui_summary.py</code>.</div>`; });
+
+function render(C, S) {
+  const gen = new Date(C.generated_utc), today = new Date(C.generated_utc.slice(0, 10) + "T00:00:00Z");
+  const H = C.horizon_days, BAR = C.market_bar;
+  const utc = s => new Date(s + "T00:00:00Z"), kOf = s => Math.round((utc(s) - today) / DAY);
+  const fmt = (d, o) => d.toLocaleDateString("en-GB", { timeZone: "UTC", ...o });
+  $("sub").textContent = `Forecast snapshot ${C.generated_utc.replace("T", " ")} UTC · horizon ${H} days · issue bar E ≥ ${BAR} · summary built ${S.built_utc.replace("T", " ")} UTC`;
+  const M = C.markets, picks = M.filter(m => m.exp_score >= BAR).slice(0, 5);
+  const pOn = (m, k) => m.daily_p[k - 1] || 0;
+  const short = m => m.question.replace(/^will\s+/i, "").replace(/\s+(by|on|before|in)\s+(the end of\s+)?[A-Z][a-z]+\.?\s*\d{0,2}(,?\s*\d{4})?\??$/, "").replace(/\?$/, "");
+  const ins = m => m.p_jump24 != null && m.p_jump24 >= 0.10;
+
+  /* ---------- calendar ---------- */
+  const heat = {}; for (let k = 1; k <= H; k++) heat[k] = 1 - M.reduce((a, m) => a * (1 - pOn(m, k)), 1);
+  const hmax = Math.max(...Object.values(heat), 1e-6);
+  const last = new Date(+today + H * DAY);
+  let sel = picks.length ? kOf(picks[0].target) : 1;
+  function cal() {
+    const start = new Date(+today - ((today.getUTCDay() + 6) % 7) * DAY), end = new Date(+last + ((7 - last.getUTCDay()) % 7) * DAY);
+    let h = `<div class="dow">${["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map(d => `<div>${d}</div>`).join("")}</div>`;
+    for (let w = +start; w <= +end; w += 7 * DAY) {
+      h += `<div class="week">`;
+      for (let i = 0; i < 7; i++) {
+        const d = new Date(w + i * DAY), k = Math.round((d - today) / DAY);
+        if (k < 1 || k > H) { h += `<div class="day out"><b>${d.getUTCDate()}</b>${k === 0 ? '<span class="small">issue day</span>' : ""}</div>`; continue; }
+        const ps = picks.filter(m => kOf(m.target) === k), wn = M.filter(m => !picks.includes(m) && kOf(m.target) === k).length;
+        h += `<button class="day ${k === sel ? "sel" : ""}" data-k="${k}"><b>${d.getUTCDate()}</b>
+          ${ps.map(m => `<span class="chip ${ins(m) ? "ins" : ""}">${esc(short(m))}</span>`).join("")}
+          ${wn ? `<span class="small">${wn} best-dated here</span>` : ""}<span class="small">${pct(heat[k], 1)}</span>
+          <span class="heat" style="background:rgba(var(--heat),${(0.1 + 0.9 * heat[k] / hmax).toFixed(2)})"></span></button>`;
+      }
+      h += `</div>`;
+    }
+    $("cal").innerHTML = h;
+    $("cal").querySelectorAll("button").forEach(b => b.onclick = () => { sel = +b.dataset.k; cal(); brief(); });
+  }
+  function chart(m) {
+    const W = 440, Hh = 140, L = 36, R = 8, T = 12, B = 26, bw = (W - L - R) / H, k0 = kOf(m.target);
+    const top = Math.max(0.05, Math.ceil(Math.max(...m.daily_p.slice(0, H)) * 20) / 20), y = v => T + (Hh - T - B) * (1 - v / top);
+    let s = `<svg viewBox="0 0 ${W} ${Hh}" width="100%" role="img" aria-label="daily first-occurrence probability">`;
+    for (let k = 1; k <= H; k++) { const o = Math.abs(k - k0); if (o <= 7) s += `<rect x="${L + (k - 1) * bw}" y="${T}" width="${bw}" height="${Hh - T - B}" fill="var(--accent)" opacity="${(CREDIT[o] / 10 * .16).toFixed(3)}"/>`; }
+    [0, top / 2, top].forEach(v => s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 5}" y="${y(v) + 3.5}" font-size="10" text-anchor="end" fill="var(--muted)">${pct(v)}</text>`);
+    for (let k = 1; k <= H; k++) {
+      const v = pOn(m, k); if (v > 0) s += `<rect x="${L + (k - 1) * bw + bw * .18}" y="${y(v)}" width="${bw * .64}" height="${Math.max(.5, y(0) - y(v))}" fill="${k === k0 ? "var(--accent)" : "var(--muted)"}" opacity="${k === k0 ? 1 : .55}"/>`;
+      if (k === 1 || k === k0 || k % 3 === 1) s += `<text x="${L + (k - .5) * bw}" y="${Hh - 9}" font-size="10" text-anchor="middle" fill="${k === k0 ? "var(--accent)" : "var(--muted)"}">${new Date(+today + k * DAY).getUTCDate()}</text>`;
+    }
+    if (m.daily_p.length < H) { const x = L + m.daily_p.length * bw; s += `<line x1="${x}" x2="${x}" y1="${T}" y2="${Hh - B}" stroke="var(--amber)" stroke-dasharray="3 3"/><text x="${x + 4}" y="${T + 10}" font-size="10" fill="var(--amber)">deadline</text>`; }
+    return s + "</svg>";
+  }
+  function brief() {
+    const d = new Date(+today + sel * DAY), ps = picks.filter(m => kOf(m.target) === sel);
+    let h = `<div class="hdr"><h2>${fmt(d, { weekday: "long", day: "numeric", month: "long" })}</h2><span class="muted mono">P(any watched event first occurs) = ${pct(heat[sel], 1)}</span></div>`;
+    if (!ps.length) h += `<p class="muted">No candidate clears E ≥ ${BAR} for this date.</p>`;
+    ps.forEach(m => {
+      const k0 = kOf(m.target), near = [-1, 0, 1].reduce((a, o) => a + pOn(m, k0 + o), 0);
+      h += `<div class="grid2" style="border-top:1px solid var(--line);padding-top:14px"><div style="display:grid;gap:10px;align-content:start">
+        <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="role r-sel">prediction</span><span class="role r-off">${esc(m.site)}</span><span class="role r-off">${esc(m.country)}</span>${ins(m) ? '<span class="role r-alert">insider alert</span>' : ""}</div>
+        <h3>${esc(short(m))}</h3>
+        <dl class="kv">
+          <dt>market</dt><dd>${esc(m.question)}</dd>
+          <dt>price p</dt><dd class="mono">${f(m.p_now, 3)} with N = ${m.days_left} days to deadline</dd>
+          <dt>λ price</dt><dd class="mono">${f(m.lam_price, 4)} / day</dd>
+          <dt>P(exact day)</dt><dd class="mono">${pct(pOn(m, k0), 1)} · within ±1 day ${pct(near, 1)}</dd>
+          <dt>E[score]</dt><dd class="mono">${f(m.exp_score, 2)} → net ${m.net >= 0 ? "+" : ""}${f(m.net, 2)}</dd>
+          <dt>insider soon72</dt><dd class="mono">${m.p_soon72 == null ? "n/a (Manifold or &lt;20 trades)" : `${pct(m.p_soon72, 1)} → λ ${f(m.lam_insider, 4)} / day (${(m.lam_insider / Math.max(m.lam_price, 1e-4)).toFixed(2)}× price)`}</dd>
+          <dt>insider jump24</dt><dd class="mono">${m.p_jump24 == null ? "n/a" : `${pct(m.p_jump24, 1)} ${ins(m) ? "≥ 10% → ALERT sent to Claude" : "(below 10% alert line)"}`}</dd>
+          <dt>source</dt><dd><code>${esc(m.condition_id || "")}</code></dd>
+        </dl></div>
+        <figure style="margin:0;display:grid;gap:6px">${chart(m)}<figcaption class="muted" style="font-size:12px">Bars P(X=k) from the price hazard; shading = judge credit if the event lands that day (darkest = predicted date).</figcaption></figure></div>`;
+    });
+    const watch = M.filter(m => !picks.includes(m)).map(m => [m, pOn(m, sel)]).filter(x => x[1] > 5e-4).sort((a, b) => b[1] - a[1]).slice(0, 6);
+    if (watch.length) h += `<div><h3 style="margin-bottom:6px">Below the bar, in play this day</h3><div class="tbl"><table><tbody>${watch.map(([m, p]) => `<tr><td class="n">${pct(p, 2)}</td><td>${esc(m.question)}</td><td class="n">E ${f(m.exp_score, 2)}</td></tr>`).join("")}</tbody></table></div></div>`;
+    $("brief").innerHTML = h;
+  }
+  cal(); brief();
+  $("candn").textContent = `${M.length} candidates · ${picks.length} above bar`;
+  $("cands").innerHTML = `<thead><tr><th>Market</th><th>Site</th><th>Country</th><th>p</th><th>N</th><th>λ price</th><th>insider soon72</th><th>λ insider</th><th>insider jump24</th><th>Best date</th><th>E vs bar</th></tr></thead><tbody>` +
+    M.map(m => `<tr><td>${esc(m.question)}</td><td>${esc(m.site)}</td><td>${esc(m.country)}</td><td class="n">${f(m.p_now, 3)}</td><td class="n">${m.days_left}</td>
+      <td class="n">${f(m.lam_price, 4)}</td><td class="n">${pct(m.p_soon72, 1)}</td><td class="n">${f(m.lam_insider, 4)}</td>
+      <td class="n" style="${ins(m) ? "color:var(--amber);font-weight:600" : ""}">${pct(m.p_jump24, 1)}</td><td class="n">${fmt(utc(m.target), { day: "numeric", month: "short" })}</td>
+      <td class="n"><span class="bar"><i class="${m.exp_score >= BAR ? "go" : ""}" style="width:${Math.min(100, m.exp_score * 10)}%"></i><u style="left:${BAR * 10}%"></u></span> ${f(m.exp_score, 2)}</td></tr>`).join("") + "</tbody>";
+
+  /* ---------- pipeline ---------- */
+  const N = (cls, t, s) => `<div class="node ${cls}"><b>${t}</b><span class="muted">${s}</span></div>`;
+  $("flow").innerHTML = [
+    ["Data (live)", N("sel", "Polymarket", "Gamma events + trade tapes, 39 tags, vol ≥ $10k") + N("sel", "Manifold", "open binary markets, ≥15 bettors, bet tapes") + N("ctx", "GDELT 1.0 daily", "yesterday's events, threats, top articles") + N("ctx", "FCDO / State Dept", "travel-advice change notes, advisory RSS") + N("ctx", "Headlines, OpenSky", "RSS feeds; US military aircraft by region") + N("ctx", "Wikipedia views", "74 country pages")],
+    ["Filters", N("sel", "is_event_market", "event verbs; drop scheduled, negated, counts, “continues”") + N("sel", "question_deadline", "parse “by / on / before &lt;date&gt;”") + N("sel", "tape checks", "≥10 trades, fresh price (&lt;3 days), never hit 90%") + N("ctx", "Claude market map", "country / type / yes-means-event (falls back to keywords)")],
+    ["Models", N("sel", "Price hazard + date optimiser", "λ from price → best date → E[score]") + N("alert", "Insider transformer", "last 256 trades + wallet reputation → P(YES ≤72h), P(jump ≥10pt in 24h)") + N("off", "GDELT LightGBM + ST-transformer", "P(surprise onset) by country × type × day; bar 5.0") + N("ctx", "Early-warning rules", "FCDO categories, threat spikes vs baseline")],
+    ["Selection", N("sel", "Pool", "market candidates E ≥ 3.0, GDELT E ≥ 4.0, dedupe family + (country, date)") + N("sel", "Default list", "markets E ≥ 3.5, GDELT E ≥ 5.0, max 5 / day") + N("sel", "Claude analyst", "claude-opus-5-5 picks ≤5 by candidate id, writes event wording; may veto")],
+    ["Output (22:00 UTC)", N("sel", "predictions.json", "country, event, date, issue time") + N("ctx", "early_warning.json, shortlist.csv", "audit trail") + N("ctx", "git commit", "by the hourly GitHub Action")]
+  ].map(([t, n]) => `<div class="col"><span class="eyebrow">${t}</span>${n}</div>`).join("");
+  $("steps").innerHTML = [
+    ["Gate", "Exit unless inside 8–21 Dec, hour ≥ 22 UTC and nothing issued today (<code>predict.py:run</code>). Heartbeat written to <code>predictions/status.json</code> every hour."],
+    ["Refresh data", "GDELT v1 daily files for the last 430 days, FCDO change history, threat codes, Wikipedia views; build the 205-feature panel ending yesterday."],
+    ["GDELT models", "LightGBM + spatio-temporal transformer (50/50) give P(onset) for 74 countries × 18 event types × 8 horizons; <code>candidates()</code> converts to E[score] using the same credit table. Only quiet (country, type) pairs are eligible."],
+    ["Markets", "<code>poly/live.py:signals</code>: fetch active event markets, map them (Claude or keyword fallback), download trade tapes, run the insider transformer, compute λ and the best date. <code>manifold.live_signals</code> does the same for Manifold (no insider model, play-money)."],
+    ["Pool", "Merge both sources, sort by E, attach early-warning signals (FCDO notes, State Dept changes, threat spikes, military flights) and recent GDELT headlines."],
+    ["Analyst", "Claude gets the pool, insider alerts and early warnings as untrusted data, returns ≤5 picks with wording against a JSON schema. Without a token, the template fallback issues the default list verbatim."],
+    ["Write + commit", "Assert dates are ≥1 day after issue and ≤ 28 Dec, ≤5 predictions; write <code>predictions/&lt;day&gt;/</code>; the workflow commits it."]
+  ].map(([t, d]) => `<div class="step"><div><b>${t}</b><p class="muted">${d}</p></div></div>`).join("");
+
+  /* ---------- models ---------- */
+  const lg = S.meta.lgbm || {}, sq = S.meta.seq || {}, im = S.meta.insider || {};
+  const mf = n => S.model_files[n] ? `${S.model_files[n].mb} MB · ${S.model_files[n].modified.replace("T", " ")}` : "missing";
+  const insRows = ["soon", "yes", "up"].map(h => (im[h] || []).map(r => `<tr><td>${h}</td><td>${esc(r.model)}</td><td class="n">${f(r.auc)}</td><td class="n">${f(r.logloss, 4)}</td></tr>`).join("")).join("");
+  const card = (role, rc, title, body) => `<div class="panel"><div class="hdr"><h2>${title}</h2><span class="role ${rc}">${role}</span></div>${body}</div>`;
+  $("models").innerHTML = [
+    card("selects predictions", "r-sel", "Market hazard + date optimiser", `
+      <p>Not a learned model, and deliberately so: every learned adjustment to it (calibration, insider blend, term structure) lost points out of sample. It converts a price into a dated prediction that maximises the judges' expected score.</p>
+      <dl class="kv"><dt>input</dt><dd>last trade price before τ, days to the question's deadline</dd><dt>output</dt><dd>best date d*, E[score]</dd>
+      <dt>code</dt><dd><code>poly/strategy.py</code>, <code>poly/live.py</code>, <code>poly/manifold.py</code></dd><dt>bar</dt><dd><code>MARKET_THRESHOLD = ${BAR}</code></dd></dl>`),
+    card("alert to Claude only", "r-alert", "Insider-flow transformer", `
+      <p>Reads the order flow of a market to spot informed trading: who is buying, how big, how new the wallet is, and that wallet's track record on markets that resolved before τ.</p>
+      <dl class="kv">
+        <dt>tokens</dt><dd>last 256 trades × 16 features (cash, direction, price, Δt, wallet n / age / resolved count / win-rate / PnL, new-wallet flag, first trade in market, …)</dd>
+        <dt>context</dt><dd>15 market features (logit p, hours to end, cash 24h / 6h, net flow, unique wallets, new-wallet share, Δp 24h / 72h, smart-money flow, longshot flow, max-trade share)</dd>
+        <dt>architecture</dt><dd>MLP token embed → [CLS] + 4-layer pre-norm Transformer encoder (d 128, 4 heads) ⊕ context MLP → 3 sigmoid heads, isotonic-calibrated</dd>
+        <dt>heads</dt><dd><code>soon</code> YES within 72h · <code>yes</code> resolves YES · <code>up</code> price +10 pts within 24h</dd>
+        <dt>data</dt><dd>resolved Polymarket geopolitics markets since Nov 2023, 12-hour UTC snapshot grid; train / val (≥ 2025-10-01) / test (≥ 2026-04-01); n = ${im.n ? `${im.n.train.toLocaleString()} / ${im.n.val.toLocaleString()} / ${im.n.test.toLocaleString()}` : "–"}</dd>
+        <dt>files</dt><dd><code>models/insider.pt</code> (${mf("insider.pt")}), <code>wallet_rep.parquet</code> (${mf("wallet_rep.parquet")})</dd></dl>
+      <div class="tbl"><table><thead><tr><th>head</th><th>model</th><th>test AUC</th><th>test logloss</th></tr></thead><tbody>${insRows}</tbody></table></div>
+      <p class="muted"><b>Verdict.</b> The <code>up</code> head beats a context-only logistic baseline (AUC ${f((im.up || [])[1]?.auc)} vs ${f((im.up || [])[0]?.auc)}): real signal that the price is about to jump. The <code>yes</code> head loses to the price itself and <code>soon</code> adds nothing reliable. Blending it into E[score] cut the backtest from +4.1 to −0.1, so live it only raises an INSIDER ALERT (P(jump) ≥ 10%) in Claude's prompt.</p>`),
+    card("gated (bar 5.0) + context", "r-off", "GDELT surprise-onset LightGBM", `
+      <p>Predicts a <i>surprise</i>: a (country, event type) that is quiet, then suddenly dominates world coverage.</p>
+      <pre>big(c,t,d)   = share(c,t,d) ≥ 80 per 10k global articles  AND  ≥ 4 × mean of the previous 28 days
+onset(c,t,d) = big(c,t,d) AND no big(c,t) in the previous 14 days
+eligible     = (c,t) currently quiet</pre>
+      <dl class="kv"><dt>rows</dt><dd>cutoff day × 74 countries × 18 CAMEO event types × 8 horizons (1–8 days)</dd>
+        <dt>features</dt><dd>type rolling stats (articles, events, share, tone, Goldstein), yearly onset history, country totals, quad-class trends, Wikipedia spikes, FCDO notes by category, threat/ultimatum/mobilisation trends, calendar</dd>
+        <dt>training</dt><dd>3% negative downsampling (weighted 1/rate), lr 0.03, 31 leaves, min leaf 500, early stopping on val; isotonic calibration; final model refit on all data</dd>
+        <dt>splits</dt><dd>train ≤ 2024-06-30 · val ≤ 2025-06-30 · test after</dd>
+        <dt>files</dt><dd><code>lgbm.txt</code> (${mf("lgbm.txt")}), <code>lgbm_final.txt</code> (${mf("lgbm_final.txt")})</dd></dl>
+      <div class="tbl"><table><tbody>
+        <tr><td>test AUC</td><td class="n">${f(lg.auc_test)}</td></tr><tr><td>test average precision</td><td class="n">${f(lg.avg_precision_test, 4)}</td></tr>
+        <tr><td>base rate</td><td class="n">${f(lg.base_rate_test, 5)}</td></tr><tr><td>lift at AP</td><td class="n">${lg.avg_precision_test ? (lg.avg_precision_test / lg.base_rate_test).toFixed(0) + "×" : "–"}</td></tr>
+        <tr><td>test positives</td><td class="n">${lg.positives_test ?? "–"}</td></tr><tr><td>best iteration</td><td class="n">${lg.best_iteration ?? "–"}</td></tr></tbody></table></div>
+      <p class="muted"><b>Verdict.</b> Strong ranking, but onsets are so rare that the top calibrated probabilities are ~5–15% per week. Hitting a date at that rate averages ~1.4 points against a 3-point cost, so live it needs E ≥ 5.0 (rarely met) and otherwise feeds Claude as a risk watchlist.</p>`),
+    card("ensembled with LightGBM", "r-off", "Spatio-temporal transformer", `
+      <dl class="kv"><dt>input</dt><dd>[56 days × 74 countries × 205 panel features], standardised</dd>
+        <dt>architecture</dt><dd>MLP embed (d 128) → 3-layer temporal Transformer per country → 2-layer cross-country attention → head to 18 types × 8 horizons; ${sq.cfg ? "1.10M params" : ""}</dd>
+        <dt>loss</dt><dd>BCE on onset labels, weighted to quiet (country, type) pairs; isotonic calibration</dd>
+        <dt>training</dt><dd>AdamW, early stopping on val (patience 4) → ${sq.epochs_trained ?? "–"} epochs; final model: all data, fixed schedule</dd>
+        <dt>files</dt><dd><code>seq.pt</code> (${mf("seq.pt")}), <code>seq_final.pt</code> (${mf("seq_final.pt")})</dd></dl>
+      <div class="tbl"><table><tbody><tr><td>test AUC</td><td class="n">${f(sq.auc_test)}</td></tr><tr><td>val BCE</td><td class="n">${f(sq.val_bce, 5)}</td></tr></tbody></table></div>
+      <p class="muted"><b>Verdict.</b> Below LightGBM (AUC ${f(sq.auc_test)} vs ${f(lg.auc_test)}); ensembled 50/50 in <code>infer.ensemble</code>. It only affects the gated GDELT path.</p>`),
+    card("context", "r-ctx", "Early-warning signals", `
+      <p>Rules, not learned models. They are public signals that often move before the headlines.</p>
+      <div class="tbl"><table><thead><tr><th>FCDO note category</th><th>lift on P(onset within 7 days)</th></tr></thead><tbody>${Object.entries(S.fcdo_lifts).map(([k, v]) => `<tr><td><code>${k}</code></td><td class="n">${v}×</td></tr>`).join("")}</tbody></table></div>
+      <ul><li>FCDO categories are also LightGBM features (<code>fcdo_{cat}_7</code>, <code>fcdo_since_{cat}</code>).</li><li>Threat spikes: GDELT CAMEO 13/138/1384/1385/139/152/154 articles over 3 days vs 28-day baseline (≥3×, ≥50/day).</li>
+      <li>US State Dept level 3–4 changes in 7 days; OpenSky US-military ICAO block (AE0000–AFFFFF) counts per region.</li>
+      <li>Tested on markets: FCDO-flagged markets resolve YES more often, but prices already include it, so no selection change.</li></ul>`),
+    card("final say on picks + wording", "r-sel", "Claude analyst", `
+      <dl class="kv"><dt>model</dt><dd><code>claude-opus-5-5</code> via API key or Claude Code OAuth token (<code>claude_client.py</code>)</dd>
+        <dt>input</dt><dd>candidate pool (id, source, market, country, best date, price, E), insider alerts, early warnings, recent GDELT events, headlines, market movers; all marked as untrusted data</dd>
+        <dt>output</dt><dd>JSON schema: ≤5 predictions referencing candidate ids, with country, event wording, date</dd>
+        <dt>guards</dt><dd>ids validated, dates re-checked; any failure → template fallback = default list</dd></dl>
+      <p class="muted">The one place judgement beats the numbers: wording a market so judges score it as the same event, vetoing markets that are really scheduled or continuations, and acting on early warnings the market hasn't priced yet.</p>`)
+  ].join("");
+
+  /* ---------- backtests ---------- */
+  const vr = v => v === "adopted" ? "r-sel" : v.startsWith("rejected for") ? "r-off" : "r-rej";
+  $("exps").innerHTML = `<thead><tr><th>Experiment</th><th>Verdict</th><th>Result</th><th>What changed</th></tr></thead><tbody>` +
+    S.experiments.map(e => `<tr><td><b>${esc(e.name)}</b></td><td><span class="role ${vr(e.verdict)}">${esc(e.verdict)}</span></td><td>${esc(e.detail)}</td><td><code>${esc(e.change)}</code></td></tr>`).join("") + "</tbody>";
+  const BT = { poly_wide_plus_manifold_22utc: "Live config: Polymarket wide + Manifold, 22:00", poly_wide_22utc: "Polymarket wide, 22:00", poly_07utc_test: "Polymarket, 07:00 (original)", poly_07utc_test_calibrated: "Polymarket, 07:00, price-calibrated", manifold_2024_2026: "Manifold alone, 2024–2026, 07:00", gdelt_onset: "GDELT onset model (2025-07 → 2026-11)" };
+  $("bts").innerHTML = Object.entries(BT).filter(([k]) => S.backtests[k]).map(([k, t]) => {
+    const b = S.backtests[k];
+    const rows = Object.entries(b).map(([th, v]) => {
+      const ppd = v.preds_per_day ?? v.n_preds_per_day, win = v.window_total_mean, pos = v.share_windows_positive;
+      return `<tr${Number(th) === BAR && !k.startsWith("gdelt") ? ' style="background:var(--accent-soft)"' : ""}><td class="n">${th}</td><td class="n">${f(ppd, 2)}</td><td class="n">${f(v.mean_expected, 2)}</td><td class="n">${f(v.mean_realised, 2)}</td><td class="n" style="font-weight:600">${win >= 0 ? "+" : ""}${f(win, 1)}</td><td class="n">${pos == null ? "–" : pct(pos)}</td></tr>`;
+    }).join("");
+    return `<div class="panel"><h3>${t}</h3><div class="tbl"><table><thead><tr><th>bar</th><th>picks/day</th><th>E</th><th>realised</th><th>14-day net</th><th>windows &gt; 0</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+  }).join("");
+
+  /* ---------- data ---------- */
+  $("data").innerHTML = `<thead><tr><th>Dataset</th><th>Path</th><th>Files</th><th>Span</th><th>Size</th></tr></thead><tbody>` +
+    S.data.map(d => `<tr><td>${esc(d.name)}</td><td><code>${esc(d.path)}</code></td><td class="n">${d.files.toLocaleString()}</td><td class="n">${d.span ? d.span.join(" → ") : "–"}</td><td class="n">${d.mb} MB</td></tr>`).join("") + "</tbody>";
+  $("live").innerHTML = `<thead><tr><th>Source</th><th>Endpoint</th><th>Used for</th></tr></thead><tbody>` + [
+    ["Polymarket Gamma", "gamma-api.polymarket.com/events/keyset", "active event markets (keyset paging: after_cursor)"],
+    ["Polymarket Data API", "data-api.polymarket.com/v2/trades?condition=", "trade tapes → price, insider model"],
+    ["Manifold", "api.manifold.markets/v0/search-markets, /bets", "open markets + bet tapes"],
+    ["GDELT 1.0", "data.gdeltproject.org/events/YYYYMMDD.export.CSV.zip", "panel features, threat spikes, recent events"],
+    ["gov.uk content API", "gov.uk/api/content/foreign-travel-advice/{slug}", "FCDO change history"],
+    ["US State Dept", "travel.state.gov/_res/rss/TAsTWs.xml", "advisory level changes"],
+    ["OpenSky", "opensky-network.org/api/states/all", "US military aircraft by region"],
+    ["Wikimedia", "wikimedia.org/api/rest_v1/metrics/pageviews", "country attention spikes"],
+    ["RSS news", "BBC, Al Jazeera, Guardian, NYT, NPR", "headlines for Claude"]
+  ].map(r => `<tr><td>${r[0]}</td><td><code>${r[1]}</code></td><td>${r[2]}</td></tr>`).join("") + "</tbody>";
+}
+</script>
+</body>
+</html>

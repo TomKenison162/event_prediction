@@ -1,0 +1,34 @@
+{
+ "middle_east": {
+  "total_airborne": 266,
+  "us_military": 1,
+  "us_military_callsigns": [
+   "CADDY27"
+  ]
+ },
+ "eastern_europe": {
+  "total_airborne": 158,
+  "us_military": 0,
+  "us_military_callsigns": []
+ },
+ "taiwan_strait": {
+  "total_airborne": 192,
+  "us_military": 0,
+  "us_military_callsigns": []
+ },
+ "korea": {
+  "total_airborne": 47,
+  "us_military": 0,
+  "us_military_callsigns": []
+ },
+ "caribbean_venezuela": {
+  "total_airborne": 34,
+  "us_military": 0,
+  "us_military_callsigns": []
+ },
+ "red_sea_horn": {
+  "total_airborne": 0,
+  "us_military": 0,
+  "us_military_callsigns": []
+ }
+}

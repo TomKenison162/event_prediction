@@ -23,3 +23,12 @@ event-prediction = "event_prediction:main"
 [build-system]
 requires = ["uv_build>=0.13.9,<0.14.0"]
 build-backend = "uv_build"
+
+# CPU-only torch on Linux (GitHub Actions): avoids ~2.5 GB of CUDA wheels every hourly run.
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]

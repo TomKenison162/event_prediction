@@ -1,0 +1,4227 @@
+[
+ {
+  "event": "Israel x Iran ceasefire continues through...?",
+  "question": "Israel x Iran ceasefire continues through December 31?",
+  "outcomes": {
+   "Yes": "0.725",
+   "No": "0.275"
+  },
+  "end": "2026-12-31T20:29:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.06,
+  "vol_24h": 205926.248376,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Israel x Iran ceasefire continues through...?",
+  "question": "Israel x Iran ceasefire continues through November 30?",
+  "outcomes": {
+   "Yes": "0.925",
+   "No": "0.075"
+  },
+  "end": "2026-11-30T20:29:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": 0.08,
+  "vol_24h": 103977.49500700002,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Israel x Iran ceasefire continues through...?",
+  "question": "Israel x Iran ceasefire continues through December 15?",
+  "outcomes": {
+   "Yes": "0.795",
+   "No": "0.205"
+  },
+  "end": "2026-12-16T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.06,
+  "vol_24h": 50876.568856,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Israel x Iran ceasefire continues through...?",
+  "question": "Israel x Iran ceasefire continues through November 22?",
+  "outcomes": {
+   "Yes": "0.9965",
+   "No": "0.0035"
+  },
+  "end": "2026-11-23T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.0715,
+  "vol_24h": 114922.30133899998,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Prime Minister of Israel after the next election?",
+  "question": "Will Benjamin Netanyahu be the next Prime Minister of Israel?",
+  "outcomes": {
+   "Yes": "0.239",
+   "No": "0.761"
+  },
+  "end": "2026-10-28T03:59:00Z",
+  "chg_1d": -0.0045,
+  "chg_1w": -0.007,
+  "vol_24h": 154834.29072899997,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Prime Minister of Israel after the next election?",
+  "question": "Will Naftali Bennett be the next Prime Minister of Israel?",
+  "outcomes": {
+   "Yes": "0.0325",
+   "No": "0.9675"
+  },
+  "end": "2026-10-28T03:59:00Z",
+  "chg_1d": -0.0035,
+  "chg_1w": 0.0005,
+  "vol_24h": 35913.838038999995,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Prime Minister of Israel after the next election?",
+  "question": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
+  "outcomes": {
+   "Yes": "0.648",
+   "No": "0.352"
+  },
+  "end": "2026-10-28T03:59:00Z",
+  "chg_1d": 0.035,
+  "chg_1w": 0.0795,
+  "vol_24h": 53921.580422,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Prime Minister of Israel after the next election?",
+  "question": "Will Avigdor Lieberman be the next Prime Minister of Israel?",
+  "outcomes": {
+   "Yes": "0.0195",
+   "No": "0.9805"
+  },
+  "end": "2026-10-28T03:59:00Z",
+  "chg_1d": -0.019,
+  "chg_1w": -0.0195,
+  "vol_24h": 130665.920052,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Prime Minister of Israel after the next election?",
+  "question": "Will Yossi Cohen be the next Prime Minister of Israel?",
+  "outcomes": {
+   "Yes": "0.0025",
+   "No": "0.9975"
+  },
+  "end": "2026-10-28T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.001,
+  "vol_24h": 3262.4305,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Prime Minister of Israel after the next election?",
+  "question": "Will Israel Katz be the next Prime Minister of Israel?",
+  "outcomes": {
+   "Yes": "0.0025",
+   "No": "0.9975"
+  },
+  "end": "2026-10-28T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.0005,
+  "vol_24h": 3266.9805,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Prime Minister of Israel after the next election?",
+  "question": "Will Amir Ohana be the next Prime Minister of Israel?",
+  "outcomes": {
+   "Yes": "0.002",
+   "No": "0.998"
+  },
+  "end": "2026-10-28T03:59:00Z",
+  "chg_1d": -0.0005,
+  "chg_1w": -0.001,
+  "vol_24h": 5653.47,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Prime Minister of Israel after the next election?",
+  "question": "Will Eli Cohen be the next Prime Minister of Israel?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2026-10-27T23:59:00Z",
+  "chg_1d": 0.0005,
+  "chg_1w": null,
+  "vol_24h": 2713.25,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Marco Rubio out as Secretary of State by...?",
+  "question": "Marco Rubio out as Secretary of State by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.0505",
+   "No": "0.9495"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": 0.026,
+  "chg_1w": 0.034,
+  "vol_24h": 58817.02777,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Marco Rubio out as Secretary of State by...?",
+  "question": "Marco Rubio out as Secretary of State by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.105",
+   "No": "0.895"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.015,
+  "chg_1w": 0.035,
+  "vol_24h": 141969.353169,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Marco Rubio out as Secretary of State by...?",
+  "question": "Marco Rubio out as Secretary of State by March 31, 2027?",
+  "outcomes": {
+   "Yes": "0.255",
+   "No": "0.745"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": -0.01,
+  "vol_24h": 27280.361358,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US announces end of Iranian blockade by...?",
+  "question": "US announces end of Iranian blockade by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.1615",
+   "No": "0.8385"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0245,
+  "chg_1w": -0.009,
+  "vol_24h": 39483.920125,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US announces end of Iranian blockade by...?",
+  "question": "US announces end of Iranian blockade by March 31, 2027?",
+  "outcomes": {
+   "Yes": "0.475",
+   "No": "0.525"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": -0.01,
+  "chg_1w": -0.055,
+  "vol_24h": 48555.468291,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US announces end of Iranian blockade by...?",
+  "question": "US announces end of Iranian blockade by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.0315",
+   "No": "0.9685"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": 0.0015,
+  "chg_1w": -0.016,
+  "vol_24h": 58884.698859,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US announces end of Iranian blockade by...?",
+  "question": "US announces end of Iranian blockade by December 15, 2026?",
+  "outcomes": {
+   "Yes": "0.075",
+   "No": "0.925"
+  },
+  "end": "2026-12-16T04:59:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": -0.02,
+  "vol_24h": 30177.323615,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US announces end of Iranian blockade by...?",
+  "question": "US announces end of Iranian blockade by January 31, 2027?",
+  "outcomes": {
+   "Yes": "0.235",
+   "No": "0.765"
+  },
+  "end": "2027-02-01T04:59:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": null,
+  "vol_24h": 27953.171491999998,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US announces end of Iranian blockade by...?",
+  "question": "US announces end of Iranian blockade by February 28, 2027?",
+  "outcomes": {
+   "Yes": "0.325",
+   "No": "0.675"
+  },
+  "end": "2027-03-01T04:59:00Z",
+  "chg_1d": -0.01,
+  "chg_1w": null,
+  "vol_24h": 3804.941495,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Venezuela leader end of 2026?",
+  "question": "Will Mar\u00eda Corina Machado be the leader of Venezuela end of 2026?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": -0.001,
+  "vol_24h": 4374.449750999999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Venezuela leader end of 2026?",
+  "question": "Will Delcy Rodr\u00edguez be the leader of Venezuela end of 2026?",
+  "outcomes": {
+   "Yes": "0.105",
+   "No": "0.895"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.02,
+  "chg_1w": -0.01,
+  "vol_24h": 26034.018952999995,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Venezuela leader end of 2026?",
+  "question": "Will Nicol\u00e1s Maduro be the leader of Venezuela end of 2026?",
+  "outcomes": {
+   "Yes": "0.8875",
+   "No": "0.1125"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.019,
+  "chg_1w": 0.0215,
+  "vol_24h": 38675.85962,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Venezuela leader end of 2026?",
+  "question": "Will Marco Rubio be the leader of Venezuela end of 2026?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2026-12-31T00:00:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 26616.278,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Venezuela leader end of 2026?",
+  "question": "Will Pete Hegseth be the leader of Venezuela end of 2026?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2026-12-31T00:00:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 31999.81199999999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Venezuela leader end of 2026?",
+  "question": "Will there be no head of state of Venezuela end of 2026?",
+  "outcomes": {
+   "Yes": "0.0095",
+   "No": "0.9905"
+  },
+  "end": "2026-12-31T00:00:00Z",
+  "chg_1d": 0.0015,
+  "chg_1w": 0.007,
+  "vol_24h": 15568.218354,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Trump out as President before 2027?",
+  "question": "Trump out as President before 2027?",
+  "outcomes": {
+   "Yes": "0.027",
+   "No": "0.973"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0105,
+  "chg_1w": 0.0025,
+  "vol_24h": 122067.18179500001,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US-Iran Final Nuclear Deal by\u2026?",
+  "question": "US-Iran Final Nuclear Deal by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.0265",
+   "No": "0.9735"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.012,
+  "chg_1w": -0.0185,
+  "vol_24h": 84553.41478099998,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US-Iran Final Nuclear Deal by\u2026?",
+  "question": "US-Iran Final Nuclear Deal by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.0075",
+   "No": "0.9925"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.0065,
+  "chg_1w": -0.005,
+  "vol_24h": 24851.716077,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine ceasefire agreement by...?",
+  "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.095",
+   "No": "0.905"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.01,
+  "chg_1w": null,
+  "vol_24h": 13479.286568,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine ceasefire agreement by...?",
+  "question": "Russia x Ukraine ceasefire agreement by March 31, 2027?",
+  "outcomes": {
+   "Yes": "0.255",
+   "No": "0.745"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": -0.02,
+  "chg_1w": -0.09,
+  "vol_24h": 2472.076924,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine ceasefire agreement by...?",
+  "question": "Russia x Ukraine ceasefire agreement by June 30, 2027?",
+  "outcomes": {
+   "Yes": "0.585",
+   "No": "0.415"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": 0.03,
+  "chg_1w": 0.05,
+  "vol_24h": 22457.686139,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine ceasefire agreement by...?",
+  "question": "Russia x Ukraine ceasefire agreement by April 30, 2027?",
+  "outcomes": {
+   "Yes": "0.32",
+   "No": "0.68"
+  },
+  "end": "2027-05-01T03:59:00Z",
+  "chg_1d": -0.055,
+  "chg_1w": -0.085,
+  "vol_24h": 12763.634828,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine ceasefire agreement by...?",
+  "question": "Russia x Ukraine ceasefire agreement by May 31, 2027?",
+  "outcomes": {
+   "Yes": "0.545",
+   "No": "0.455"
+  },
+  "end": "2027-06-01T03:59:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": 0.02,
+  "vol_24h": 11098.453494,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine ceasefire agreement by...?",
+  "question": "Russia x Ukraine ceasefire agreement by July 31, 2027?",
+  "outcomes": {
+   "Yes": "0.595",
+   "No": "0.405"
+  },
+  "end": "2027-08-01T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.03,
+  "vol_24h": 2706.220571,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine ceasefire agreement by...?",
+  "question": "Russia x Ukraine ceasefire agreement by September 30, 2027?",
+  "outcomes": {
+   "Yes": "0.64",
+   "No": "0.36"
+  },
+  "end": "2027-10-01T03:59:00Z",
+  "chg_1d": -0.005,
+  "chg_1w": 0.025,
+  "vol_24h": 3882.113966,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine ceasefire agreement by...?",
+  "question": "Russia x Ukraine ceasefire agreement by January 31, 2027?",
+  "outcomes": {
+   "Yes": "0.175",
+   "No": "0.825"
+  },
+  "end": "2027-02-01T04:59:00Z",
+  "chg_1d": -0.01,
+  "chg_1w": -0.02,
+  "vol_24h": 3722.662282,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine ceasefire agreement by...?",
+  "question": "Russia x Ukraine ceasefire agreement by February 28, 2027?",
+  "outcomes": {
+   "Yes": "0.195",
+   "No": "0.805"
+  },
+  "end": "2027-03-01T04:59:00Z",
+  "chg_1d": -0.035,
+  "chg_1w": -0.05,
+  "vol_24h": 7106.352746,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine ceasefire agreement by...?",
+  "question": "Russia x Ukraine ceasefire agreement by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.0055",
+   "No": "0.9945"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.0095,
+  "chg_1w": -0.025,
+  "vol_24h": 26302.234523,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will the Iranian regime fall before 2027?",
+  "question": "Will the Iranian regime fall before 2027?",
+  "outcomes": {
+   "Yes": "0.0305",
+   "No": "0.9695"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.007,
+  "chg_1w": -0.0005,
+  "vol_24h": 97899.75536699998,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will the U.S. invade Iran before 2027?",
+  "question": "Will the U.S. invade Iran before 2027?",
+  "outcomes": {
+   "Yes": "0.055",
+   "No": "0.945"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.02,
+  "vol_24h": 96465.04830499999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Iran leadership change by...?",
+  "question": "Iran leadership change by June 30, 2027?",
+  "outcomes": {
+   "Yes": "0.235",
+   "No": "0.765"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.02,
+  "vol_24h": 4289.023915999999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Iran leadership change by...?",
+  "question": "Iran leadership change by November 30?",
+  "outcomes": {
+   "Yes": "0.01",
+   "No": "0.99"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.004,
+  "chg_1w": -0.0145,
+  "vol_24h": 41251.661383,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Iran leadership change by...?",
+  "question": "Iran leadership change by December 31?",
+  "outcomes": {
+   "Yes": "0.065",
+   "No": "0.935"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.02,
+  "vol_24h": 36761.313130999995,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Who will Trump speak to by November 30?",
+  "question": "Will Trump speak to Volodymyr Zelenskyy by November 30?",
+  "outcomes": {
+   "Yes": "0.215",
+   "No": "0.785"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.035,
+  "chg_1w": -0.15,
+  "vol_24h": 5492.996032999999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Who will Trump speak to by November 30?",
+  "question": "Will Trump speak to Emmanuel Macron by November 30?",
+  "outcomes": {
+   "Yes": "0.1865",
+   "No": "0.8135"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.073,
+  "chg_1w": -0.3235,
+  "vol_24h": 26695.847759999997,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Who will Trump speak to by November 30?",
+  "question": "Will Trump speak to Ursula von der Leyen by November 30?",
+  "outcomes": {
+   "Yes": "0.11",
+   "No": "0.89"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.115,
+  "chg_1w": -0.385,
+  "vol_24h": 2021.661913,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Who will Trump speak to by November 30?",
+  "question": "Will Trump speak to Mark Rutte by November 30?",
+  "outcomes": {
+   "Yes": "0.957",
+   "No": "0.043"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": 0.492,
+  "chg_1w": 0.307,
+  "vol_24h": 10679.361499,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Who will Trump speak to by November 30?",
+  "question": "Will Trump speak to Andy Burnham by November 30?",
+  "outcomes": {
+   "Yes": "0.105",
+   "No": "0.895"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.24,
+  "chg_1w": -0.3,
+  "vol_24h": 16796.324608999996,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "NATO x Russia military clash by...?",
+  "question": "NATO x Russia military clash by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.135",
+   "No": "0.865"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.05,
+  "chg_1w": 0.02,
+  "vol_24h": 46002.206769,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "NATO x Russia military clash by...?",
+  "question": "NATO x Russia military clash by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.024",
+   "No": "0.976"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.0015,
+  "chg_1w": 0.0075,
+  "vol_24h": 3994.5567,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "2026 Taiwanese Local Elections: Party Winner",
+  "question": "Will Kuomintang (KMT) win the most head of local government elections in the 2026 Taiwan local elections?",
+  "outcomes": {
+   "Yes": "0.775",
+   "No": "0.225"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.155,
+  "vol_24h": 30008.575094000003,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "2026 Taiwanese Local Elections: Party Winner",
+  "question": "Will the Democratic Progressive Party (DPP) win the most head of local government elections in the 2026 Taiwan local elections?",
+  "outcomes": {
+   "Yes": "0.23",
+   "No": "0.77"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": 0.0095,
+  "chg_1w": -0.141,
+  "vol_24h": 20213.299653999995,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US x Iran Effective Ceasefire begins by...? (2 week pause)",
+  "question": "US x Iran Effective Ceasefire by November 22?",
+  "outcomes": {
+   "Yes": "0.51",
+   "No": "0.49"
+  },
+  "end": "2026-11-22T20:29:00Z",
+  "chg_1d": 0.115,
+  "chg_1w": 0.095,
+  "vol_24h": 26786.304488,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US x Iran Effective Ceasefire begins by...? (2 week pause)",
+  "question": "US x Iran Effective Ceasefire by November 30?",
+  "outcomes": {
+   "Yes": "0.665",
+   "No": "0.335"
+  },
+  "end": "2026-11-30T20:29:00Z",
+  "chg_1d": 0.09,
+  "chg_1w": 0.15,
+  "vol_24h": 7103.754766,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US x Iran Effective Ceasefire begins by...? (2 week pause)",
+  "question": "US x Iran Effective Ceasefire by December 31?",
+  "outcomes": {
+   "Yes": "0.835",
+   "No": "0.165"
+  },
+  "end": "2026-12-31T20:29:00Z",
+  "chg_1d": 0.075,
+  "chg_1w": 0.15,
+  "vol_24h": 12206.180323,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Xi Jinping out before 2027?",
+  "question": "Xi Jinping out before 2027?",
+  "outcomes": {
+   "Yes": "0.0165",
+   "No": "0.9835"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.002,
+  "chg_1w": null,
+  "vol_24h": 49129.97738199999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Where will Zelenskyy and Putin meet next before 2027?",
+  "question": "Will Zelenskyy and Putin meet next in Turkey before 2027?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": -0.002,
+  "vol_24h": 4910.0865,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Where will Zelenskyy and Putin meet next before 2027?",
+  "question": "Will Zelenskyy and Putin meet next in Qatar / UAE before 2027?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": -0.0015,
+  "vol_24h": 4824.345,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Where will Zelenskyy and Putin meet next before 2027?",
+  "question": "Will Zelenskyy and Putin meet next in Saudi Arabia before 2027?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": -0.001,
+  "vol_24h": 2132.372,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Where will Zelenskyy and Putin meet next before 2027?",
+  "question": "Will Zelenskyy and Putin meet next in US before 2027?",
+  "outcomes": {
+   "Yes": "0.024",
+   "No": "0.976"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.003,
+  "vol_24h": 15529.391554000002,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Where will Zelenskyy and Putin meet next before 2027?",
+  "question": "Will Zelenskyy and Putin not meet before 2027?",
+  "outcomes": {
+   "Yes": "0.9695",
+   "No": "0.0305"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.002,
+  "chg_1w": 0.011,
+  "vol_24h": 17389.348304,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Putin out as President of Russia by...?",
+  "question": "Putin out as President of Russia by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.0125",
+   "No": "0.9875"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.0035,
+  "vol_24h": 16163.442769,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Putin out as President of Russia by...?",
+  "question": "Putin out as President of Russia by June 30, 2027?",
+  "outcomes": {
+   "Yes": "0.085",
+   "No": "0.915"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.01,
+  "vol_24h": 24447.730438,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Putin out as President of Russia by...?",
+  "question": "Putin out as President of Russia by March 31, 2027?",
+  "outcomes": {
+   "Yes": "0.055",
+   "No": "0.945"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 3426.923331,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Strait of Hormuz traffic returns to normal by December 31?",
+  "question": "Strait of Hormuz traffic returns to normal by December 31?",
+  "outcomes": {
+   "Yes": "0.0305",
+   "No": "0.9695"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.004,
+  "chg_1w": -0.0145,
+  "vol_24h": 42175.713222,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Israeli airspace closed by...? (Excluding Holiday Closures)",
+  "question": "Israeli airspace closed by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.14",
+   "No": "0.86"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.045,
+  "chg_1w": -0.055,
+  "vol_24h": 7959.921755000001,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Israeli airspace closed by...? (Excluding Holiday Closures)",
+  "question": "Israeli airspace closed by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.046",
+   "No": "0.954"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": 0.0045,
+  "chg_1w": -0.0185,
+  "vol_24h": 33926.671158000005,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US-Iran Hormuz Agreement by...?",
+  "question": "US-Iran Hormuz Agreement by November 30?",
+  "outcomes": {
+   "Yes": "0.0275",
+   "No": "0.9725"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.0025,
+  "chg_1w": -0.0185,
+  "vol_24h": 3094.435974,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US-Iran Hormuz Agreement by...?",
+  "question": "US-Iran Hormuz Agreement by December 31?",
+  "outcomes": {
+   "Yes": "0.125",
+   "No": "0.875"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.02,
+  "chg_1w": -0.01,
+  "vol_24h": 37035.923997,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Next leader out of power before 2027?",
+  "question": "Will Benjamin Netanyahu be the next leader out before 2027?",
+  "outcomes": {
+   "Yes": "0.395",
+   "No": "0.605"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.11,
+  "chg_1w": 0.03,
+  "vol_24h": 9981.644035,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Next leader out of power before 2027?",
+  "question": "Will Volodymyr Zelenskyy be the next leader out before 2027?",
+  "outcomes": {
+   "Yes": "0.015",
+   "No": "0.985"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0105,
+  "chg_1w": 0.011,
+  "vol_24h": 2480.325917,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Next leader out of power before 2027?",
+  "question": "Will Friedrich Merz be the next leader out before 2027?",
+  "outcomes": {
+   "Yes": "0.006",
+   "No": "0.994"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.0005,
+  "chg_1w": 0.0015,
+  "vol_24h": 3567.235833,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Next leader out of power before 2027?",
+  "question": "Will Miguel D\u00edaz-Canel be the next leader out before 2027?",
+  "outcomes": {
+   "Yes": "0.0065",
+   "No": "0.9935"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.002,
+  "chg_1w": 0.002,
+  "vol_24h": 2277.7828329999998,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Next leader out of power before 2027?",
+  "question": "Will no listed leader be out before 2027?",
+  "outcomes": {
+   "Yes": "0.5",
+   "No": "0.5"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.14,
+  "chg_1w": -0.035,
+  "vol_24h": 11806.913208,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Netanyahu out by...?",
+  "question": "Netanyahu out by end of 2026?",
+  "outcomes": {
+   "Yes": "0.475",
+   "No": "0.525"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.09,
+  "chg_1w": 0.02,
+  "vol_24h": 17851.801575999998,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Netanyahu out by...?",
+  "question": "Netanyahu out by March 31, 2027?",
+  "outcomes": {
+   "Yes": "0.595",
+   "No": "0.405"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": 0.06,
+  "chg_1w": 0.035,
+  "vol_24h": 6896.276279999999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Netanyahu out by...?",
+  "question": "Netanyahu out by June 30, 2027?",
+  "outcomes": {
+   "Yes": "0.715",
+   "No": "0.285"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": 0.08,
+  "chg_1w": 0.04,
+  "vol_24h": 11208.860481999998,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Where will the next US-Iran senior diplomatic meeting take place...?",
+  "question": "Will no qualifying US-Iran senior diplomatic meeting take place by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.845",
+   "No": "0.155"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.05,
+  "chg_1w": 0.08,
+  "vol_24h": 10903.264158,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Where will the next US-Iran senior diplomatic meeting take place...?",
+  "question": "Will the next US-Iran senior diplomatic meeting take place in Egypt by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.009",
+   "No": "0.991"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.007,
+  "chg_1w": 0.007,
+  "vol_24h": 2017.077059,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will Russia invade another country by...?",
+  "question": "Will Russia invade another country in 2026?",
+  "outcomes": {
+   "Yes": "0.0255",
+   "No": "0.9745"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": 0.005,
+  "vol_24h": 31700.587745,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Strait of Hormuz traffic returns to normal by...?",
+  "question": "Strait of Hormuz traffic returns to normal by January 31, 2027?",
+  "outcomes": {
+   "Yes": "0.05",
+   "No": "0.95"
+  },
+  "end": "2027-02-01T04:59:00Z",
+  "chg_1d": -0.005,
+  "chg_1w": -0.035,
+  "vol_24h": 6509.8189200000015,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Strait of Hormuz traffic returns to normal by...?",
+  "question": "Strait of Hormuz traffic returns to normal by June 30, 2027?",
+  "outcomes": {
+   "Yes": "0.23",
+   "No": "0.77"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": -0.025,
+  "chg_1w": -0.14,
+  "vol_24h": 15368.161025,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Strait of Hormuz traffic returns to normal by...?",
+  "question": "Strait of Hormuz traffic returns to normal by December 31, 2027?",
+  "outcomes": {
+   "Yes": "0.325",
+   "No": "0.675"
+  },
+  "end": "2028-01-01T04:59:00Z",
+  "chg_1d": -0.02,
+  "chg_1w": -0.27,
+  "vol_24h": 6644.7327319999995,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will Putin meet with Zelenskyy by December 31, 2026?",
+  "question": "Will Putin meet with Zelenskyy by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.0355",
+   "No": "0.9645"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.005,
+  "chg_1w": -0.0005,
+  "vol_24h": 25094.189961000004,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will China invade Taiwan by end of 2026?",
+  "question": "Will China invade Taiwan by end of 2026?",
+  "outcomes": {
+   "Yes": "0.0155",
+   "No": "0.9845"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": null,
+  "vol_24h": 21937.31815200001,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will China invade Taiwan by December 31, 2027?",
+  "question": "Will China invade Taiwan by December 31, 2027?",
+  "outcomes": {
+   "Yes": "0.085",
+   "No": "0.915"
+  },
+  "end": "2028-01-01T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 21442.641607,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Crude Oil all time high by...?",
+  "question": "Will Crude Oil reach a new all-time high by December 31?",
+  "outcomes": {
+   "Yes": "0.0305",
+   "No": "0.9695"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.003,
+  "chg_1w": -0.006,
+  "vol_24h": 15848.740824,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Crude Oil all time high by...?",
+  "question": "Will Crude Oil reach a new all-time high by March 31, 2027?",
+  "outcomes": {
+   "Yes": "0.135",
+   "No": "0.865"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.02,
+  "vol_24h": 4682.352857999999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will the US acquire part of Greenland in 2026?",
+  "question": "Will the US acquire part of Greenland in 2026?",
+  "outcomes": {
+   "Yes": "0.009",
+   "No": "0.991"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0005,
+  "chg_1w": -0.0065,
+  "vol_24h": 18481.296112,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Iran full airspace closure by...?",
+  "question": "Iran full airspace closure by December 31?",
+  "outcomes": {
+   "Yes": "0.135",
+   "No": "0.865"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.01,
+  "chg_1w": -0.07,
+  "vol_24h": 9279.704311,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Iran full airspace closure by...?",
+  "question": "Iran full airspace closure by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.04",
+   "No": "0.96"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.007,
+  "chg_1w": -0.05,
+  "vol_24h": 9772.54634,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Next US-Iran senior diplomatic meeting by...?",
+  "question": "Next US-Iran senior diplomatic meeting by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.145",
+   "No": "0.855"
+  },
+  "end": "2026-12-31T23:59:00Z",
+  "chg_1d": -0.055,
+  "chg_1w": -0.08,
+  "vol_24h": 12151.084579999999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Bab el-Mandeb Strait effectively closed by...?",
+  "question": "Bab el-Mandeb Strait effectively closed by December 31?",
+  "outcomes": {
+   "Yes": "0.06",
+   "No": "0.94"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.005,
+  "chg_1w": -0.005,
+  "vol_24h": 13064.003334,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Bab el-Mandeb Strait effectively closed by...?",
+  "question": "Bab el-Mandeb Strait effectively closed by November 30?",
+  "outcomes": {
+   "Yes": "0.012",
+   "No": "0.988"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": 0.003,
+  "chg_1w": -0.0095,
+  "vol_24h": 2085.872858,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Kharg Island no longer under Iranian control by...?",
+  "question": "Kharg Island no longer under Iranian control by December 31?",
+  "outcomes": {
+   "Yes": "0.0325",
+   "No": "0.9675"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0025,
+  "chg_1w": -0.004,
+  "vol_24h": 13156.965869999998,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Pete Hegseth out as Secretary of Defense by December 31?",
+  "question": "Pete Hegseth out as Secretary of Defense by December 31?",
+  "outcomes": {
+   "Yes": "0.11",
+   "No": "0.89"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.005,
+  "chg_1w": -0.045,
+  "vol_24h": 12151.110298000001,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine energy ceasefire agreement by...?",
+  "question": "Russia x Ukraine energy ceasefire agreement by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.018",
+   "No": "0.982"
+  },
+  "end": "2026-11-30T21:59:00Z",
+  "chg_1d": 0.0095,
+  "chg_1w": -0.0185,
+  "vol_24h": 2985.247273,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine energy ceasefire agreement by...?",
+  "question": "Russia x Ukraine energy ceasefire agreement by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.105",
+   "No": "0.895"
+  },
+  "end": "2026-12-31T21:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.03,
+  "vol_24h": 8651.079339,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US imports Russian diesel by...?",
+  "question": "US imports Russian diesel by March 31?",
+  "outcomes": {
+   "Yes": "0.175",
+   "No": "0.825"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": -0.03,
+  "chg_1w": -0.02,
+  "vol_24h": 7901.271059,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US military draft authorized in 2026?",
+  "question": "US military draft authorized in 2026?",
+  "outcomes": {
+   "Yes": "0.0125",
+   "No": "0.9875"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": -0.004,
+  "vol_24h": 10086.736667,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will the US officially declare war on Iran by...?",
+  "question": "Will the US officially declare war on Iran by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.017",
+   "No": "0.983"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.0015,
+  "chg_1w": 0.001,
+  "vol_24h": 9204.5,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will Russia capture all of Kostyantynivka by...?",
+  "question": "Will Russia capture all of Kostyantynivka by March 31, 2027?",
+  "outcomes": {
+   "Yes": "0.28",
+   "No": "0.72"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": -0.015,
+  "chg_1w": -0.045,
+  "vol_24h": 4703.964042,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will Russia capture all of Kostyantynivka by...?",
+  "question": "Will Russia capture all of Kostyantynivka by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.065",
+   "No": "0.935"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": -0.02,
+  "vol_24h": 3373.2785719999997,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Iran-Oman Hormuz Management Agreement by...?",
+  "question": "Iran-Oman Hormuz Agreement by November 30?",
+  "outcomes": {
+   "Yes": "0.027",
+   "No": "0.973"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": 0.009,
+  "chg_1w": -0.038,
+  "vol_24h": 7554.134599,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia military action against EU country by...?",
+  "question": "Russia military action against an EU country by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.1045",
+   "No": "0.8955"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.008,
+  "chg_1w": 0.068,
+  "vol_24h": 7511.623711,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Houthis capture Taiz by...? (castle)",
+  "question": "Houthis capture Taiz city by November 30?",
+  "outcomes": {
+   "Yes": "0.0355",
+   "No": "0.9645"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.0075,
+  "chg_1w": -0.0495,
+  "vol_24h": 2261.01,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Houthis capture Taiz by...? (castle)",
+  "question": "Houthis capture Taiz city by December 31?",
+  "outcomes": {
+   "Yes": "0.19",
+   "No": "0.81"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.005,
+  "chg_1w": -0.015,
+  "vol_24h": 5382.126192,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will the Iranian regime fall by June 30, 2027?",
+  "question": "Will the Iranian regime fall by June 30, 2027?",
+  "outcomes": {
+   "Yes": "0.115",
+   "No": "0.885"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.01,
+  "vol_24h": 6769.082392999999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "EU country expels a Russian diplomat by...?",
+  "question": "EU country expels a Russian diplomat by December 15, 2026?",
+  "outcomes": {
+   "Yes": "0.525",
+   "No": "0.475"
+  },
+  "end": "2026-12-16T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 4290.625955,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Strait of Hormuz traffic returns to normal by November 30?",
+  "question": "Strait of Hormuz traffic returns to normal by November 30?",
+  "outcomes": {
+   "Yes": "0.0025",
+   "No": "0.9975"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.002,
+  "chg_1w": -0.0095,
+  "vol_24h": 5615.58,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Miguel D\u00edaz-Canel out as leader of Cuba by...?",
+  "question": "Miguel D\u00edaz-Canel out as leader of Cuba by December 31?",
+  "outcomes": {
+   "Yes": "0.043",
+   "No": "0.957"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.034,
+  "chg_1w": 0.0085,
+  "vol_24h": 6148.845566999999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will Iran damage undersea internet cables by...?",
+  "question": "Will Iran sabotage undersea internet cables by December 31?",
+  "outcomes": {
+   "Yes": "0.085",
+   "No": "0.915"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.02,
+  "chg_1w": null,
+  "vol_24h": 5762.599999999999,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Zelenskyy out as Ukraine president by end of 2026?",
+  "question": "Zelenskyy out as Ukraine president by end of 2026?",
+  "outcomes": {
+   "Yes": "0.0245",
+   "No": "0.9755"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.0015,
+  "vol_24h": 5702.243089000001,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will Zelenskyy talk to Putin by...?",
+  "question": "Will Zelenskyy talk to Putin by December 31?",
+  "outcomes": {
+   "Yes": "0.045",
+   "No": "0.955"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.01,
+  "chg_1w": -0.01,
+  "vol_24h": 5671.7,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US obtains Iranian enriched uranium by...?",
+  "question": "US obtains Iranian enriched uranium by December 31?",
+  "outcomes": {
+   "Yes": "0.0245",
+   "No": "0.9755"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0025,
+  "chg_1w": 0.0015,
+  "vol_24h": 5214.745714,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Kim Jong Un out as Supreme Leader of North Korea by December 31, 2026?",
+  "question": "Kim Jong Un out as Supreme Leader of North Korea by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.011",
+   "No": "0.989"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.002,
+  "chg_1w": -0.011,
+  "vol_24h": 5192.2512719999995,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Peak daily ship traffic through the Strait of Hormuz week of November 23?",
+  "question": "Will 7+ ships transit the Strait of Hormuz on any day week of November 23?",
+  "outcomes": {
+   "Yes": "0.235",
+   "No": "0.765"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": -0.06,
+  "chg_1w": null,
+  "vol_24h": 2374.292939,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "China x Philippines military clash before 2027?",
+  "question": "China x Philippines military clash before 2027?",
+  "outcomes": {
+   "Yes": "0.075",
+   "No": "0.925"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": -0.03,
+  "vol_24h": 4691.461975,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "How many US aircraft carriers in CENTCOM on November 30?",
+  "question": "Will there be 2 US aircraft carriers in CENTCOM on November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.96",
+   "No": "0.04"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": 0.003,
+  "chg_1w": 0.685,
+  "vol_24h": 2527.010531,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will Trump and Xi hug before 2028?",
+  "question": "Will Trump and Xi hug before 2028?",
+  "outcomes": {
+   "Yes": "0.3",
+   "No": "0.7"
+  },
+  "end": "2028-01-01T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 4059.62963,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will the Iranian regime fall before 2028?",
+  "question": "Will the Iranian regime fall before 2028?",
+  "outcomes": {
+   "Yes": "0.175",
+   "No": "0.825"
+  },
+  "end": "2028-01-01T04:59:00Z",
+  "chg_1d": -0.03,
+  "chg_1w": 0.01,
+  "vol_24h": 3955.201152,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Who will Trump meet with in 2026?",
+  "question": "Will Trump meet with Mohammed bin Salman in 2026?",
+  "outcomes": {
+   "Yes": "0.9465",
+   "No": "0.0535"
+  },
+  "end": "2027-01-02T04:59:00Z",
+  "chg_1d": -0.007,
+  "chg_1w": 0.1015,
+  "vol_24h": 3258.691455,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "FAA outage attributed to Iran?",
+  "question": "FAA outage attributed to Iran?",
+  "outcomes": {
+   "Yes": "0.0125",
+   "No": "0.9875"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": 0.002,
+  "vol_24h": 3571.306667,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US military action against Cuba by...?",
+  "question": "US strike on Cuba by December 31?",
+  "outcomes": {
+   "Yes": "0.065",
+   "No": "0.935"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.03,
+  "vol_24h": 3389.99,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Cuban regime falls by...?",
+  "question": "Cuban regime falls by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.0375",
+   "No": "0.9625"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.006,
+  "chg_1w": 0.011,
+  "vol_24h": 2209.897412,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will Ukraine recapture Crimean territory by...?",
+  "question": "Will Ukraine recapture Crimean territory by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.0135",
+   "No": "0.9865"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.005,
+  "vol_24h": 2535.8924399999996,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "IAEA visits Isfahan, Fordow, or Natanz nuclear site by...?",
+  "question": "IAEA visits Isfahan, Fordow, or Natanz nuclear site by December 31?",
+  "outcomes": {
+   "Yes": "0.055",
+   "No": "0.945"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.02,
+  "chg_1w": null,
+  "vol_24h": 3032.026871,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will Russia capture Dobropillia by...?",
+  "question": "Will Russia capture Dobropillia by March 31, 2027?",
+  "outcomes": {
+   "Yes": "0.25",
+   "No": "0.75"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": -0.01,
+  "chg_1w": -0.125,
+  "vol_24h": 2898.3427039999997,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Masoud Pezeshkian out by...?",
+  "question": "Masoud Pezeshkian out by December 31?",
+  "outcomes": {
+   "Yes": "0.0305",
+   "No": "0.9695"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.0045,
+  "chg_1w": -0.0345,
+  "vol_24h": 2966.87,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Canada admitted to the EU before 2029?",
+  "question": "Canada admitted to the EU before 2029?",
+  "outcomes": {
+   "Yes": "0.075",
+   "No": "0.925"
+  },
+  "end": "2029-01-01T04:59:00Z",
+  "chg_1d": -0.11,
+  "chg_1w": -0.095,
+  "vol_24h": 2843.1121470000003,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will Iran target Iraq by...?",
+  "question": "Will Iran target Iraq by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.94",
+   "No": "0.06"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": 0.53,
+  "chg_1w": null,
+  "vol_24h": 2339.03814,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Which countries will join the Mecca Agreement by December 31, 2027?",
+  "question": "Will Syria join the Mecca Agreement by December 31, 2027?",
+  "outcomes": {
+   "Yes": "0.195",
+   "No": "0.805"
+  },
+  "end": "2028-01-01T04:59:00Z",
+  "chg_1d": 0.035,
+  "chg_1w": 0.01,
+  "vol_24h": 2760.2320780000005,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Perim Island no longer under Houthi control by...?",
+  "question": "Perim Island no longer under Houthi control by November 30?",
+  "outcomes": {
+   "Yes": "0.01",
+   "No": "0.99"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.0045,
+  "chg_1w": -0.0255,
+  "vol_24h": 2161.595715,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Next Russia-Ukraine senior diplomatic meeting by...?",
+  "question": "Next Russia-Ukraine senior diplomatic meeting by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.58",
+   "No": "0.42"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.055,
+  "chg_1w": -0.045,
+  "vol_24h": 2388.708189,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Will Putin meet with Zelenskyy by...?",
+  "question": "Will Putin meet with Zelenskyy by March 31, 2027?",
+  "outcomes": {
+   "Yes": "0.115",
+   "No": "0.885"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": 0.04,
+  "chg_1w": 0.025,
+  "vol_24h": 2359.475557,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Pakistan military action against Yemen by...?",
+  "question": "Pakistan military action against Yemen by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.11",
+   "No": "0.89"
+  },
+  "end": "2026-12-31T20:59:00Z",
+  "chg_1d": -0.01,
+  "chg_1w": -0.015,
+  "vol_24h": 2317.743207,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "US strike on Mexico by...?",
+  "question": "US strike on Mexico by December 31?",
+  "outcomes": {
+   "Yes": "0.022",
+   "No": "0.978"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0025,
+  "chg_1w": -0.0025,
+  "vol_24h": 2307.671917,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Russia x Ukraine Peace Combo",
+  "question": "Russia x Ukraine Peace Combo",
+  "outcomes": {
+   "Yes": "0.0215",
+   "No": "0.9785"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.0005,
+  "chg_1w": 0.004,
+  "vol_24h": 2254.54,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "UNSC Resolution Endorsing Final U.S.-Iran Deal by December 31?",
+  "question": "UNSC Resolution Endorsing Final U.S.-Iran Deal by December 31?",
+  "outcomes": {
+   "Yes": "0.0395",
+   "No": "0.9605"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.003,
+  "chg_1w": -0.011,
+  "vol_24h": 2125.214524,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Ukraine joins NATO before 2027?",
+  "question": "Ukraine joins NATO before 2027?",
+  "outcomes": {
+   "Yes": "0.013",
+   "No": "0.987"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.004,
+  "chg_1w": 0.003,
+  "vol_24h": 2003.018,
+  "tag": "geopolitics"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Marine Le Pen win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.4585",
+   "No": "0.5415"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": 0.002,
+  "chg_1w": -0.038,
+  "vol_24h": 72943.13101,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Jordan Bardella win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0155",
+   "No": "0.9845"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": null,
+  "vol_24h": 19124.259922,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will \u00c9ric Zemmour win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": -0.002,
+  "vol_24h": 28756.661334,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will \u00c9douard Philippe win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.04",
+   "No": "0.96"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": 0.0005,
+  "chg_1w": -0.005,
+  "vol_24h": 37937.365213,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will David Lisnard win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.244",
+   "No": "0.756"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": 0.0075,
+  "chg_1w": 0.0655,
+  "vol_24h": 184016.239379,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Xavier Bertrand win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 30509.82,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Fran\u00e7ois Ruffin win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 5000,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Gabriel Attal win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0045",
+   "No": "0.9955"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.001,
+  "vol_24h": 34485.3005,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Bruno Retailleau win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0035",
+   "No": "0.9965"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": null,
+  "vol_24h": 95350.077333,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Fran\u00e7ois Hollande win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0375",
+   "No": "0.9625"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": 0.015,
+  "vol_24h": 36798.854612,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Rapha\u00ebl Glucksmann win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0115",
+   "No": "0.9885"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": -0.007,
+  "vol_24h": 34504.726548,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Jean-Luc M\u00e9lenchon win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.145",
+   "No": "0.855"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.01,
+  "vol_24h": 61815.40437599999,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Dominique de Villepin win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0135",
+   "No": "0.9865"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": -0.01,
+  "chg_1w": 0.005,
+  "vol_24h": 61772.989775999995,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will S\u00e9gol\u00e8ne Royal win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 5050,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Nicolas Dupont-Aignan win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 5050,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Fran\u00e7ois Bayrou win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 5050,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will G\u00e9rald Darmanin win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 100050,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Bernard Cazeneuve win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.001,
+  "vol_24h": 11000,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Sarah Knafo win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.001,
+  "vol_24h": 9013.383,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will S\u00e9bastien Lecornu win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 10000,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Christine Lagarde win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0405",
+   "No": "0.9595"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": -0.019,
+  "vol_24h": 29406.313580000002,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Natacha Polony win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 3050,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Anasse Kazib win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 3050,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Sylvain Durif win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 25550,
+  "tag": "world"
+ },
+ {
+  "event": "Next French Presidential Election",
+  "question": "Will Teddy Riner win the 2027 French presidential election?",
+  "outcomes": {
+   "Yes": "0.0055",
+   "No": "0.9945"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": -0.013,
+  "vol_24h": 29773.43,
+  "tag": "world"
+ },
+ {
+  "event": "Next Prime Minister of Sweden",
+  "question": "Will Ulf Kristersson be the next Prime Minister of Sweden?",
+  "outcomes": {
+   "Yes": "0.699",
+   "No": "0.301"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": 0.0405,
+  "chg_1w": 0.3645,
+  "vol_24h": 77937.762746,
+  "tag": "world"
+ },
+ {
+  "event": "Next Prime Minister of Sweden",
+  "question": "Will Magdalena Andersson be the next Prime Minister of Sweden?",
+  "outcomes": {
+   "Yes": "0.27",
+   "No": "0.73"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": -0.055,
+  "chg_1w": -0.345,
+  "vol_24h": 78317.533352,
+  "tag": "world"
+ },
+ {
+  "event": "Next Prime Minister of Sweden",
+  "question": "Will Jimmie \u00c5kesson be the next Prime Minister of Sweden?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.001,
+  "vol_24h": 12871.147,
+  "tag": "world"
+ },
+ {
+  "event": "Next Prime Minister of Sweden",
+  "question": "Will Ebba Busch be the next Prime Minister of Sweden?",
+  "outcomes": {
+   "Yes": "0.008",
+   "No": "0.992"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": 0.0045,
+  "chg_1w": 0.0005,
+  "vol_24h": 10075.595331,
+  "tag": "world"
+ },
+ {
+  "event": "Next Prime Minister of Sweden",
+  "question": "Will Elisabeth Thand Ringqvist be the next Prime Minister of Sweden?",
+  "outcomes": {
+   "Yes": "0.002",
+   "No": "0.998"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": 0.0005,
+  "chg_1w": null,
+  "vol_24h": 6342.327668000001,
+  "tag": "world"
+ },
+ {
+  "event": "Spain General Election Winner",
+  "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+  "outcomes": {
+   "Yes": "0.255",
+   "No": "0.745"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": 0.01,
+  "vol_24h": 28549.476995999994,
+  "tag": "world"
+ },
+ {
+  "event": "Spain General Election Winner",
+  "question": "Will PP win the most seats in the 2026 Spanish general election?",
+  "outcomes": {
+   "Yes": "0.745",
+   "No": "0.255"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": -0.01,
+  "chg_1w": -0.01,
+  "vol_24h": 36076.082191999994,
+  "tag": "world"
+ },
+ {
+  "event": "Spain General Election Winner",
+  "question": "Will Vox win the most seats in the 2026 Spanish general election?",
+  "outcomes": {
+   "Yes": "0.0035",
+   "No": "0.9965"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": -0.0035,
+  "vol_24h": 3422.5,
+  "tag": "world"
+ },
+ {
+  "event": "Miss Universe 2026 Winner?",
+  "question": "Will Chile win Miss Universe 2026?",
+  "outcomes": {
+   "Yes": "0.063",
+   "No": "0.937"
+  },
+  "end": "2026-11-25T04:59:00Z",
+  "chg_1d": 0.036,
+  "chg_1w": -0.012,
+  "vol_24h": 3525.4438170000003,
+  "tag": "world"
+ },
+ {
+  "event": "Miss Universe 2026 Winner?",
+  "question": "Will Cuba win Miss Universe 2026?",
+  "outcomes": {
+   "Yes": "0.0235",
+   "No": "0.9765"
+  },
+  "end": "2026-11-25T04:59:00Z",
+  "chg_1d": -0.055,
+  "chg_1w": -0.0415,
+  "vol_24h": 2345.549903,
+  "tag": "world"
+ },
+ {
+  "event": "Miss Universe 2026 Winner?",
+  "question": "Will the Dominican Republic win Miss Universe 2026?",
+  "outcomes": {
+   "Yes": "0.0055",
+   "No": "0.9945"
+  },
+  "end": "2026-11-25T04:59:00Z",
+  "chg_1d": -0.0205,
+  "chg_1w": -0.0215,
+  "vol_24h": 2922.1424540000003,
+  "tag": "world"
+ },
+ {
+  "event": "Miss Universe 2026 Winner?",
+  "question": "Will France win Miss Universe 2026?",
+  "outcomes": {
+   "Yes": "0.0975",
+   "No": "0.9025"
+  },
+  "end": "2026-11-25T04:59:00Z",
+  "chg_1d": 0.0145,
+  "chg_1w": 0.017,
+  "vol_24h": 6559.807094000001,
+  "tag": "world"
+ },
+ {
+  "event": "Miss Universe 2026 Winner?",
+  "question": "Will the Philippines win Miss Universe 2026?",
+  "outcomes": {
+   "Yes": "0.085",
+   "No": "0.915"
+  },
+  "end": "2026-11-25T04:59:00Z",
+  "chg_1d": -0.015,
+  "chg_1w": -0.095,
+  "vol_24h": 3566.7904069999995,
+  "tag": "world"
+ },
+ {
+  "event": "Miss Universe 2026 Winner?",
+  "question": "Will Puerto Rico win Miss Universe 2026?",
+  "outcomes": {
+   "Yes": "0.15",
+   "No": "0.85"
+  },
+  "end": "2026-11-25T04:59:00Z",
+  "chg_1d": -0.07,
+  "chg_1w": 0.015,
+  "vol_24h": 6108.847475,
+  "tag": "world"
+ },
+ {
+  "event": "Miss Universe 2026 Winner?",
+  "question": "Will Venezuela win Miss Universe 2026?",
+  "outcomes": {
+   "Yes": "0.5445",
+   "No": "0.4555"
+  },
+  "end": "2026-11-25T04:59:00Z",
+  "chg_1d": 0.206,
+  "chg_1w": 0.366,
+  "vol_24h": 13047.246928999997,
+  "tag": "world"
+ },
+ {
+  "event": "Next Israeli government formed by...?",
+  "question": "Next Israeli government formed by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.116",
+   "No": "0.884"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": 0.0735,
+  "chg_1w": 0.0355,
+  "vol_24h": 29571.509961,
+  "tag": "world"
+ },
+ {
+  "event": "Next Israeli government formed by...?",
+  "question": "Next Israeli government formed by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.505",
+   "No": "0.495"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": 0.14,
+  "chg_1w": 0.085,
+  "vol_24h": 8563.419178999999,
+  "tag": "world"
+ },
+ {
+  "event": "Next Israeli government formed by...?",
+  "question": "Next Israeli government formed by February 28, 2027?",
+  "outcomes": {
+   "Yes": "0.595",
+   "No": "0.405"
+  },
+  "end": "2027-03-01T04:59:00Z",
+  "chg_1d": 0.02,
+  "chg_1w": -0.07,
+  "vol_24h": 2818.86807,
+  "tag": "world"
+ },
+ {
+  "event": "Next Israeli government formed by...?",
+  "question": "Next Israeli government formed by June 30, 2027?",
+  "outcomes": {
+   "Yes": "0.725",
+   "No": "0.275"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": 0.09,
+  "chg_1w": 0.035,
+  "vol_24h": 2490.21312,
+  "tag": "world"
+ },
+ {
+  "event": "Spain General Election: Santa Cruz de Tenerife Winner",
+  "question": "Will PP win the most seats in Santa Cruz de Tenerife in the 2026 Spanish general election?",
+  "outcomes": {
+   "Yes": "0.31",
+   "No": "0.69"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": 0.06,
+  "chg_1w": -0.17,
+  "vol_24h": 10201.292447,
+  "tag": "world"
+ },
+ {
+  "event": "Spain General Election: Santa Cruz de Tenerife Winner",
+  "question": "Will PSOE win the most seats in Santa Cruz de Tenerife in the 2026 Spanish general election?",
+  "outcomes": {
+   "Yes": "0.655",
+   "No": "0.345"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": -0.105,
+  "chg_1w": 0.18,
+  "vol_24h": 4798.583226999999,
+  "tag": "world"
+ },
+ {
+  "event": "Spain General Election: Santa Cruz de Tenerife Winner",
+  "question": "Will Vox win the most seats in Santa Cruz de Tenerife in the 2026 Spanish general election?",
+  "outcomes": {
+   "Yes": "0.0025",
+   "No": "0.9975"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": -0.0025,
+  "vol_24h": 5884.389,
+  "tag": "world"
+ },
+ {
+  "event": "World Happiness Report 2027: last country",
+  "question": "Will Afghanistan be last in the World Happiness Report 2027?",
+  "outcomes": {
+   "Yes": "0.865",
+   "No": "0.135"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 5424.006435,
+  "tag": "world"
+ },
+ {
+  "event": "World Happiness Report 2027: last country",
+  "question": "Will Sierra Leone be last in the World Happiness Report 2027?",
+  "outcomes": {
+   "Yes": "0.091",
+   "No": "0.909"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 2382.0550000000003,
+  "tag": "world"
+ },
+ {
+  "event": "Reserve Bank of Australia Decision in December",
+  "question": "Reserve Bank of Australia decreases interest rates by 25 bps at the December 2026 meeting?",
+  "outcomes": {
+   "Yes": "0.0045",
+   "No": "0.9955"
+  },
+  "end": "2026-12-08T23:59:00Z",
+  "chg_1d": 0.003,
+  "chg_1w": 0.0025,
+  "vol_24h": 3366.7219999999998,
+  "tag": "world"
+ },
+ {
+  "event": "Reserve Bank of Australia Decision in December",
+  "question": "No change in Reserve Bank of Australia's interest rates at the December 2026 meeting?",
+  "outcomes": {
+   "Yes": "0.906",
+   "No": "0.094"
+  },
+  "end": "2026-12-08T23:59:00Z",
+  "chg_1d": -0.0665,
+  "chg_1w": -0.0345,
+  "vol_24h": 2580.454399,
+  "tag": "world"
+ },
+ {
+  "event": "French presidential odds leader on December 31?",
+  "question": "Marine Le Pen French presidential odds leader on December 31?",
+  "outcomes": {
+   "Yes": "0.9575",
+   "No": "0.0425"
+  },
+  "end": "2026-12-31T17:00:00Z",
+  "chg_1d": -0.008,
+  "chg_1w": 0.0225,
+  "vol_24h": 2530.697318,
+  "tag": "world"
+ },
+ {
+  "event": "France declares state of emergency by...?",
+  "question": "France declares state of emergency by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.0215",
+   "No": "0.9785"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0035,
+  "chg_1w": -0.0115,
+  "vol_24h": 4703.365385,
+  "tag": "world"
+ },
+ {
+  "event": "Bank of Korea decision in November?",
+  "question": "Will the Bank of Korea hike by 25 bps at the November 2026 meeting?",
+  "outcomes": {
+   "Yes": "0.9875",
+   "No": "0.0125"
+  },
+  "end": "2026-11-26T00:00:00Z",
+  "chg_1d": 0.0055,
+  "chg_1w": null,
+  "vol_24h": 2332.558016,
+  "tag": "world"
+ },
+ {
+  "event": "Brazil presidential election annulled?",
+  "question": "Brazil presidential election annulled by December 31?",
+  "outcomes": {
+   "Yes": "0.0175",
+   "No": "0.9825"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0045,
+  "chg_1w": -0.0005,
+  "vol_24h": 3916.92,
+  "tag": "world"
+ },
+ {
+  "event": "US rank in World Happiness Report 2027",
+  "question": "Will the US rank 19th or higher in the World Happiness Report 2027?",
+  "outcomes": {
+   "Yes": "0.67",
+   "No": "0.33"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": -0.025,
+  "chg_1w": 0.175,
+  "vol_24h": 3195.1049999999996,
+  "tag": "world"
+ },
+ {
+  "event": "France defaults on debt by December 31, 2027?",
+  "question": "France defaults on debt by December 31, 2027?",
+  "outcomes": {
+   "Yes": "0.0555",
+   "No": "0.9445"
+  },
+  "end": "2028-01-01T04:59:00Z",
+  "chg_1d": -0.0155,
+  "chg_1w": -0.0155,
+  "vol_24h": 3184.4539120000004,
+  "tag": "world"
+ },
+ {
+  "event": "Spain General Election: PP + Vox Majority?",
+  "question": "Spain General Election: PP + Vox Majority?",
+  "outcomes": {
+   "Yes": "0.865",
+   "No": "0.135"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": -0.01,
+  "vol_24h": 3116.7565369999998,
+  "tag": "world"
+ },
+ {
+  "event": "Spain General Election: Elected Senate Winner",
+  "question": "Will PP win the most seats in the Senate in the 2026 Spanish general election?",
+  "outcomes": {
+   "Yes": "0.911",
+   "No": "0.089"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": -0.044,
+  "chg_1w": -0.029,
+  "vol_24h": 2162.195803,
+  "tag": "world"
+ },
+ {
+  "event": "New pandemic in 2026?",
+  "question": "New pandemic in 2026?",
+  "outcomes": {
+   "Yes": "0.016",
+   "No": "0.984"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.0015,
+  "chg_1w": -0.0005,
+  "vol_24h": 2176.00353,
+  "tag": "world"
+ },
+ {
+  "event": "Republican Presidential Nominee 2028",
+  "question": "Will Donald Trump win the 2028 Republican presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0045",
+   "No": "0.9955"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.001,
+  "vol_24h": 17372.97225,
+  "tag": "politics"
+ },
+ {
+  "event": "Republican Presidential Nominee 2028",
+  "question": "Will J.D. Vance win the 2028 Republican presidential nomination?",
+  "outcomes": {
+   "Yes": "0.3415",
+   "No": "0.6585"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": -0.03,
+  "vol_24h": 15913.008063,
+  "tag": "politics"
+ },
+ {
+  "event": "Republican Presidential Nominee 2028",
+  "question": "Will Marco Rubio win the 2028 Republican presidential nomination?",
+  "outcomes": {
+   "Yes": "0.1895",
+   "No": "0.8105"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": 0.024,
+  "vol_24h": 9500.594808,
+  "tag": "politics"
+ },
+ {
+  "event": "Republican Presidential Nominee 2028",
+  "question": "Will Donald Trump Jr. win the 2028 Republican presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0095",
+   "No": "0.9905"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.001,
+  "vol_24h": 4834.466555,
+  "tag": "politics"
+ },
+ {
+  "event": "Republican Presidential Nominee 2028",
+  "question": "Will Ron DeSantis win the 2028 Republican presidential nomination?",
+  "outcomes": {
+   "Yes": "0.147",
+   "No": "0.853"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": -0.0055,
+  "chg_1w": -0.0005,
+  "vol_24h": 32679.690001000003,
+  "tag": "politics"
+ },
+ {
+  "event": "Republican Presidential Nominee 2028",
+  "question": "Will Vivek Ramaswamy win the 2028 Republican presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": null,
+  "vol_24h": 147401.04,
+  "tag": "politics"
+ },
+ {
+  "event": "Republican Presidential Nominee 2028",
+  "question": "Will Matt Gaetz win the 2028 Republican presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.001,
+  "vol_24h": 2931.715,
+  "tag": "politics"
+ },
+ {
+  "event": "Republican Presidential Nominee 2028",
+  "question": "Will Kristi Noem win the 2028 Republican presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 12859.794,
+  "tag": "politics"
+ },
+ {
+  "event": "Republican Presidential Nominee 2028",
+  "question": "Will Rand Paul win the 2028 Republican presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0035",
+   "No": "0.9965"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.002,
+  "vol_24h": 8255.11,
+  "tag": "politics"
+ },
+ {
+  "event": "Republican Presidential Nominee 2028",
+  "question": "Will Steve Bannon win the 2028 Republican presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 5786.5960000000005,
+  "tag": "politics"
+ },
+ {
+  "event": "Republican Presidential Nominee 2028",
+  "question": "Will Tom Cotton win the 2028 Republican presidential nomination?",
+  "outcomes": {
+   "Yes": "0.004",
+   "No": "0.996"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": -0.0005,
+  "chg_1w": -0.0015,
+  "vol_24h": 50559.13,
+  "tag": "politics"
+ },
+ {
+  "event": "Taipei Mayor Election Winner",
+  "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+  "outcomes": {
+   "Yes": "0.635",
+   "No": "0.365"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": -0.05,
+  "chg_1w": 0.04,
+  "vol_24h": 178841.100364,
+  "tag": "politics"
+ },
+ {
+  "event": "Taipei Mayor Election Winner",
+  "question": "Will Puma Shen win the next Taipei Mayor election?",
+  "outcomes": {
+   "Yes": "0.3655",
+   "No": "0.6345"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": 0.052,
+  "chg_1w": -0.046,
+  "vol_24h": 141941.790888,
+  "tag": "politics"
+ },
+ {
+  "event": "Taipei Mayor Election Winner",
+  "question": "Will Kuo Hsi win the next Taipei Mayor election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 2000,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Gavin Newsom win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0975",
+   "No": "0.9025"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": -0.005,
+  "vol_24h": 11473.407733,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Alexandria Ocasio-Cortez win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.1785",
+   "No": "0.8215"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": 0.014,
+  "chg_1w": 0.033,
+  "vol_24h": 42259.469044000005,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Pete Buttigieg win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0555",
+   "No": "0.9445"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": 0.004,
+  "vol_24h": 63416.80403599999,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Josh Shapiro win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0545",
+   "No": "0.9455"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": -0.007,
+  "chg_1w": 0.003,
+  "vol_24h": 4863.693077,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Wes Moore win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0215",
+   "No": "0.9785"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": 0.002,
+  "chg_1w": 0.0015,
+  "vol_24h": 8457.890788,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Stephen A. Smith win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 3094.734,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Kamala Harris win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0465",
+   "No": "0.9535"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.001,
+  "vol_24h": 3170.301492,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Andy Beshear win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0355",
+   "No": "0.9645"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": -0.003,
+  "chg_1w": -0.0035,
+  "vol_24h": 5029.046722,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Jon Ossoff win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.2195",
+   "No": "0.7805"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": -0.002,
+  "chg_1w": -0.046,
+  "vol_24h": 10500.421792000001,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Mark Cuban win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0025",
+   "No": "0.9975"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 12505.21,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Zohran Mamdani win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 9295.209,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Jared Polis win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 3144.8289999999997,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Hillary Clinton win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.001,
+  "vol_24h": 3086.459,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 10627.11,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Oprah Winfrey win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.001,
+  "vol_24h": 7933.667,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Chris Murphy win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0025",
+   "No": "0.9975"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 5052.697001,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Ro Khanna win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0125",
+   "No": "0.9875"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.01,
+  "vol_24h": 5700.337884,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will James Talarico win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.014",
+   "No": "0.986"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": -0.0015,
+  "chg_1w": -0.0025,
+  "vol_24h": 3446.7433340000002,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Hakeem Jeffries win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 3640.8269999999998,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic Presidential Nominee 2028",
+  "question": "Will Chris Van Hollen win the 2028 Democratic presidential nomination?",
+  "outcomes": {
+   "Yes": "0.0085",
+   "No": "0.9915"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": null,
+  "vol_24h": 7980.59,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will JD Vance win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.1305",
+   "No": "0.8695"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.024,
+  "vol_24h": 2531.126988,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Gavin Newsom win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0655",
+   "No": "0.9345"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.008,
+  "vol_24h": 2730.785457,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Alexandria Ocasio-Cortez win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.1065",
+   "No": "0.8935"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": 0.003,
+  "chg_1w": 0.013,
+  "vol_24h": 35161.35481600001,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Pete Buttigieg win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0325",
+   "No": "0.9675"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": 0.004,
+  "vol_24h": 12390.043334000002,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Kamala Harris win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0285",
+   "No": "0.9715"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.002,
+  "vol_24h": 4705.321614000001,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Tulsi Gabbard win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 20164.162,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Donald Trump Jr. win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.004",
+   "No": "0.996"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.0005,
+  "vol_24h": 2292.08,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Nikki Haley win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 3307.293,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Ron DeSantis win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0445",
+   "No": "0.9555"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": -0.013,
+  "chg_1w": -0.021,
+  "vol_24h": 31689.922604,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Dwayne 'The Rock' Johnson win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.013",
+   "No": "0.987"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": -0.0005,
+  "chg_1w": -0.0005,
+  "vol_24h": 3000,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Tucker Carlson win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0155",
+   "No": "0.9845"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.002,
+  "vol_24h": 3301.608333,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Ivanka Trump win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0055",
+   "No": "0.9945"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 13841.182134,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Zohran Mamdani win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": 0.0005,
+  "chg_1w": 0.001,
+  "vol_24h": 7086,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Ro Khanna win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0095",
+   "No": "0.9905"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 2622.454,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Jon Ossoff win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.1645",
+   "No": "0.8355"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": -0.005,
+  "chg_1w": -0.017,
+  "vol_24h": 3366.1720809999993,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Elissa Slotkin win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0015",
+   "No": "0.9985"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 8024.643999999999,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Josh Stein win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0005",
+   "No": "0.9995"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 28350,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Raphael Warnock win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0205",
+   "No": "0.9795"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.0045,
+  "vol_24h": 5040.6,
+  "tag": "politics"
+ },
+ {
+  "event": "Presidential Election Winner 2028",
+  "question": "Will Ted Cruz win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.0065",
+   "No": "0.9935"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 4285.714286,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Prime Minister of Spain?",
+  "question": "Will Pedro S\u00e1nchez be the next Prime Minister of Spain?",
+  "outcomes": {
+   "Yes": "0.1165",
+   "No": "0.8835"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": 0.004,
+  "chg_1w": -0.024,
+  "vol_24h": 98579.02851400003,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Prime Minister of Spain?",
+  "question": "Will Alberto N\u00fa\u00f1ez Feij\u00f3o be the next Prime Minister of Spain?",
+  "outcomes": {
+   "Yes": "0.885",
+   "No": "0.115"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.03,
+  "vol_24h": 42990.765163,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Prime Minister of Spain?",
+  "question": "Will Santiago Abascal be the next Prime Minister of Spain?",
+  "outcomes": {
+   "Yes": "0.0025",
+   "No": "0.9975"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": -0.002,
+  "chg_1w": -0.014,
+  "vol_24h": 24834.677697000003,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Prime Minister of Spain?",
+  "question": "Will Carlos Cuerpo be the next Prime Minister of Spain?",
+  "outcomes": {
+   "Yes": "0.0025",
+   "No": "0.9975"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": -0.001,
+  "chg_1w": 0.002,
+  "vol_24h": 27503.165359000002,
+  "tag": "politics"
+ },
+ {
+  "event": "Will the US confirm that aliens exist by...?",
+  "question": "Will the US confirm that aliens exist before 2027?",
+  "outcomes": {
+   "Yes": "0.016",
+   "No": "0.984"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0005,
+  "chg_1w": -0.0005,
+  "vol_24h": 121986.66190100003,
+  "tag": "politics"
+ },
+ {
+  "event": "Which party wins 2028 US Presidential Election?",
+  "question": "Will the Democrats win the 2028 US Presidential Election?",
+  "outcomes": {
+   "Yes": "0.675",
+   "No": "0.325"
+  },
+  "end": "2028-11-08T04:59:00Z",
+  "chg_1d": 0.03,
+  "chg_1w": 0.01,
+  "vol_24h": 55993.83210400001,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Press Secretary announced by...?",
+  "question": "Next White House Press Secretary announced by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.655",
+   "No": "0.345"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.08,
+  "chg_1w": 0.05,
+  "vol_24h": 48961.510882,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Press Secretary announced by...?",
+  "question": "Next White House Press Secretary announced by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.14",
+   "No": "0.86"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": 0.015,
+  "chg_1w": -0.045,
+  "vol_24h": 5542.307566000001,
+  "tag": "politics"
+ },
+ {
+  "event": "New Taipei Mayor Election Winner",
+  "question": "Will Lee Shu-chuan win the next New Taipei Mayor election?",
+  "outcomes": {
+   "Yes": "0.415",
+   "No": "0.585"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": -0.055,
+  "chg_1w": 0.01,
+  "vol_24h": 22846.807031,
+  "tag": "politics"
+ },
+ {
+  "event": "New Taipei Mayor Election Winner",
+  "question": "Will Su Chiao-hui win the next New Taipei Mayor election?",
+  "outcomes": {
+   "Yes": "0.585",
+   "No": "0.415"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": 0.05,
+  "chg_1w": -0.02,
+  "vol_24h": 25021.24757,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic nomination odds leader on December 31?",
+  "question": "Jon Ossoff Democratic nomination odds leader on December 31?",
+  "outcomes": {
+   "Yes": "0.62",
+   "No": "0.38"
+  },
+  "end": "2026-12-31T17:00:00Z",
+  "chg_1d": -0.315,
+  "chg_1w": -0.215,
+  "vol_24h": 41285.203267000004,
+  "tag": "politics"
+ },
+ {
+  "event": "Who will leave Trump Administration before 2027?",
+  "question": "Will Pete Hegseth leave the Trump administration before 2027?",
+  "outcomes": {
+   "Yes": "0.115",
+   "No": "0.885"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.03,
+  "vol_24h": 3147.386271,
+  "tag": "politics"
+ },
+ {
+  "event": "Who will leave Trump Administration before 2027?",
+  "question": "Will Marco Rubio leave the Trump administration before 2027?",
+  "outcomes": {
+   "Yes": "0.105",
+   "No": "0.895"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.03,
+  "chg_1w": 0.03,
+  "vol_24h": 22838.810238000005,
+  "tag": "politics"
+ },
+ {
+  "event": "Who will leave Trump Administration before 2027?",
+  "question": "Will Howard Lutnick leave the Trump administration before 2027?",
+  "outcomes": {
+   "Yes": "0.105",
+   "No": "0.895"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": -0.095,
+  "vol_24h": 4183.749868999999,
+  "tag": "politics"
+ },
+ {
+  "event": "Who will leave Trump Administration before 2027?",
+  "question": "Will Kash Patel leave the Trump administration before 2027?",
+  "outcomes": {
+   "Yes": "0.09",
+   "No": "0.91"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.035,
+  "chg_1w": -0.02,
+  "vol_24h": 2930.3712020000003,
+  "tag": "politics"
+ },
+ {
+  "event": "Will a turkey audibly gobble during the Thanksgiving Turkey Pardon?",
+  "question": "Will a turkey audibly gobble during the Thanksgiving Turkey Pardon on November 24?",
+  "outcomes": {
+   "Yes": "0.8245",
+   "No": "0.1755"
+  },
+  "end": "2026-11-25T04:59:00Z",
+  "chg_1d": -0.0605,
+  "chg_1w": null,
+  "vol_24h": 33395.369696,
+  "tag": "politics"
+ },
+ {
+  "event": "Jensen Huang publicly testifies before Congress by...?",
+  "question": "Will Jensen Huang publicly testify before Congress by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.865",
+   "No": "0.135"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.07,
+  "chg_1w": 0.49,
+  "vol_24h": 18897.773945999998,
+  "tag": "politics"
+ },
+ {
+  "event": "Jensen Huang publicly testifies before Congress by...?",
+  "question": "Will Jensen Huang publicly testify before Congress by March 31, 2027?",
+  "outcomes": {
+   "Yes": "0.91",
+   "No": "0.09"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": -0.04,
+  "chg_1w": 0.37,
+  "vol_24h": 4572.04946,
+  "tag": "politics"
+ },
+ {
+  "event": "Howard Lutnick out as Secretary of Commerce by...?",
+  "question": "Howard Lutnick out as Secretary of Commerce by November 30?",
+  "outcomes": {
+   "Yes": "0.014",
+   "No": "0.986"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.0085,
+  "chg_1w": -0.051,
+  "vol_24h": 2155.913883,
+  "tag": "politics"
+ },
+ {
+  "event": "Howard Lutnick out as Secretary of Commerce by...?",
+  "question": "Howard Lutnick out as Secretary of Commerce by March 31, 2027?",
+  "outcomes": {
+   "Yes": "0.245",
+   "No": "0.755"
+  },
+  "end": "2027-04-01T03:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 5983.563945,
+  "tag": "politics"
+ },
+ {
+  "event": "Howard Lutnick out as Secretary of Commerce by...?",
+  "question": "Howard Lutnick out as Secretary of Commerce by December 31?",
+  "outcomes": {
+   "Yes": "0.095",
+   "No": "0.905"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": -0.05,
+  "chg_1w": -0.1,
+  "vol_24h": 19928.898326000002,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Senate Majority Leader?",
+  "question": "Will Chuck Schumer be the next Senate Majority Leader?",
+  "outcomes": {
+   "Yes": "0.915",
+   "No": "0.085"
+  },
+  "end": "2026-11-04T04:59:00Z",
+  "chg_1d": -0.01,
+  "chg_1w": null,
+  "vol_24h": 16039.796543,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Senate Majority Leader?",
+  "question": "Will Brian Schatz be the next Senate Majority Leader?",
+  "outcomes": {
+   "Yes": "0.01",
+   "No": "0.99"
+  },
+  "end": "2026-11-04T04:59:00Z",
+  "chg_1d": 0.0085,
+  "chg_1w": 0.002,
+  "vol_24h": 5616.354183,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Senate Majority Leader?",
+  "question": "Will Chris Van Hollen be the next Senate Majority Leader?",
+  "outcomes": {
+   "Yes": "0.0775",
+   "No": "0.9225"
+  },
+  "end": "2026-11-04T04:59:00Z",
+  "chg_1d": -0.003,
+  "chg_1w": -0.0075,
+  "vol_24h": 6039.919918,
+  "tag": "politics"
+ },
+ {
+  "event": "Clarity Act (H.R.3633) signed into law in 2026?",
+  "question": "Clarity Act (H.R.3633) signed into law in 2026?",
+  "outcomes": {
+   "Yes": "0.008",
+   "No": "0.992"
+  },
+  "end": "2027-01-01T05:00:00Z",
+  "chg_1d": 0.004,
+  "chg_1w": -0.009,
+  "vol_24h": 25660.275,
+  "tag": "politics"
+ },
+ {
+  "event": "Canadian unwrought aluminum duty rate on December 31, 2027?",
+  "question": "Will the US Section 232 tariff rate on Canadian primary aluminum be >40-50% on December 31, 2027?",
+  "outcomes": {
+   "Yes": "0.535",
+   "No": "0.465"
+  },
+  "end": "2027-12-31T05:01:00Z",
+  "chg_1d": 0.03,
+  "chg_1w": 0.03,
+  "vol_24h": 19747.167626,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Press Secretary?",
+  "question": "Will Margo Martin be the next White House Press Secretary?",
+  "outcomes": {
+   "Yes": "0.0055",
+   "No": "0.9945"
+  },
+  "end": "2028-01-01T04:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": -0.0045,
+  "vol_24h": 2182.3,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Press Secretary?",
+  "question": "Will Scott Jennings be the next White House Press Secretary?",
+  "outcomes": {
+   "Yes": "0.06",
+   "No": "0.94"
+  },
+  "end": "2028-01-01T04:59:00Z",
+  "chg_1d": -0.0555,
+  "chg_1w": -0.0135,
+  "vol_24h": 5772.046393999999,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Press Secretary?",
+  "question": "Will Ben Ferguson be the next White House Press Secretary?",
+  "outcomes": {
+   "Yes": "0.115",
+   "No": "0.885"
+  },
+  "end": "2028-01-01T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.005,
+  "vol_24h": 5280.395732,
+  "tag": "politics"
+ },
+ {
+  "event": "Which coalition will form the next Swedish government?",
+  "question": "Will the next governing coalition of Sweden include M + KD + L + C?",
+  "outcomes": {
+   "Yes": "0.563",
+   "No": "0.437"
+  },
+  "end": "2027-08-01T03:59:00Z",
+  "chg_1d": -0.0735,
+  "chg_1w": 0.321,
+  "vol_24h": 4014.5303529999996,
+  "tag": "politics"
+ },
+ {
+  "event": "Taichung Mayor Election Winner",
+  "question": "Will Johnny Chiang win the next Taichung Mayor election?",
+  "outcomes": {
+   "Yes": "0.815",
+   "No": "0.185"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": 0.015,
+  "chg_1w": 0.035,
+  "vol_24h": 9077.510439000001,
+  "tag": "politics"
+ },
+ {
+  "event": "Taichung Mayor Election Winner",
+  "question": "Will Ho Hsin-chun win the next Taichung Mayor election?",
+  "outcomes": {
+   "Yes": "0.178",
+   "No": "0.822"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": -0.024,
+  "chg_1w": -0.033,
+  "vol_24h": 6063.483686,
+  "tag": "politics"
+ },
+ {
+  "event": "Jensen Huang arrested by...?",
+  "question": "Will Jensen Huang be arrested by November 30, 2026?",
+  "outcomes": {
+   "Yes": "0.0065",
+   "No": "0.9935"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": -0.002,
+  "chg_1w": -0.0025,
+  "vol_24h": 6630.949786999999,
+  "tag": "politics"
+ },
+ {
+  "event": "Jensen Huang arrested by...?",
+  "question": "Will Jensen Huang be arrested by December 31, 2026?",
+  "outcomes": {
+   "Yes": "0.0285",
+   "No": "0.9715"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.006,
+  "chg_1w": 0.0035,
+  "vol_24h": 8083.655963,
+  "tag": "politics"
+ },
+ {
+  "event": "Pete Hegseth out as Secretary of Defense by...?",
+  "question": "Pete Hegseth out as Secretary of Defense by November 30?",
+  "outcomes": {
+   "Yes": "0.0195",
+   "No": "0.9805"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": 0.003,
+  "chg_1w": -0.0145,
+  "vol_24h": 14255.318064,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Prime Minister of Serbia?",
+  "question": "Will Dejan \u0160o\u0161ki\u0107 be the next Prime Minister of Serbia?",
+  "outcomes": {
+   "Yes": "0.358",
+   "No": "0.642"
+  },
+  "end": "2028-07-01T03:59:00Z",
+  "chg_1d": -0.006,
+  "chg_1w": -0.069,
+  "vol_24h": 3779.9630830000006,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Prime Minister of Serbia?",
+  "question": "Will Vesna Spasojevi\u0107 Brki\u0107 be the next Prime Minister of Serbia?",
+  "outcomes": {
+   "Yes": "0.0105",
+   "No": "0.9895"
+  },
+  "end": "2028-07-01T03:59:00Z",
+  "chg_1d": 0.001,
+  "chg_1w": null,
+  "vol_24h": 7135.398751000001,
+  "tag": "politics"
+ },
+ {
+  "event": "Spain General Election: Turnout",
+  "question": "Will voter turnout be 70% or higher in the 2026 Spanish general election?",
+  "outcomes": {
+   "Yes": "0.555",
+   "No": "0.445"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": 0.025,
+  "chg_1w": 0.2,
+  "vol_24h": 4899.996343,
+  "tag": "politics"
+ },
+ {
+  "event": "Next Serbia Presidential Election Winner",
+  "question": "Will Radomir Sai\u010di\u0107 win the next Serbia presidential election?",
+  "outcomes": {
+   "Yes": "0.845",
+   "No": "0.155"
+  },
+  "end": "2027-05-02T03:59:00Z",
+  "chg_1d": 0.035,
+  "chg_1w": 0.12,
+  "vol_24h": 11048.434517,
+  "tag": "politics"
+ },
+ {
+  "event": "Ljubljana Mayoral Election Winner",
+  "question": "Will Zoran Jankovi\u0107 win the 2026 Ljubljana mayoral election?",
+  "outcomes": {
+   "Yes": "0.68",
+   "No": "0.32"
+  },
+  "end": "2026-11-16T04:59:00Z",
+  "chg_1d": -0.015,
+  "chg_1w": 0.015,
+  "vol_24h": 2798.195453,
+  "tag": "politics"
+ },
+ {
+  "event": "Ljubljana Mayoral Election Winner",
+  "question": "Will Luka Mesec win the 2026 Ljubljana mayoral election?",
+  "outcomes": {
+   "Yes": "0.315",
+   "No": "0.685"
+  },
+  "end": "2026-11-16T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": null,
+  "vol_24h": 8686.828293,
+  "tag": "politics"
+ },
+ {
+  "event": "Kaohsiung Mayor Election Winner",
+  "question": "Will Ko Chih-en win the next Kaohsiung Mayor election?",
+  "outcomes": {
+   "Yes": "0.2",
+   "No": "0.8"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": -0.0065,
+  "chg_1w": 0.016,
+  "vol_24h": 4921.920957,
+  "tag": "politics"
+ },
+ {
+  "event": "Kaohsiung Mayor Election Winner",
+  "question": "Will Lai Jui-lung win the next Kaohsiung Mayor election?",
+  "outcomes": {
+   "Yes": "0.795",
+   "No": "0.205"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.01,
+  "vol_24h": 5953.043810999999,
+  "tag": "politics"
+ },
+ {
+  "event": "New Zealand legislative election winner?",
+  "question": "Will National Party win the most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+  "outcomes": {
+   "Yes": "0.995",
+   "No": "0.005"
+  },
+  "end": "2026-11-08T04:59:00Z",
+  "chg_1d": 0.0005,
+  "chg_1w": 0.003,
+  "vol_24h": 5304.08875,
+  "tag": "politics"
+ },
+ {
+  "event": "New Zealand legislative election winner?",
+  "question": "Will Labour Party win the most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+  "outcomes": {
+   "Yes": "0.004",
+   "No": "0.996"
+  },
+  "end": "2026-11-08T04:59:00Z",
+  "chg_1d": -0.0005,
+  "chg_1w": -0.0005,
+  "vol_24h": 5328.75,
+  "tag": "politics"
+ },
+ {
+  "event": "U.S. tariff rate on China on December 31, 2026?",
+  "question": "Will the U.S. tariff rate on China be between 5% and 15% on December 31?",
+  "outcomes": {
+   "Yes": "0.625",
+   "No": "0.375"
+  },
+  "end": "2026-12-31T00:00:00Z",
+  "chg_1d": -0.295,
+  "chg_1w": -0.27,
+  "vol_24h": 4985.667453,
+  "tag": "politics"
+ },
+ {
+  "event": "Government shutdown by...?",
+  "question": "Government shutdown by December 12?",
+  "outcomes": {
+   "Yes": "0.26",
+   "No": "0.74"
+  },
+  "end": "2026-12-13T04:59:00Z",
+  "chg_1d": 0.005,
+  "chg_1w": -0.03,
+  "vol_24h": 6128.869245,
+  "tag": "politics"
+ },
+ {
+  "event": "Government shutdown by...?",
+  "question": "Government shutdown by December 31?",
+  "outcomes": {
+   "Yes": "0.315",
+   "No": "0.685"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.02,
+  "chg_1w": -0.01,
+  "vol_24h": 3290.419965,
+  "tag": "politics"
+ },
+ {
+  "event": "Will Trump be impeached by...?",
+  "question": "Will Trump be impeached by June 30, 2027?",
+  "outcomes": {
+   "Yes": "0.395",
+   "No": "0.605"
+  },
+  "end": "2027-07-01T03:59:00Z",
+  "chg_1d": 0.01,
+  "chg_1w": -0.03,
+  "vol_24h": 7434.015161999999,
+  "tag": "politics"
+ },
+ {
+  "event": "Next French Presidential Election: who will advance to the 2nd round?",
+  "question": "Will David Lisnard advance to the second round of the next French presidential election?",
+  "outcomes": {
+   "Yes": "0.2765",
+   "No": "0.7235"
+  },
+  "end": "2027-04-19T03:59:00Z",
+  "chg_1d": 0.031,
+  "chg_1w": 0.051,
+  "vol_24h": 2343.974733,
+  "tag": "politics"
+ },
+ {
+  "event": "Tainan Mayor Election Winner",
+  "question": "Will Hsieh Lung-chieh win the next Tainan Mayor election?",
+  "outcomes": {
+   "Yes": "0.0565",
+   "No": "0.9435"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": 0.0055,
+  "chg_1w": 0.0105,
+  "vol_24h": 6127.668289,
+  "tag": "politics"
+ },
+ {
+  "event": "Tainan Mayor Election Winner",
+  "question": "Will Chen Ting-fei win the next Tainan Mayor election?",
+  "outcomes": {
+   "Yes": "0.941",
+   "No": "0.059"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": -0.0015,
+  "chg_1w": -0.015,
+  "vol_24h": 2542.234278,
+  "tag": "politics"
+ },
+ {
+  "event": "Quito Mayoral Election Winner",
+  "question": "Will Pabel Mu\u00f1oz win the next Quito mayoral election?",
+  "outcomes": {
+   "Yes": "0.59",
+   "No": "0.41"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": 0.06,
+  "chg_1w": 0.11,
+  "vol_24h": 2385.903159,
+  "tag": "politics"
+ },
+ {
+  "event": "Quito Mayoral Election Winner",
+  "question": "Will Bernardo Jij\u00f3n win the next Quito mayoral election?",
+  "outcomes": {
+   "Yes": "0.2205",
+   "No": "0.7795"
+  },
+  "end": "2026-11-30T04:59:00Z",
+  "chg_1d": 0.165,
+  "chg_1w": 0.1945,
+  "vol_24h": 3312.469282,
+  "tag": "politics"
+ },
+ {
+  "event": "2026 Midterms: House Turnout",
+  "question": "Will there be between 115m and 120m votes cast in the 2026 U.S. House of Representatives midterm elections?",
+  "outcomes": {
+   "Yes": "0.8415",
+   "No": "0.1585"
+  },
+  "end": "2026-11-04T04:59:00Z",
+  "chg_1d": 0.1065,
+  "chg_1w": 0.077,
+  "vol_24h": 2741.5154519999996,
+  "tag": "politics"
+ },
+ {
+  "event": "2026 Midterms: House Turnout",
+  "question": "Will there be between 120m and 125m votes cast in the 2026 U.S. House of Representatives midterm elections?",
+  "outcomes": {
+   "Yes": "0.109",
+   "No": "0.891"
+  },
+  "end": "2026-11-04T04:59:00Z",
+  "chg_1d": -0.1235,
+  "chg_1w": -0.1325,
+  "vol_24h": 4490.951016999999,
+  "tag": "politics"
+ },
+ {
+  "event": "Taoyuan Mayor Election Winner",
+  "question": "Will Chang San-cheng win the next Taoyuan Mayor election?",
+  "outcomes": {
+   "Yes": "0.925",
+   "No": "0.075"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": 0.02,
+  "chg_1w": 0.03,
+  "vol_24h": 2625.36707,
+  "tag": "politics"
+ },
+ {
+  "event": "Taoyuan Mayor Election Winner",
+  "question": "Will Huang Shih-chieh win the next Taoyuan Mayor election?",
+  "outcomes": {
+   "Yes": "0.077",
+   "No": "0.923"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": -0.016,
+  "chg_1w": -0.016,
+  "vol_24h": 4043.636653,
+  "tag": "politics"
+ },
+ {
+  "event": "Victoria Parliamentary Election Winner",
+  "question": "Will Labor win the most seats in the next Victorian state election?",
+  "outcomes": {
+   "Yes": "0.0335",
+   "No": "0.9665"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": 0.005,
+  "chg_1w": -0.0035,
+  "vol_24h": 2410.5371149999996,
+  "tag": "politics"
+ },
+ {
+  "event": "Victoria Parliamentary Election Winner",
+  "question": "Will Liberal\u2013National win the most seats in the next Victorian state election?",
+  "outcomes": {
+   "Yes": "0.959",
+   "No": "0.041"
+  },
+  "end": "2026-11-29T04:59:00Z",
+  "chg_1d": null,
+  "chg_1w": 0.0085,
+  "vol_24h": 2187.735431,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic 2028 presidential odds on November 27?",
+  "question": "Democratic 2028 presidential odds 64-66% on November 27?",
+  "outcomes": {
+   "Yes": "0.27",
+   "No": "0.73"
+  },
+  "end": "2026-11-27T17:00:00Z",
+  "chg_1d": -0.145,
+  "chg_1w": null,
+  "vol_24h": 3136.537152,
+  "tag": "politics"
+ },
+ {
+  "event": "Democratic 2028 presidential odds on November 27?",
+  "question": "Democratic 2028 presidential odds 66-68% on November 27?",
+  "outcomes": {
+   "Yes": "0.57",
+   "No": "0.43"
+  },
+  "end": "2026-11-27T17:00:00Z",
+  "chg_1d": 0.105,
+  "chg_1w": null,
+  "vol_24h": 2029.2952340000002,
+  "tag": "politics"
+ },
+ {
+  "event": "Who will announce Presidential run before 2027?",
+  "question": "Will Marco Rubio announce a presidential run before 2027?",
+  "outcomes": {
+   "Yes": "0.046",
+   "No": "0.954"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0295,
+  "chg_1w": 0.0305,
+  "vol_24h": 2522.617515,
+  "tag": "politics"
+ },
+ {
+  "event": "Jeffrey Epstein confirmed to be alive before 2027?",
+  "question": "Jeffrey Epstein confirmed to be alive before 2027?",
+  "outcomes": {
+   "Yes": "0.009",
+   "No": "0.991"
+  },
+  "end": "2027-01-01T04:59:00Z",
+  "chg_1d": 0.0025,
+  "chg_1w": 0.0045,
+  "vol_24h": 5292.2020729999995,
+  "tag": "politics"
+ },
+ {
+  "event": "USD x Iranian rials End of December?",
+  "question": "Will USD be less than 2.0M Iranian rials on December 31?",
+  "outcomes": {
+   "Yes": "0.0195",
+   "No": "0.9805"
+  },
+  "end": "2026-12-31T23:59:00Z",
+  "chg_1d": -0.0065,
+  "chg_1w": -0.0355,
+  "vol_24h": 2034.996245,
+  "tag": "middle-east"
+ },
+ {
+  "event": "USD x Iranian rials End of December?",
+  "question": "Will USD be between 2.5M and 3.0M Iranian rials on December 31?",
+  "outcomes": {
+   "Yes": "0.425",
+   "No": "0.575"
+  },
+  "end": "2026-12-31T23:59:00Z",
+  "chg_1d": -0.04,
+  "chg_1w": -0.01,
+  "vol_24h": 3292.3519840000004,
+  "tag": "middle-east"
+ },
+ {
+  "event": "USD x Iranian rials End of December?",
+  "question": "Will USD be between 3.0M and 3.5M Iranian rials on December 31?",
+  "outcomes": {
+   "Yes": "0.44",
+   "No": "0.56"
+  },
+  "end": "2026-12-31T23:59:00Z",
+  "chg_1d": -0.005,
+  "chg_1w": 0.11,
+  "vol_24h": 3315.7617780000005,
+  "tag": "middle-east"
+ },
+ {
+  "event": "USD x Iranian rials End of December?",
+  "question": "Will USD be between 3.5M and 4.0M Iranian rials on December 31?",
+  "outcomes": {
+   "Yes": "0.048",
+   "No": "0.952"
+  },
+  "end": "2026-12-31T23:59:00Z",
+  "chg_1d": null,
+  "chg_1w": -0.035,
+  "vol_24h": 2057.599551,
+  "tag": "middle-east"
+ },
+ {
+  "event": "USD x Iranian rials End of December?",
+  "question": "Will USD be at least 4.0M Iranian rials on December 31?",
+  "outcomes": {
+   "Yes": "0.015",
+   "No": "0.985"
+  },
+  "end": "2026-12-31T23:59:00Z",
+  "chg_1d": 0.0115,
+  "chg_1w": null,
+  "vol_24h": 2698.5534260000004,
+  "tag": "middle-east"
+ },
+ {
+  "event": "USD x Iranian rials End of November?",
+  "question": "Will USD be at least 3.0M Iranian rials on November 30?",
+  "outcomes": {
+   "Yes": "0.122",
+   "No": "0.878"
+  },
+  "end": "2026-12-01T04:59:00Z",
+  "chg_1d": 0.1065,
+  "chg_1w": -0.023,
+  "vol_24h": 2100.388053,
+  "tag": "middle-east"
+ }
+]

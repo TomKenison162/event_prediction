@@ -82,6 +82,10 @@ MAX_PER_DAY = 5
 LIVE_START = date(2026, 12, 8)
 LIVE_END = date(2026, 12, 21)
 LAST_TARGET = date(2026, 12, 28)
+# Rule "predicted date at least 1 day after the issued time": 1 = next calendar day allowed
+# (backtest +29.2 / 14 days); set 2 if the group reads it as a full 24h (+24.4).
+MIN_LEAD_DAYS = 1
+ISSUE_HOUR_UTC = 22            # issue late: backtest 14-day net +17.5 at 22:00 vs +13.5 at 07:00
 SCORE_THRESHOLD = 5.0          # only predict when expected judge score exceeds this
 
 # Label: a (country, type, day) is "notable" if that day's matching events were

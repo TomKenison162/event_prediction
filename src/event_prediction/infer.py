@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 from .config import COUNTRIES, HORIZONS, MODELS, TYPE_NAMES
-from .dataset import Panel, TabularBuilder, feature_columns
+from .dataset import Panel, TabularBuilder, feature_columns, quiet_mask
 from .scoring import expected_score
 from .train_lgbm import to_lgb
 
@@ -78,8 +78,9 @@ def candidates(panel: Panel, cutoff: int, P: np.ndarray, min_h: int, max_h: int)
     already-observed days use the observed label; beyond the model horizon we
     fall back to the 28-day base rate."""
     C, T, _ = P.shape
-    Y = panel.Y
-    base = Y[max(0, cutoff - 27):cutoff + 1].mean(0)            # C,T
+    Y = panel.big                                                 # observed big days
+    base = panel.onset[max(0, cutoff - 364):cutoff + 1].mean(0)   # C,T yearly onset rate
+    quiet = quiet_mask(panel, cutoff)
     rows = []
     for h in range(min_h, max_h + 1):
         pk = {}
@@ -95,7 +96,9 @@ def candidates(panel: Panel, cutoff: int, P: np.ndarray, min_h: int, max_h: int)
         tgt = panel.days[cutoff] + pd.Timedelta(days=h)
         for c in range(C):
             for t in range(T):
+                if not quiet[c, t]:
+                    continue                      # ongoing situation: not a surprise, never eligible
                 rows.append((panel.countries[c], COUNTRIES[panel.countries[c]], TYPE_NAMES[t],
                              tgt.date(), h, float(pk[0][c, t]), float(e[c, t]), float(base[c, t])))
     return pd.DataFrame(rows, columns=["country", "country_name", "type", "target", "h",
-                                       "p", "exp_score", "base_rate_28d"])
+                                       "p", "exp_score", "base_rate_365d"])

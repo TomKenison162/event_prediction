@@ -12,3 +12,9 @@ predictions_dryrun/
 data/poly/trades/
 data/poly/*.pkl
 data/poly/markets_resolved.parquet
+data/gdelt_precursor/
+data/manifold/
+data/gdelt_agg_early/
+data/gdelt_top_early/
+data/gdelt_precursor_early/
+data/poly/markets_wide.parquet

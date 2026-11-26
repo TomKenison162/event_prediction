@@ -1,0 +1,12 @@
+{
+  "3.5": {
+    "preds_per_day": 1.0802919708029197,
+    "mean_expected": 4.935830053931847,
+    "mean_realised": 4.931306306306307,
+    "miss_rate": 0.3400900900900901,
+    "window_total_mean": 29.246231155778894,
+    "window_p10": -10.949999999999996,
+    "window_p90": 70.0,
+    "share_windows_positive": 0.8015075376884422
+  }
+}

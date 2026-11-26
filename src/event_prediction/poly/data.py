@@ -24,6 +24,10 @@ GAMMA = "https://gamma-api.polymarket.com/events/keyset"
 TRADES_URL = "https://data-api.polymarket.com/v2/trades"
 TAGS = ["geopolitics", "middle-east", "ukraine", "iran", "russia", "china", "israel",
         "military", "venezuela", "world-affairs", "world"]
+EXTRA_TAGS = ["gaza", "lebanon", "syria", "yemen", "north-korea", "taiwan", "india", "pakistan",
+              "india-pakistan", "africa", "south-america", "latin-america", "europe", "asia",
+              "turkey", "mexico", "politics", "global-politics", "trump", "foreign-policy",
+              "nato", "putin", "zelensky", "netanyahu", "hamas", "hezbollah", "houthis", "coups"]
 SKIP = ("nba", "nfl", "nhl", "mlb", "ufc", "premier league", "champions league", "bitcoin",
         "ethereum", "solana", "crypto", " fc ", "grand prix", "oscars", "grammy", "box office",
         "say ", "tweet", "temperature", "election", "primary", "nominee", "poll")
@@ -69,16 +73,27 @@ def _market_row(ev: dict, m: dict, tag: str) -> dict | None:
     }
 
 
-def fetch_markets(closed: bool, min_volume: float = 50_000, since: str = "2023-11-01") -> pd.DataFrame:
+def fetch_markets(closed: bool, min_volume: float = 50_000, since: str = "2023-11-01",
+                  tags: list[str] | None = None) -> pd.DataFrame:
     rows, seen = [], set()
-    for tag in TAGS:
-        cur, n = None, 0
+    for tag in tags or TAGS:
+        cur, n, pages, seen_ev = None, 0, 0, set()
         while True:
             p = {"closed": str(closed).lower(), "limit": 100, "tag_slug": tag}
+            if closed:
+                p["end_date_min"] = f"{since}T00:00:00Z"
             if cur:
-                p["cursor"] = cur
+                p["after_cursor"] = cur            # Gamma keyset paging parameter
             d = _get(GAMMA, p)
             evs = d.get("events", [])
+            ids = {e.get("id") for e in evs}
+            if ids and ids <= seen_ev:             # guard: API returned a page we already saw
+                print(f"{tag}: repeated page, stopping")
+                break
+            seen_ev |= ids
+            pages += 1
+            if pages % 20 == 0:
+                print(f"  {tag}: {pages} pages, {len(seen_ev)} events, {n} markets kept", flush=True)
             for ev in evs:
                 for m in ev.get("markets", []):
                     r = _market_row(ev, m, tag)
@@ -154,13 +169,16 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--skip-markets", action="store_true")
     ap.add_argument("--workers", type=int, default=12)
+    ap.add_argument("--wide", action="store_true", help="extra tags, min volume 10k -> markets_wide.parquet")
     a = ap.parse_args()
     POLY.mkdir(parents=True, exist_ok=True)
+    out = POLY / ("markets_wide.parquet" if a.wide else "markets_resolved.parquet")
     if not a.skip_markets:
-        m = fetch_markets(closed=True)
-        m.to_parquet(POLY / "markets_resolved.parquet", index=False)
+        m = (fetch_markets(closed=True, min_volume=10_000, tags=TAGS + EXTRA_TAGS) if a.wide
+             else fetch_markets(closed=True))
+        m.to_parquet(out, index=False)
         print(f"{len(m)} resolved markets, yes rate {m['yes_won'].mean():.3f}")
-    m = pd.read_parquet(POLY / "markets_resolved.parquet")
+    m = pd.read_parquet(out)
     collect_trades(m, a.workers)
 
 

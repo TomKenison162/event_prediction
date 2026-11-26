@@ -78,21 +78,44 @@ class Data:
         self.stats = stats
         Fn = (F - np.array(stats["mu"], np.float32)) / np.array(stats["sd"], np.float32)
         self.F = torch.tensor(np.clip(Fn, -10, 10), dtype=torch.float32, device=dev)
-        Ypad = np.concatenate([p.Y, np.zeros((max(HORIZONS),) + p.Y.shape[1:], bool)])
+        Ypad = np.concatenate([p.onset, np.zeros((max(HORIZONS),) + p.onset.shape[1:], bool)])
         self.Y = torch.tensor(Ypad, dtype=torch.float32, device=dev)
+        valid = np.concatenate([~p.missing, np.zeros(max(HORIZONS), bool)])
+        self.valid = torch.tensor(valid, dtype=torch.float32, device=dev)
+        # quiet[d,c,t]: no big day in the ONSET_QUIET days up to d (only these are ever predicted)
+        from .dataset import ONSET_QUIET
+        recent = np.zeros_like(p.big)
+        for k in range(ONSET_QUIET):
+            recent[k:] |= p.big[:len(p.big) - k]
+        self.quiet = torch.tensor(~recent, dtype=torch.float32, device=dev)
         self.n_days = len(p.days)
         self.hz = torch.tensor(HORIZONS, device=dev)
 
     def batch(self, cut: torch.Tensor):
         win = cut[:, None] - torch.arange(SEQ_LEN - 1, -1, -1, device=cut.device)[None]  # B,L
         x = self.F[win].permute(0, 2, 1, 3)                    # B,C,L,K
-        y = self.Y[cut[:, None] + self.hz[None]]               # B,H,C,T
+        tgt = cut[:, None] + self.hz[None]
+        y = self.Y[tgt]                                        # B,H,C,T
+        # B,C,T,H weight: 0 on missing target days and for pairs not quiet at the cutoff
+        self.last_w = self.valid[tgt][:, None, None, :] * self.quiet[cut][..., None]
         return x, y.permute(0, 2, 3, 1)                        # B,C,T,H
 
 
 def cutoffs(p: Panel, lo: str, hi: str) -> np.ndarray:
     idx = np.where((p.days >= pd.Timestamp(lo)) & (p.days <= pd.Timestamp(hi)))[0]
     return idx[(idx >= SEQ_LEN - 1) & (idx + max(HORIZONS) < len(p.days))]
+
+
+def labels(p: Panel, cut: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """-> (y [N,C,T,H] float, weight [N,C,T,H]: 0 where the target day has no data)."""
+    tgt = cut[:, None] + np.array(HORIZONS)[None]
+    y = p.onset[tgt].transpose(0, 2, 3, 1).astype(np.float32)
+    from .dataset import ONSET_QUIET
+    w = (~p.missing[tgt]).astype(np.float32)[:, None, None, :]
+    recent = np.zeros((len(cut),) + p.big.shape[1:], bool)
+    for k in range(ONSET_QUIET):
+        recent |= p.big[np.maximum(cut - k, 0)]
+    return y, (np.broadcast_to(w, y.shape) * (~recent)[..., None]).astype(np.float32)
 
 
 @torch.no_grad()
@@ -139,8 +162,13 @@ def main() -> None:
     opt = torch.optim.AdamW(model.parameters(), lr=a.lr, weight_decay=0.01)
     sched = torch.optim.lr_scheduler.OneCycleLR(opt, a.lr, total_steps=a.epochs * (len(tr) // a.bs + 1))
     # up-weight positives a little (base rate is low) without distorting too much
-    pos_rate = float(p.Y[tr].mean())
-    lossf = nn.BCEWithLogitsLoss(pos_weight=torch.tensor(min(5.0, 0.5 / max(pos_rate, 1e-3)), device=dev))
+    pos_rate = float(p.onset[tr].mean())
+    pw = torch.tensor(min(5.0, 0.5 / max(pos_rate, 1e-3)), device=dev)
+
+    def lossf(logits, y):
+        l = nn.functional.binary_cross_entropy_with_logits(logits, y, pos_weight=pw, reduction="none")
+        w = data.last_w.expand_as(l)
+        return (l * w).sum() / w.sum().clamp(min=1)
 
     best, bad, best_state = 1e9, 0, None
     for ep in range(a.epochs):
@@ -159,10 +187,10 @@ def main() -> None:
         msg = f"ep {ep:02d} train {tot / len(tr):.4f} ({time.time() - t0:.0f}s)"
         if not a.final:
             pv = predict(model, data, va)
-            yv = data.Y[torch.tensor(va[:, None] + np.array(HORIZONS)[None], device=dev)].cpu().numpy()
-            yv = yv.transpose(0, 2, 3, 1)
-            vl = float(nn.functional.binary_cross_entropy(torch.tensor(pv).clamp(1e-6, 1 - 1e-6),
-                                                          torch.tensor(yv)).item())
+            yv, wv = labels(p, va)
+            vl = float((nn.functional.binary_cross_entropy(torch.tensor(pv).clamp(1e-6, 1 - 1e-6),
+                                                           torch.tensor(yv), reduction="none")
+                        * torch.tensor(wv)).sum() / wv.sum())
             msg += f" val_bce {vl:.4f}"
             if vl < best - 1e-4:
                 best, bad = vl, 0
@@ -183,12 +211,14 @@ def main() -> None:
 
     # isotonic calibration on val, report on test
     pv = predict(model, data, va)
-    yv = p.Y[va[:, None] + np.array(HORIZONS)[None]].transpose(0, 2, 3, 1)
-    iso = IsotonicRegression(out_of_bounds="clip", y_min=0, y_max=1).fit(pv.ravel(), yv.ravel())
+    yv, wv = labels(p, va)
+    keep = wv.ravel() > 0
+    iso = IsotonicRegression(out_of_bounds="clip", y_min=0, y_max=1).fit(pv.ravel()[keep], yv.ravel()[keep])
     pickle.dump(iso, open(MODELS / f"{a.tag}_iso.pkl", "wb"))
     pt = predict(model, data, te)
-    yt = p.Y[te[:, None] + np.array(HORIZONS)[None]].transpose(0, 2, 3, 1)
-    rep = {"auc_test": float(roc_auc_score(yt.ravel(), pt.ravel())), "val_bce": best, "cfg": cfg,
+    yt, wt = labels(p, te)
+    kt = wt.ravel() > 0
+    rep = {"auc_test": float(roc_auc_score(yt.ravel()[kt], pt.ravel()[kt])), "val_bce": best, "cfg": cfg,
            "epochs_trained": ep + 1}
     (MODELS / f"{a.tag}_meta.json").write_text(json.dumps(rep, indent=2))
     print(rep)

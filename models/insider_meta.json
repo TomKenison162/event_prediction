@@ -1,0 +1,49 @@
+{
+  "soon": [
+    {
+      "model": "context_logreg",
+      "auc": 0.9289876598008014,
+      "logloss": 0.08691508322954178
+    },
+    {
+      "model": "insider_transformer",
+      "auc": 0.9338243420869901,
+      "logloss": 0.08931766450405121
+    }
+  ],
+  "yes": [
+    {
+      "model": "price_only",
+      "auc": 0.9333775767784152,
+      "logloss": 0.26066951773594094
+    },
+    {
+      "model": "context_logreg",
+      "auc": 0.9331334747049937,
+      "logloss": 0.26065531373023987
+    },
+    {
+      "model": "insider_transformer",
+      "auc": 0.9232099885020093,
+      "logloss": 0.27368906140327454
+    }
+  ],
+  "up": [
+    {
+      "model": "context_logreg",
+      "auc": 0.786538763114905,
+      "logloss": 0.12953269481658936
+    },
+    {
+      "model": "insider_transformer",
+      "auc": 0.8521658633210767,
+      "logloss": 0.11682702600955963
+    }
+  ],
+  "epochs_trained": 8,
+  "n": {
+    "train": 37013,
+    "val": 50208,
+    "test": 55590
+  }
+}
